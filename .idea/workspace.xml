@@ -94,7 +94,7 @@
       <workItem from="1604503442344" duration="1470000" />
       <workItem from="1604922976044" duration="2329000" />
       <workItem from="1604934488923" duration="600000" />
-      <workItem from="1604935219569" duration="1859000" />
+      <workItem from="1604935219569" duration="2001000" />
     </task>
     <servers />
   </component>
@@ -127,9 +127,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="607" y="279" width="452" height="246" key="ComposerInitDialogKey/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601587207730" />
-    <state x="613" y="145" key="FileChooserDialogImpl" timestamp="1601674841837">
+    <state x="613" y="145" key="FileChooserDialogImpl" timestamp="1604944242276">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="613" y="145" key="FileChooserDialogImpl/0.0.1366.768/-1920.-182.1280.720@0.0.1366.768" timestamp="1604944242276" />
     <state x="613" y="145" key="FileChooserDialogImpl/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601674841837" />
     <state x="1940" y="193" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1280.1024@1366.0.1280.1024" timestamp="1601651826871" />
     <state width="1321" height="238" key="GridCell.Tab.0.bottom" timestamp="1601702141256">
@@ -206,6 +207,10 @@
       <screen x="-1920" y="4" width="1920" height="1080" />
     </state>
     <state x="-1663" y="4" width="1079" height="754" maximized="true" key="dock-window-7/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601836558499" />
+    <state x="92" y="92" width="1182" height="584" key="git4idea.log.GitShowExternalLogAction" timestamp="1604944254318">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="92" y="92" width="1182" height="584" key="git4idea.log.GitShowExternalLogAction/0.0.1366.768/-1920.-182.1280.720@0.0.1366.768" timestamp="1604944254318" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1601756677147">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
