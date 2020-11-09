@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="bf25a61f-6905-4b16-b9c1-bd5ff4e199e6" />
+    </execution>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/source/Config.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="PhpDebugGeneral" xdebug_force_break_when_outside_project="false" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-client" />
+      <path value="$PROJECT_DIR$/vendor/league/plates" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-facebook" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-google" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/router" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/optimizer" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/datalayer" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/minify" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/path-converter" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1iIE60YNfrBRA2clxD7FwlxiQE9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\app" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\assets\images" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\assets\js" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\assets\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="" />
+      <created>1601586530107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601586530107</updated>
+      <workItem from="1601586532455" duration="3464000" />
+      <workItem from="1601590042394" duration="21605000" />
+      <workItem from="1601641467973" duration="14137000" />
+      <workItem from="1601673687288" duration="10357000" />
+      <workItem from="1601739929384" duration="38021000" />
+      <workItem from="1601900919801" duration="2040000" />
+      <workItem from="1601986418130" duration="589000" />
+      <workItem from="1602591728767" duration="3669000" />
+      <workItem from="1602851118557" duration="604000" />
+      <workItem from="1602946100789" duration="376000" />
+      <workItem from="1603113196205" duration="1256000" />
+      <workItem from="1603195048041" duration="3217000" />
+      <workItem from="1603201666803" duration="2497000" />
+      <workItem from="1603717383508" duration="1216000" />
+      <workItem from="1604495919100" duration="793000" />
+      <workItem from="1604503442344" duration="1470000" />
+      <workItem from="1604922976044" duration="2329000" />
+      <workItem from="1604934488923" duration="600000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="309" y="65" key="#Inspections" timestamp="1601774225790">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="309" y="65" key="#Inspections/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601774225790" />
+    <state x="473" y="0" key="#PHP" timestamp="1601768659972">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="473" y="0" key="#PHP/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601768659972" />
+    <state x="274" y="9" width="1092" height="759" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601681821328">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="274" y="9" width="1092" height="759" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601681821328" />
+    <state x="638" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1601648077447">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="638" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601616621259" />
+    <state x="638" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1601648077447" />
+    <state x="413" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601757287365">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="413" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601757287365" />
+    <state x="607" y="279" width="452" height="246" key="ComposerInitDialogKey" timestamp="1601587207730">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="607" y="279" width="452" height="246" key="ComposerInitDialogKey/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601587207730" />
+    <state x="613" y="145" key="FileChooserDialogImpl" timestamp="1601674841837">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="613" y="145" key="FileChooserDialogImpl/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601674841837" />
+    <state x="1940" y="193" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1280.1024@1366.0.1280.1024" timestamp="1601651826871" />
+    <state width="1321" height="238" key="GridCell.Tab.0.bottom" timestamp="1601702141256">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1321" height="238" key="GridCell.Tab.0.bottom/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601702141256" />
+    <state width="1321" height="238" key="GridCell.Tab.0.center" timestamp="1601702141256">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1321" height="238" key="GridCell.Tab.0.center/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601702141256" />
+    <state width="1321" height="238" key="GridCell.Tab.0.left" timestamp="1601702141255">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1321" height="238" key="GridCell.Tab.0.left/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601702141255" />
+    <state width="1321" height="238" key="GridCell.Tab.0.right" timestamp="1601702141256">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1321" height="238" key="GridCell.Tab.0.right/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601702141256" />
+    <state width="1321" height="238" key="GridCell.Tab.1.bottom" timestamp="1601702141257">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1321" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601702141257" />
+    <state width="1321" height="238" key="GridCell.Tab.1.center" timestamp="1601702141257">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1321" height="238" key="GridCell.Tab.1.center/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601702141257" />
+    <state width="1321" height="238" key="GridCell.Tab.1.left" timestamp="1601702141256">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1321" height="238" key="GridCell.Tab.1.left/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601702141256" />
+    <state width="1321" height="238" key="GridCell.Tab.1.right" timestamp="1601702141257">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1321" height="238" key="GridCell.Tab.1.right/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601702141257" />
+    <state x="577" y="129" key="NewPhpClassDialog" timestamp="1601613924886">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="577" y="129" key="NewPhpClassDialog/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601613924886" />
+    <state x="650" y="314" key="NewPhpFileDialog" timestamp="1601833251098">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="650" y="314" key="NewPhpFileDialog/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601833251098" />
+    <state x="1975" y="419" key="NewPhpFileDialog/0.0.1366.768/1366.0.1280.1024@1366.0.1280.1024" timestamp="1601658025378" />
+    <state x="336" y="33" key="SettingsEditor" timestamp="1601616084941">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="336" y="33" key="SettingsEditor/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601616084941" />
+    <state x="-1342" y="4" width="1039" height="754" maximized="true" key="dock-window-1" timestamp="1601754390665">
+      <screen x="-1920" y="4" width="1920" height="1080" />
+    </state>
+    <state x="-1342" y="4" width="1039" height="754" maximized="true" key="dock-window-1/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601754390665" />
+    <state x="-1563" y="4" width="1039" height="754" maximized="true" key="dock-window-2" timestamp="1601754689968">
+      <screen x="-1920" y="4" width="1920" height="1080" />
+    </state>
+    <state x="-1563" y="4" width="1039" height="754" maximized="true" key="dock-window-2/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601754689968" />
+    <state x="-1512" y="4" width="1039" height="754" maximized="true" key="dock-window-3" timestamp="1601755073284">
+      <screen x="-1920" y="4" width="1920" height="1080" />
+    </state>
+    <state x="-1512" y="4" width="1039" height="754" maximized="true" key="dock-window-3/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601755073284" />
+    <state x="-1426" y="4" width="1039" height="754" maximized="true" key="dock-window-4" timestamp="1601759793839">
+      <screen x="-1920" y="4" width="1920" height="1080" />
+    </state>
+    <state x="-1426" y="4" width="1039" height="754" maximized="true" key="dock-window-4/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601759793839" />
+    <state x="-1319" y="4" width="1079" height="754" maximized="true" key="dock-window-5" timestamp="1601774014129">
+      <screen x="-1920" y="4" width="1920" height="1080" />
+    </state>
+    <state x="-1319" y="4" width="1079" height="754" maximized="true" key="dock-window-5/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601774014129" />
+    <state x="-1847" y="4" width="1079" height="754" maximized="true" key="dock-window-6" timestamp="1601836473297">
+      <screen x="-1920" y="4" width="1920" height="1080" />
+    </state>
+    <state x="-1847" y="4" width="1079" height="754" maximized="true" key="dock-window-6/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601836473297" />
+    <state x="-1663" y="4" width="1079" height="754" maximized="true" key="dock-window-7" timestamp="1601836558499">
+      <screen x="-1920" y="4" width="1920" height="1080" />
+    </state>
+    <state x="-1663" y="4" width="1079" height="754" maximized="true" key="dock-window-7/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601836558499" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1601756677147">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601756677147" />
+    <state x="496" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1601757055803">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="496" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601757055803" />
+    <state x="496" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1601648076124" />
+    <state x="1831" y="119" width="672" height="904" key="search.everywhere.popup/0.0.1366.768/1366.0.1280.1024@1366.0.1280.1024" timestamp="1601658020772" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="new_platinvar" type="b2602c69:ProjectViewProjectNode" />
+        <item name="new_platinvar" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+</project>
