@@ -75,7 +75,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -116,7 +116,7 @@
       <workItem from="1604922976044" duration="2329000" />
       <workItem from="1604934488923" duration="600000" />
       <workItem from="1604935219569" duration="2602000" />
-      <workItem from="1605011405562" duration="788000" />
+      <workItem from="1605011405562" duration="1425000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -219,10 +219,10 @@
     </state>
     <state x="650" y="314" key="NewPhpFileDialog/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601833251098" />
     <state x="1975" y="419" key="NewPhpFileDialog/0.0.1366.768/1366.0.1280.1024@1366.0.1280.1024" timestamp="1601658025378" />
-    <state x="146" y="26" key="SettingsEditor" timestamp="1605011543116">
+    <state x="146" y="26" key="SettingsEditor" timestamp="1605015403882">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="146" y="26" key="SettingsEditor/0.0.1366.768/-1920.-182.1280.720@0.0.1366.768" timestamp="1605011543116" />
+    <state x="146" y="26" key="SettingsEditor/0.0.1366.768/-1920.-182.1280.720@0.0.1366.768" timestamp="1605015403882" />
     <state x="336" y="33" key="SettingsEditor/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601616084941" />
     <state x="275" y="119" key="Vcs.Push.Dialog.v2" timestamp="1605011502423">
       <screen x="0" y="0" width="1366" height="768" />
