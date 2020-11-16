@@ -19,7 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Update workspace.xml" />
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Update workspace.xml">
+      <change afterPath="$PROJECT_DIR$/source/Models/Events.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/Models/Lesson.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/Models/SchoolRoom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/.eslintignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/register-v2.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,14 +93,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\new_platinvar\views\assets" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\theme\app" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\assets\images" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\assets\js" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\assets\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -119,7 +134,9 @@
       <workItem from="1605011405562" duration="2026000" />
       <workItem from="1605020552409" duration="581000" />
       <workItem from="1605097260710" duration="2444000" />
-      <workItem from="1605272893161" duration="597000" />
+      <workItem from="1605272893161" duration="2792000" />
+      <workItem from="1605288038749" duration="2529000" />
+      <workItem from="1605531405567" duration="1120000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -128,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605011494904</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update workspace.xml">
+      <created>1605273956495</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605273956495</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,10 +238,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1321" height="238" key="GridCell.Tab.1.right/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601702141257" />
-    <state x="577" y="129" key="NewPhpClassDialog" timestamp="1601613924886">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="1943" y="129" key="NewPhpClassDialog" timestamp="1605532488341">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="577" y="129" key="NewPhpClassDialog/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601613924886" />
+    <state x="1943" y="129" key="NewPhpClassDialog/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1605532488341" />
     <state x="650" y="314" key="NewPhpFileDialog" timestamp="1601833251098">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
