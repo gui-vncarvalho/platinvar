@@ -19,20 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Update workspace.xml">
-      <change afterPath="$PROJECT_DIR$/source/Models/Events.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Models/Lesson.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Models/SchoolRoom.php" afterDir="false" />
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Criação das Models de Eventos, Sala de Aula e Lições">
+      <change afterPath="$PROJECT_DIR$/source/Models/Course.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/Models/Event.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/register-v2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/Events.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Lesson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/SchoolRoom.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/SchoolRoom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/dist/img/AdminLTELogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/custom-grid-field.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/custom-grid-field.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/custom-load-indicator.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/custom-load-indicator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/custom-row-renderer.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/custom-row-renderer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/custom-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/custom-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/loading-by-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/loading-by-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/odata-service.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/odata-service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/sorting.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/plugins/jsgrid/demos/sorting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/_theme.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +138,7 @@
       <workItem from="1605097260710" duration="2444000" />
       <workItem from="1605272893161" duration="2792000" />
       <workItem from="1605288038749" duration="2529000" />
-      <workItem from="1605531405567" duration="1120000" />
+      <workItem from="1605531405567" duration="3512000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -152,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605273956495</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Criação das Models de Eventos, Sala de Aula e Lições">
+      <created>1605532657529</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605532657529</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,17 +181,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update workspace.xml" />
+    <MESSAGE value="Criação das Models de Eventos, Sala de Aula e Lições" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação das Models de Eventos, Sala de Aula e Lições" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="65" key="#Inspections" timestamp="1601774225790">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="309" y="65" key="#Inspections/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601774225790" />
-    <state x="473" y="0" key="#PHP" timestamp="1601768659972">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="1839" y="0" key="#PHP" timestamp="1605533962982">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="473" y="0" key="#PHP/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601768659972" />
+    <state x="1839" y="0" key="#PHP/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1605533962982" />
     <state x="274" y="9" width="1092" height="759" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601681821328">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -192,6 +203,10 @@
     </state>
     <state x="638" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601616621259" />
     <state x="638" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1601648077447" />
+    <state x="1870" y="169" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605533598050">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1870" y="169" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1605533598050" />
     <state x="413" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601757287365">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -238,11 +253,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1321" height="238" key="GridCell.Tab.1.right/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601702141257" />
-    <state x="1943" y="129" key="NewPhpClassDialog" timestamp="1605532488341">
+    <state x="1943" y="129" key="NewPhpClassDialog" timestamp="1605533658814">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="577" y="129" key="NewPhpClassDialog/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601613924886" />
-    <state x="1943" y="129" key="NewPhpClassDialog/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1605532488341" />
+    <state x="1943" y="129" key="NewPhpClassDialog/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1605533658814" />
     <state x="650" y="314" key="NewPhpFileDialog" timestamp="1601833251098">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -297,12 +312,13 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601756677147" />
-    <state x="496" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1601757055803">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="1862" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605534063372">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="496" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601757055803" />
     <state x="496" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1601648076124" />
     <state x="1831" y="119" width="672" height="904" key="search.everywhere.popup/0.0.1366.768/1366.0.1280.1024@1366.0.1280.1024" timestamp="1601658020772" />
+    <state x="1862" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1605534063372" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

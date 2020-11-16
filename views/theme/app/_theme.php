@@ -56,9 +56,9 @@
         <ul class="navbar-nav ml-auto">
             <!-- Messages Dropdown Menu -->
             <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown" href="#">
+                <a class="nav-link disabled" data-toggle="dropdown" href="#">
                     <i class="far fa-comments"></i>
-                    <span class="badge badge-danger navbar-badge">3</span>
+                    <span class="badge badge-danger navbar-badge"> </span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                     <a href="#" class="dropdown-item">
@@ -114,9 +114,9 @@
             </li>
             <!-- Notifications Dropdown Menu -->
             <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown" href="#">
+                <a class="nav-link disabled" data-toggle="dropdown" href="#">
                     <i class="far fa-bell"></i>
-                    <span class="badge badge-warning navbar-badge">14</span>
+                    <span class="badge badge-warning navbar-badge"> </span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                     <span class="dropdown-header">14 Notificações</span>
@@ -147,7 +147,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="<?= $router->route("app.home"); ?>" class="brand-link">
-            <img rel="icon" alt="<?= site("name"); ?>" type="image/png" src="<?= asset("/dist/img/AdminLTELogo.png"); ?>" class="brand-image img-circle elevation-3"/>
+            <img rel="icon" alt="<?= site("name"); ?>" type="image/png" src="<?= asset("images/logo_invar.png"); ?>" class="brand-image elevation-3"/>
             <span class="brand-text font-weight-light"> Plataforma </span>
         </a>
 
@@ -213,11 +213,11 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?= $router->route("app.chat"); ?>" class="nav-link">
+                                <a href="<?= $router->route("app.chat"); ?>" class="nav-link disabled">
                                     <i class="nav-icon fas fa-comments"></i>
                                     <p>
                                         Chat
-                                        <span class="right badge badge-danger">Novo</span>
+                                        <span class="right badge badge-danger"> Em breve </span>
                                     </p>
                                 </a>
                             </li>

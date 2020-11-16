@@ -4,7 +4,7 @@
 namespace Source\Models;
 use CoffeeCode\DataLayer\DataLayer;
 
-class Events
+class Course extends DataLayer
 {
 
 }
