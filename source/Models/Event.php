@@ -4,15 +4,21 @@
 namespace Source\Models;
 use CoffeeCode\DataLayer\DataLayer;
 
-class Events extends DataLayer
+class Event extends DataLayer
 {
-    public function __construct(string $entity, array $required, string $primary = 'id', bool $timestamps = true)
+    public function __construct()
     {
-        parent::__construct("event", ["name, date, time"], "id_event");
+        parent::__construct("events", ["name","date","time"], "id_event",false);
     }
 
     public function save(): bool
     {
-        
+        if (
+            !$this->validateEvent()
+        ) {
+            return false;
+        }
+
+        return true;
     }
 }
