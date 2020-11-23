@@ -21,4 +21,21 @@ class Event extends DataLayer
 
         return true;
     }
+
+    protected function validateEvent(): bool
+    {
+        $eventByName = null;
+        if (!$this->id) {
+            $eventByName = $this->find("name = :event", "name={$this->event}")->count();
+        } else {
+            $eventByName = $this->find("name = :event AND id != :id", "name={$this->event}&id={$this->id}")->count();
+        }
+
+        if ($eventByName) {
+            $this->fail = new Exception("Você já possui um evento com este nome");
+            return false;
+        }
+
+        return true;
+    }
 }
