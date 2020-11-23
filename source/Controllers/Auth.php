@@ -35,8 +35,8 @@ class Auth extends Controller
 
         if(!$email || !$passwd) {
             echo $this->ajaxResponse("message", [
-               "type" => "alert",
-               "message" => "Informe seu e-mail e senha para logar"
+                "type" => "alert",
+                "message" => "Informe seu e-mail e senha para logar"
             ]);
             return;
         }

@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Criação de construtores das novas classes do projeto">
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Construtor de Eventos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Auth.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="ssh.settings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -133,7 +133,7 @@
       <workItem from="1605704431699" duration="948000" />
       <workItem from="1606142321646" duration="1220000" />
       <workItem from="1606145952097" duration="38000" />
-      <workItem from="1606150047161" duration="1007000" />
+      <workItem from="1606150047161" duration="4345000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -163,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605616936216</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Construtor de Eventos">
+      <created>1606151080914</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606151080914</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,9 +192,14 @@
     <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Criação das Models de Eventos, Sala de Aula e Lições" />
     <MESSAGE value="Criação de construtores das novas classes do projeto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação de construtores das novas classes do projeto" />
+    <MESSAGE value="Construtor de Eventos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Construtor de Eventos" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="42" key="#Deployment" timestamp="1606151387560">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="42" key="#Deployment/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1606151387560" />
     <state x="309" y="65" key="#Inspections" timestamp="1601774225790">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -271,25 +283,26 @@
     </state>
     <state x="650" y="314" key="NewPhpFileDialog/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601833251098" />
     <state x="1975" y="419" key="NewPhpFileDialog/0.0.1366.768/1366.0.1280.1024@1366.0.1280.1024" timestamp="1601658025378" />
-    <state x="146" y="31" width="1035" height="711" key="SettingsEditor" timestamp="1606151053767">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="1512" y="31" width="1035" height="711" key="SettingsEditor" timestamp="1606153857991">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="146" y="26" key="SettingsEditor/0.0.1366.768/-1920.-182.1280.720@0.0.1366.768" timestamp="1605015403882" />
     <state x="336" y="33" key="SettingsEditor/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601616084941" />
-    <state x="146" y="31" width="1035" height="711" key="SettingsEditor/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1606151053767" />
-    <state x="1512" y="31" key="SettingsEditor/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606150518863" />
-    <state x="275" y="119" key="Vcs.Push.Dialog.v2" timestamp="1605011502423">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="146" y="31" width="1035" height="711" key="SettingsEditor/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1606151198979" />
+    <state x="1512" y="31" key="SettingsEditor/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606153857991" />
+    <state x="1641" y="119" key="Vcs.Push.Dialog.v2" timestamp="1606152091740">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="119" key="Vcs.Push.Dialog.v2/0.0.1366.768/-1920.-182.1280.720@0.0.1366.768" timestamp="1605011502423" />
+    <state x="1641" y="119" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606152091740" />
     <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605013371936">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768/-1920.-182.1280.720@0.0.1366.768" timestamp="1605013371936" />
-    <state x="1861" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606142982355">
+    <state x="1861" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606154295386">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1861" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606142982355" />
+    <state x="1861" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606154295386" />
     <state x="-1342" y="4" width="1039" height="754" maximized="true" key="dock-window-1" timestamp="1601754390665">
       <screen x="-1920" y="4" width="1920" height="1080" />
     </state>
