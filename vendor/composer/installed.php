@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'No version set (parsed as 1.0.0)',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'b7459eaec385cf35481250a37c05b06d6647e3f1',
     'name' => 'gui-vncarvalho/platinvar',
   ),
   'versions' => 
@@ -40,21 +40,21 @@
     ),
     'gui-vncarvalho/platinvar' => 
     array (
-      'pretty_version' => 'No version set (parsed as 1.0.0)',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'b7459eaec385cf35481250a37c05b06d6647e3f1',
     ),
     'guzzlehttp/guzzle' => 
     array (
-      'pretty_version' => '7.1.1',
-      'version' => '7.1.1.0',
+      'pretty_version' => '7.2.0',
+      'version' => '7.2.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '7427d6f99df41cc01f33cd59832f721c150ffdf3',
+      'reference' => '0aa74dfb41ae110835923ef10a9d803a22d50e79',
     ),
     'guzzlehttp/promises' => 
     array (
@@ -76,12 +76,12 @@
     ),
     'league/oauth2-client' => 
     array (
-      'pretty_version' => '2.5.0',
-      'version' => '2.5.0.0',
+      'pretty_version' => '2.6.0',
+      'version' => '2.6.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'd9f2a1e000dc14eb3c02e15d15759385ec7ff0fb',
+      'reference' => 'badb01e62383430706433191b82506b6df24ad98',
     ),
     'league/oauth2-facebook' => 
     array (
@@ -130,21 +130,21 @@
     ),
     'paragonie/random_compat' => 
     array (
-      'pretty_version' => 'v9.99.99',
-      'version' => '9.99.99.0',
+      'pretty_version' => 'v9.99.100',
+      'version' => '9.99.100.0',
       'aliases' => 
       array (
       ),
-      'reference' => '84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95',
+      'reference' => '996434e5492cb4c3edcb9168db6fbb1359ef965a',
     ),
     'phpmailer/phpmailer' => 
     array (
-      'pretty_version' => 'v6.1.7',
-      'version' => '6.1.7.0',
+      'pretty_version' => 'v6.1.8',
+      'version' => '6.1.8.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2c2370ba3df7034f9eb7b8f387c97b52b2ba5ad0',
+      'reference' => '917ab212fa00dc6eacbb26e8bc387ebe40993bc1',
     ),
     'psr/http-client' => 
     array (
