@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'b7459eaec385cf35481250a37c05b06d6647e3f1',
+    'reference' => '881e9edba4cb5cfdd86e7d7cf904a5db674b8f86',
     'name' => 'gui-vncarvalho/platinvar',
   ),
   'versions' => 
@@ -58,7 +58,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'b7459eaec385cf35481250a37c05b06d6647e3f1',
+      'reference' => '881e9edba4cb5cfdd86e7d7cf904a5db674b8f86',
     ),
     'guzzlehttp/guzzle' => 
     array (

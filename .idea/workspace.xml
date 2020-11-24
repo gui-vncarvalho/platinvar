@@ -22,60 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Alinhamento PSR1">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Execução do composer e do autoload">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/platform_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/platform_check.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/psalm.baseline.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/psalm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJarInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJarInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/EasyHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/EasyHandle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/MockHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/MockHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/MessageFormatter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/MessageFormatter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/MessageFormatterInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/MessageFormatterInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Middleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Middleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Pool.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Pool.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RetryMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RetryMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/TransferStats.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/TransferStats.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Utils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-client/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-client/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-client/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-client/CREDITS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-client/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/oauth2-client/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-client/README.PROVIDER-GUIDE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/oauth2-client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-client/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/oauth2-client/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-client/src/Token/AccessToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/oauth2-client/src/Token/AccessToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-client/src/Token/AccessTokenInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/oauth2-client/src/Token/AccessTokenInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/VERSION" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/get_oauth_token.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/get_oauth_token.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-tl.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-tl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/Exception.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/OAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/OAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/POP3.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/POP3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/SMTP.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/SMTP.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +78,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../estudo/fsphp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../invar-org" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -134,7 +86,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -188,7 +140,8 @@
       <workItem from="1605704431699" duration="948000" />
       <workItem from="1606142321646" duration="1220000" />
       <workItem from="1606145952097" duration="38000" />
-      <workItem from="1606150047161" duration="6976000" />
+      <workItem from="1606150047161" duration="7917000" />
+      <workItem from="1606219359421" duration="1049000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -232,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606154541258</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Execução do composer e do autoload">
+      <created>1606161517329</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606161517329</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,17 +216,18 @@
     <MESSAGE value="Criação de construtores das novas classes do projeto" />
     <MESSAGE value="Construtor de Eventos" />
     <MESSAGE value="Alinhamento PSR1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alinhamento PSR1" />
+    <MESSAGE value="Execução do composer e do autoload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Execução do composer e do autoload" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1591" y="41" key="#CLI_Interpreters" timestamp="1606154833085">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1591" y="41" key="#CLI_Interpreters/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606154833085" />
-    <state x="275" y="42" key="#Deployment" timestamp="1606151387560">
+    <state x="275" y="42" key="#Deployment" timestamp="1606162236875">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="42" key="#Deployment/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1606151387560" />
+    <state x="275" y="42" key="#Deployment/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1606162236875" />
     <state x="309" y="65" key="#Inspections" timestamp="1601774225790">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -276,10 +237,11 @@
     </state>
     <state x="473" y="0" key="#PHP/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601768659972" />
     <state x="1839" y="0" key="#PHP/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1605533962982" />
-    <state x="274" y="9" width="1092" height="759" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601681821328">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="1640" y="9" width="1092" height="759" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606161691966">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="274" y="9" width="1092" height="759" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601681821328" />
+    <state x="1640" y="9" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606161691966" />
     <state x="638" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1601648077447">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -301,13 +263,13 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="607" y="279" width="452" height="246" key="ComposerInitDialogKey/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601587207730" />
-    <state x="1979" y="145" key="FileChooserDialogImpl" timestamp="1606155340404">
+    <state x="1979" y="145" key="FileChooserDialogImpl" timestamp="1606162118698">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="613" y="145" key="FileChooserDialogImpl/0.0.1366.768/-1920.-182.1280.720@0.0.1366.768" timestamp="1604944242276" />
     <state x="613" y="145" key="FileChooserDialogImpl/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601674841837" />
     <state x="1940" y="193" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1280.1024@1366.0.1280.1024" timestamp="1601651826871" />
-    <state x="1979" y="145" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606155340404" />
+    <state x="1979" y="145" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606162118698" />
     <state width="1321" height="238" key="GridCell.Tab.0.bottom" timestamp="1601702141256">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -350,27 +312,27 @@
     </state>
     <state x="650" y="314" key="NewPhpFileDialog/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601833251098" />
     <state x="1975" y="419" key="NewPhpFileDialog/0.0.1366.768/1366.0.1280.1024@1366.0.1280.1024" timestamp="1601658025378" />
-    <state x="1512" y="31" width="1035" height="711" key="SettingsEditor" timestamp="1606154857121">
+    <state x="1512" y="31" width="1035" height="711" key="SettingsEditor" timestamp="1606162363867">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="146" y="26" key="SettingsEditor/0.0.1366.768/-1920.-182.1280.720@0.0.1366.768" timestamp="1605015403882" />
     <state x="336" y="33" key="SettingsEditor/0.0.1366.768/-1920.4.1920.1080@0.0.1366.768" timestamp="1601616084941" />
     <state x="146" y="31" width="1035" height="711" key="SettingsEditor/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1606151198979" />
-    <state x="1512" y="31" key="SettingsEditor/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606154857121" />
-    <state x="1641" y="119" key="Vcs.Push.Dialog.v2" timestamp="1606154544060">
+    <state x="1512" y="31" key="SettingsEditor/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606162363867" />
+    <state x="1641" y="119" key="Vcs.Push.Dialog.v2" timestamp="1606161532435">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="119" key="Vcs.Push.Dialog.v2/0.0.1366.768/-1920.-182.1280.720@0.0.1366.768" timestamp="1605011502423" />
-    <state x="1641" y="119" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606154544060" />
+    <state x="1641" y="119" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606161532435" />
     <state x="1458" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606154772679">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768/-1920.-182.1280.720@0.0.1366.768" timestamp="1605013371936" />
     <state x="1458" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606154772679" />
-    <state x="1861" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606154295386">
+    <state x="1861" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606220631972">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1861" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606154295386" />
+    <state x="1861" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1606220631972" />
     <state x="-1342" y="4" width="1039" height="754" maximized="true" key="dock-window-1" timestamp="1601754390665">
       <screen x="-1920" y="4" width="1920" height="1080" />
     </state>
