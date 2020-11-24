@@ -23,11 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Execução do composer e do autoload">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/VERSION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/get_oauth_token.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/get_oauth_token.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-tl.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-tl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/Exception.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/OAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/OAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/POP3.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/POP3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/SMTP.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/SMTP.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,6 +203,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
