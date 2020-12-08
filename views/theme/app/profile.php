@@ -66,26 +66,26 @@
                 <strong><i class="fas fa-book mr-1"></i> Educação </strong>
 
                 <p class="text-muted">
-                  B.S. in Computer Science from the University of Tennessee at Knoxville
+                  Técnico em Informática para Internet
                 </p>
 
                 <hr>
 
                 <strong><i class="fas fa-map-marker-alt mr-1"></i> Localização </strong>
 
-                <p class="text-muted">Malibu, California</p>
+                <p class="text-muted">Santa Isabel, São Paulo</p>
 
                 <hr>
 
                 <strong><i class="fas fa-pencil-alt mr-1"></i> Habilidades </strong>
 
-                <p class="text-muted">
-                  <span class="tag tag-danger">UI Design</span>
-                  <span class="tag tag-success">Coding</span>
-                  <span class="tag tag-info">Javascript</span>
-                  <span class="tag tag-warning">PHP</span>
-                  <span class="tag tag-primary">Node.js</span>
-                </p>
+                <ul>
+                  <li >PHP</li>
+                  <li >SQL</li>
+                  <li >MVC</li>
+                  <li >POO</li>
+                  <li >UX Design</li>
+                </ul>
 
                 <hr>
 
@@ -286,31 +286,6 @@
                         </div>
                       </div>
                       <!-- END timeline item -->
-                      <!-- timeline time label -->
-                      <div class="time-label">
-                        <span class="bg-success">
-                        3 Jan. 2014
-                        </span>
-                      </div>
-                      <!-- /.timeline-label -->
-                      <!-- timeline item -->
-                      <div>
-                        <i class="fas fa-camera bg-purple"></i>
-
-                        <div class="timeline-item">
-                          <span class="time"><i class="far fa-clock"></i> 2 dias atrás</span>
-
-                          <h3 class="timeline-header"><a href="#">Mina Lee</a> subiu novas fotos</h3>
-
-                          <div class="timeline-body">
-                            <img src="http://placehold.it/150x100" alt="...">
-                            <img src="http://placehold.it/150x100" alt="...">
-                            <img src="http://placehold.it/150x100" alt="...">
-                            <img src="http://placehold.it/150x100" alt="...">
-                          </div>
-                        </div>
-                      </div>
-                      <!-- END timeline item -->
                       <div>
                         <i class="far fa-clock bg-gray"></i>
                       </div>
@@ -321,33 +296,27 @@
                   <div class="tab-pane" id="settings">
                     <form class="form-horizontal">
                       <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Nome</label>
+                        <label for="inputUsername" class="col-sm-2 col-form-label">Apelido</label>
                         <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputName" placeholder="Name">
+                          <input type="text" class="form-control" id="inputUsername" placeholder="Apelido">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                        <label for="inputRole" class="col-sm-2 col-form-label">Cargo</label>
                         <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="inputName2" class="col-sm-2 col-form-label">Nome</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputName2" placeholder="Name">
+                          <input type="text" class="form-control" id="inputRole" placeholder="Cargo">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="inputExperience" class="col-sm-2 col-form-label">Experiência</label>
                         <div class="col-sm-10">
-                          <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
+                          <textarea class="form-control" id="inputExperience" placeholder="Experiência"></textarea>
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="inputSkills" class="col-sm-2 col-form-label">Habilidades</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                          <input type="text" class="form-control" id="inputSkills" placeholder="Habilidades">
                         </div>
                       </div>
                       <div class="form-group row">

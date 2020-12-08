@@ -50,6 +50,9 @@ class App extends Controller
         ]);
     }
 
+    /**
+     *
+     */
     public function class(): void
     {
       $head = $this->seo->optimize(
@@ -65,7 +68,10 @@ class App extends Controller
       ]);
     }
 
-  public function calendar(): void
+    /**
+     *
+     */
+    public function calendar(): void
   {
     $head = $this->seo->optimize(
       "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
@@ -80,7 +86,10 @@ class App extends Controller
     ]);
   }
 
-  public function profile(): void
+    /**
+     *
+     */
+    public function profile(): void
   {
     $head = $this->seo->optimize(
       "Bem-vindo(a) {$this->user->first_name} | " . site("name"),

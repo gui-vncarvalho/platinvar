@@ -35,7 +35,7 @@ $router->get("/facebook", "Auth:facebook", "auth.facebook");
 $router->get("/google", "Auth:google", "auth.google");
 
 /*
- * PROFILE
+ * APP
  */
 $router->group("/me");
 $router->get("/","App:home","app.home");
