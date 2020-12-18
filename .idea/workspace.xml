@@ -24,8 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Execução do composer e do autoload">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Course.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +148,7 @@
       <workItem from="1607621759445" duration="609000" />
       <workItem from="1607623038389" duration="743000" />
       <workItem from="1608212081256" duration="8091000" />
+      <workItem from="1608298491542" duration="5470000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
