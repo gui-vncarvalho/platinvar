@@ -23,7 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Execução do composer e do autoload">
+      <change afterPath="$PROJECT_DIR$/views/theme/app/dashboard_student.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/theme/app/dashboard_teacher.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Controllers/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/dashboard_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +79,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adminlte" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -148,7 +153,18 @@
       <workItem from="1607621759445" duration="609000" />
       <workItem from="1607623038389" duration="743000" />
       <workItem from="1608212081256" duration="8091000" />
-      <workItem from="1608298491542" duration="5470000" />
+      <workItem from="1608298491542" duration="6220000" />
+      <workItem from="1608554040591" duration="643000" />
+      <workItem from="1608554863921" duration="1270000" />
+      <workItem from="1608557335036" duration="3877000" />
+      <workItem from="1608563976495" duration="641000" />
+      <workItem from="1608644211684" duration="3775000" />
+      <workItem from="1608731692126" duration="7227000" />
+      <workItem from="1609180820104" duration="3225000" />
+      <workItem from="1609242872102" duration="6326000" />
+      <workItem from="1609330495623" duration="7923000" />
+      <workItem from="1609761624227" duration="200000" />
+      <workItem from="1609761902244" duration="6671000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -199,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606161517329</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Execução do composer e do autoload">
+      <created>1608321318051</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608321318052</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,16 +258,6 @@
     <MESSAGE value="Alinhamento PSR1" />
     <MESSAGE value="Execução do composer e do autoload" />
     <option name="LAST_COMMIT_MESSAGE" value="Execução do composer e do autoload" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/theme/error.php</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

@@ -17,7 +17,7 @@ class App extends Controller
     protected $user;
 
     /**
-     * App constructor.
+ \    * App constructor.
      * @param $router
      */
     public function __construct($router)
@@ -44,7 +44,7 @@ class App extends Controller
             routeImage("Conta de {$this->user->first_name}")
         )->render();
 
-        echo  $this->view->render("theme/app/dashboard", [
+        echo  $this->view->render("theme/app/dashboard_admin", [
             "head" => $head,
             "user" => $this->user
         ]);
