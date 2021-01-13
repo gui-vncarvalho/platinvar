@@ -22,13 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Execução do composer e do autoload">
-      <change afterPath="$PROJECT_DIR$/views/theme/app/dashboard_student.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/theme/app/dashboard_teacher.php" afterDir="false" />
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Criação dos diferentes paineis de controle">
+      <change afterPath="$PROJECT_DIR$/source/Models/Company.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Controllers/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/dashboard_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Controllers/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/SchoolRoom.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/SchoolRoom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/emails/recover.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/emails/recover.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/dashboard_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +47,23 @@
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="bf25a61f-6905-4b16-b9c1-bd5ff4e199e6" />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/source/Config.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
@@ -79,7 +100,8 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adminlte" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -164,7 +186,15 @@
       <workItem from="1609242872102" duration="6326000" />
       <workItem from="1609330495623" duration="7923000" />
       <workItem from="1609761624227" duration="200000" />
-      <workItem from="1609761902244" duration="6671000" />
+      <workItem from="1609761902244" duration="12079000" />
+      <workItem from="1609851320399" duration="1383000" />
+      <workItem from="1609935953262" duration="2820000" />
+      <workItem from="1609944956968" duration="5303000" />
+      <workItem from="1610024604222" duration="5491000" />
+      <workItem from="1610366587863" duration="13837000" />
+      <workItem from="1610456932850" duration="2532000" />
+      <workItem from="1610478421821" duration="896000" />
+      <workItem from="1610546579824" duration="4116000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -222,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608321318052</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Criação dos diferentes paineis de controle">
+      <created>1609773621334</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609773621334</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +294,8 @@
     <MESSAGE value="Construtor de Eventos" />
     <MESSAGE value="Alinhamento PSR1" />
     <MESSAGE value="Execução do composer e do autoload" />
-    <option name="LAST_COMMIT_MESSAGE" value="Execução do composer e do autoload" />
+    <MESSAGE value="Criação dos diferentes paineis de controle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação dos diferentes paineis de controle" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

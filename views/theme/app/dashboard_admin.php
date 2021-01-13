@@ -54,6 +54,22 @@
                              id="email" placeholder="E-mail para acessar">
                   </div>
                   <div class="form-group">
+                      <label for="company">Vinculo | <code> atenção máxima </code></label>
+                      <select class="custom-select form-control-border" name="company" id="company">
+                          <option value=""> Value 1 </option>
+                          <option value=""> Value 2 </option>
+                          <option value="DEMHAB"> DEMHAB </option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="local">Local | <code> unidade/condomínio </code></label>
+                      <select class="custom-select form-control-border" name="local" id="local">
+                          <option value=" "> Selecione </option>
+                          <option value="Marista"> Marista </option>
+                          <option value="Bomfim"> Bomfim </option>
+                      </select>
+                  </div>
+                  <div class="form-group">
                       <label for="passwd">Senha</label>
                       <input type="password" class="form-control" name="passwd"
                              id="passwd" placeholder="Senha para acessar">

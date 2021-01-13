@@ -6,17 +6,17 @@ use CoffeeCode\DataLayer\DataLayer;
 use Exception;
 
 /**
- * Class User
+ * Class Company
  * @package Source\Models
  */
-class User extends DataLayer
+class Company extends DataLayer
 {
     /**
-     * User constructor.
+     * Company constructor.
      */
     public function __construct()
     {
-        parent::__construct("users", ["first_name", "last_name", "email", "passwd"]);
+        parent::__construct("company", ["company_name","unit", "cnpj", "accountable", "phone", "email"]);
     }
 
     /**
@@ -25,14 +25,31 @@ class User extends DataLayer
     public function save(): bool
     {
         if (
-            !$this->validateEmail()
-            || !$this->validatePassword()
+            !$this->validateCnpj()
+            || !$this->validatePhone()
+            || !$this->validateEmail()
             || !parent::save()
         ) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * @return bool
+     */
+    protected function validateCnpj(): bool
+    {
+
+    }
+
+    /**
+     * @return bool
+     */
+    protected function validatePhone(): bool
+    {
+
     }
 
     /**
@@ -57,24 +74,6 @@ class User extends DataLayer
             return false;
         }
 
-        return true;
-    }
-
-    /**
-     * @return bool
-     */
-    protected function validatePassword(): bool
-    {
-        if (empty($this->passwd) || strlen($this->passwd) < 5) {
-            $this->fail = new Exception("Informe uma senha com pelo menos 5 caracteres");
-            return false;
-        }
-
-        if (password_get_info($this->passwd)["algo"]) {
-            return true;
-        }
-
-        $this->passwd = password_hash($this->passwd, PASSWORD_DEFAULT);
         return true;
     }
 }

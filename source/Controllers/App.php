@@ -2,7 +2,7 @@
 
 namespace Source\Controllers;
 
-use Source\Models\User;
+use Source\Models\Student;
 
 /**
  * Class App
@@ -24,7 +24,7 @@ class App extends Controller
     {
         parent::__construct($router);
 
-        if(empty($_SESSION["user"]) || !$this->user = (new User())->findById($_SESSION["user"])) {
+        if(empty($_SESSION["user"]) || !$this->user = (new Student())->findById($_SESSION["user"])) {
             unset($_SESSION["user"]);
 
             flash("error", "Acesso negado. Favor logue-se");

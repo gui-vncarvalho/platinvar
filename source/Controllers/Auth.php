@@ -7,7 +7,7 @@ use League\OAuth2\Client\Provider\Facebook;
 use League\OAuth2\Client\Provider\FacebookUser;
 use League\OAuth2\Client\Provider\Google;
 use League\OAuth2\Client\Provider\GoogleUser;
-use Source\Models\User;
+use Source\Models\Student;
 use Source\Support\Email;
 
 /**
@@ -30,22 +30,22 @@ class Auth extends Controller
      */
     public function login($data): void
     {
-        $email = filter_var($data["email"], FILTER_VALIDATE_EMAIL);
+        $ra = filter_var($data["id"], FILTER_VALIDATE_INT);
         $passwd = filter_var($data["passwd"], FILTER_DEFAULT);
 
-        if(!$email || !$passwd) {
+        if(!$ra || !$passwd) {
             echo $this->ajaxResponse("message", [
                 "type" => "alert",
-                "message" => "Informe seu e-mail e senha para logar"
+                "message" => "Informe seu registro e senha para logar"
             ]);
             return;
         }
 
-        $user = (new User())->find("email = :e", "e={$email}")->fetch();
+        $user = (new Student())->find("id = :i", "i={$ra}")->fetch();
         if(!$user || !password_verify($passwd, $user->passwd)) {
             echo $this->ajaxResponse("message", [
                 "type" => "error",
-                "message" => "E-mail ou senha informados não conferem"
+                "message" => "Registro ou senha informados não conferem"
             ]);
             return;
         }
@@ -71,11 +71,13 @@ class Auth extends Controller
             return;
         }
 
-        $user = new User();
+        $user = new Student();
         $user->first_name = $data["first_name"];
         $user->last_name = $data["last_name"];
         $user->email = $data["email"];
         $user->passwd = $data["passwd"];
+        $user->company = $data["company"];
+        $user->local = $data["local"];
 
         /** SOCIAL VALIDATE */
         $this->socialValidate($user);
@@ -88,7 +90,6 @@ class Auth extends Controller
             return;
         }
 
-        $_SESSION["user"] = $user->id;
         echo $this->ajaxResponse("redirect", [
             "url" => $this->router->route("app.home")
         ]);
@@ -108,7 +109,7 @@ class Auth extends Controller
             return;
         }
 
-        $user = (new User())->find("email = :e", "e={$email}")->fetch();
+        $user = (new Student())->find("email = :e", "e={$email}")->fetch();
         if(!$user) {
             echo $this->ajaxResponse("message", [
                 "type" => "error",
@@ -147,7 +148,7 @@ class Auth extends Controller
      */
     public function reset($data): void
     {
-        if(empty($_SESSION["forget"]) || !$user = (new User())->findById($_SESSION["forget"])) {
+        if(empty($_SESSION["forget"]) || !$user = (new Student())->findById($_SESSION["forget"])) {
             flash("error", "Não foi possível recuperar, tente novamente");
             echo $this->ajaxResponse("redirect", [
                 "url" => $this->router->route("web.forget")
@@ -224,7 +225,7 @@ class Auth extends Controller
         /** @var $facebook_user FacebookUser */
         $facebook_user = unserialize($_SESSION["facebook_auth"]);
         var_dump($_SESSION["facebook_auth"]);
-        $user_by_id = (new User())->find("facebook_id = :id", "id={$facebook_user->getId()}")->fetch();
+        $user_by_id = (new Student())->find("facebook_id = :id", "id={$facebook_user->getId()}")->fetch();
 
         //LOGIN BY ID
         if ($user_by_id) {
@@ -235,7 +236,7 @@ class Auth extends Controller
         }
 
         //LOGIN BY EMAIL
-        $user_by_email = (new User())->find("email = :e","e={$facebook_user->getEmail()}")->fetch();
+        $user_by_email = (new Student())->find("email = :e","e={$facebook_user->getEmail()}")->fetch();
         if ($user_by_email) {
             flash("info", "Olá {$facebook_user->getFirstName()}, faça login para conectar seu Facebook");
             $this->router->redirect("web.login");
@@ -280,7 +281,7 @@ class Auth extends Controller
 
         /** @var $google_user GoogleUser */
         $google_user = unserialize($_SESSION["google_auth"]);
-        $user_by_id = (new User())->find("google_id = :id", "id={$google_user->getId()}")->fetch();
+        $user_by_id = (new Student())->find("google_id = :id", "id={$google_user->getId()}")->fetch();
 
         //LOGIN BY ID
         if ($user_by_id) {
@@ -291,7 +292,7 @@ class Auth extends Controller
         }
 
         //LOGIN BY EMAIL
-        $user_by_email = (new User())->find("email = :e","e={$google_user->getEmail()}")->fetch();
+        $user_by_email = (new Student())->find("email = :e","e={$google_user->getEmail()}")->fetch();
         if ($user_by_email) {
             flash("info", "Olá {$google_user->getFirstName()}, faça login para conectar seu Google");
             $this->router->redirect("web.login");
@@ -307,7 +308,7 @@ class Auth extends Controller
     /**
      * @param User $user
      */
-    public function socialValidate(User $user): void
+    public function socialValidate(Student $user): void
     {
         /**
          * FACEBOOK

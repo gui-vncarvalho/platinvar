@@ -2,7 +2,7 @@
 
 namespace Source\Controllers;
 
-use Source\Models\User;
+use Source\Models\Student;
 
 /**
  * Class Web
@@ -73,7 +73,7 @@ class Web extends Controller
 
     /**
      *
-     */
+     */2
     public function forget(): void
     {
         $head = $this->seo->optimize(
@@ -109,7 +109,7 @@ class Web extends Controller
             $this->router->redirect("web.forget");
         }
 
-        $user = (new User())->find("email = :e AND forget = :f", "e={$email}&f={$forget}")->fetch();
+        $user = (new Student())->find("email = :e AND forget = :f", "e={$email}&f={$forget}")->fetch();
         if (!$user) {
             flash("error", $errForget);
             $this->router->redirect("web.forget");
