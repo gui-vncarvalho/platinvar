@@ -16,7 +16,7 @@ class Student extends DataLayer
      */
     public function __construct()
     {
-        parent::__construct("students", ["first_name", "last_name", "email", "passwd", "company"]);
+        parent::__construct("users", ["first_name", "last_name", "email", "passwd"]);
     }
 
     /**

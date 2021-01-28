@@ -2,37 +2,50 @@
 
 <div class="main_content_box">
     <div class="login">
+        <div class="login-logo">
+            <a href="https://www.invar.org.br/">
+                <img class="mb-3" src="<?= asset("/images/logo_invar.png"); ?>" alt="" width="100" height="150">
+            </a>
+        </div>
+        <!-- /.login-logo -->
+        <h5 class="login-box-msg text-white">Preencha os dados para acessar</h5>
+
         <form class="form" action="<?= $router->route("auth.login"); ?>" method="post" autocomplete="off">
- <!--
-            <div class="form_social">
-                <a href="<?= $router->route("auth.facebook"); ?>" class="btn btn-facebook">Facebook Login</a>
-                <a href="<?= $router->route("auth.google"); ?>" class="btn btn-google">Google Login</a>
-            </div>
--->
+
             <div class="login_form_callback">
                 <?= flash(); ?>
             </div>
 
-            <label>
-                <span class="field">Registro:</span>
-                <input value="" type="text" name="id" placeholder="Informe seu número de registro:"/>
-            </label>
-            <label>
-                <span class="field">Senha:</span>
-                <input autocomplete="" type="password" name="passwd" placeholder="Informe sua senha:"/>
-            </label>
-
-            <div class="form_actions">
-                <button class="btn btn-green">Logar-se</button>
-                <a href="<?= $router->route("web.forget"); ?>" title="Recuperar Senha">Recuperar Senha</a>
+            <div class="input-group mb-3">
+                <input class="form-control"
+                       value="" type="text" name="id" placeholder="Número de Registro:"/>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-address-card"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input class="form-control"
+                       autocomplete="" type="password" name="passwd" placeholder="Senha:"/>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-key"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <a class="text-white"
+                       href="<?= $router->route("web.forget"); ?>" title="Recuperar Senha">Esqueceu sua senha?</a>
+                </div>
+                <!-- /.col -->
+                <div class="col-4">
+                    <button class="btn btn-primary btn-block">Logar-se</button>
+                </div>
+                <!-- /.col -->
             </div>
         </form>
-<!--
-        <div class="form_register_action">
-            <p>Ainda não tem conta?</p>
-            <a href="<?= $router->route("web.register"); ?>" class="btn btn-blue">Cadastre-se Aqui</a>
-        </div>
--->
     </div>
 </div>
 

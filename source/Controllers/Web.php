@@ -73,7 +73,7 @@ class Web extends Controller
 
     /**
      *
-     */2
+     */
     public function forget(): void
     {
         $head = $this->seo->optimize(

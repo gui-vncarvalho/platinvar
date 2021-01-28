@@ -8,8 +8,11 @@
 
     <?= $head; ?>
 
+    <!-- CORE STYLES -->
+    <link rel="stylesheet" href="<?= asset("/dist/css/adminlte.min.css"); ?>"/>
+    <link rel="stylesheet" href="<?= asset("/plugins/fontawesome-free/css/all.min.css"); ?>"/>
     <link rel="stylesheet" href="<?= asset("/style.min.css"); ?>"/>
-    <link rel="icon" type="image/png" href="<?= asset("/images/favicon.png"); ?>"/>
+    <link rel="icon" type="image/png" href="<?= asset("/images/logo_invar.png"); ?>"/>
 </head>
 <body>
 

@@ -19,284 +19,146 @@
     </div><!-- /.container-fluid -->
   </section>
 
-  <!-- Main content -->
-  <section class="content">
+<!-- Main content -->
+<section class="content">
 
     <!-- Default box -->
     <div class="card">
-      <div class="card-header">
-        <h3 class="card-title">Aulas</h3>
-
+        <div class="card-header">
+            <h3 class="card-title">Detalhes do curso</h3>
         <div class="card-tools">
-          <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
             <i class="fas fa-minus"></i></button>
-          <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+            <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
             <i class="fas fa-times"></i></button>
         </div>
-      </div>
-      <div class="card-body p-0">
-        <table class="table table-striped projects">
-          <thead>
-          <tr>
-            <th style="width: 1%">
-              #
-            </th>
-            <th style="width: 20%">
-              Nome
-            </th>
-            <th style="width: 30%">
-              Professor
-            </th>
-            <th>
-              Progresso na aula
-            </th>
-            <th style="width: 8%" class="text-center">
-              Status da atividade
-            </th>
-            <th style="width: 20%">
-            </th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td>
-              #
-            </td>
-            <td>
-              <a>
-                Aula 1
-              </a>
-              <br/>
-              <small>
-                Criado em 01.01.2019
-              </small>
-            </td>
-            <td>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <img alt="Avatar" class="table-avatar" src="<?= asset("/dist/img/avatar.png"); ?>">
-                </li>
-              </ul>
-            </td>
-            <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-volumenow="57" aria-volumemin="0" aria-volumemax="100" style="width: 57%">
-                </div>
-              </div>
-              <small>
-                57% Completo
-              </small>
-            </td>
-            <td class="project-state">
-              <span class="badge badge-success">Sucesso</span>
-            </td>
-            <td class="project-actions text-right">
-              <a class="btn btn-primary btn-sm" href="#">
-                <i class="fas fa-folder">
-                </i>
-                Arquivos
-              </a>
-              <a class="btn btn-secondary btn-sm" href="#">
-                <i class="fas fa-sign-in-alt">
-                </i>
-                Acessar
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              #
-            </td>
-            <td>
-              <a>
-                Aula 2
-              </a>
-              <br/>
-              <small>
-                Criado em 01.01.2019
-              </small>
-            </td>
-            <td>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <img alt="Avatar" class="table-avatar" src="<?= asset("/dist/img/avatar.png"); ?>">
-                </li>
-                <li class="list-inline-item">
-                  <img alt="Avatar" class="table-avatar" src="<?= asset("/dist/img/avatar2.png"); ?>g">
-                </li>
-              </ul>
-            </td>
-            <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-volumenow="47" aria-volumemin="0" aria-volumemax="100" style="width: 47%">
-                </div>
-              </div>
-              <small>
-                47% Completo
-              </small>
-            </td>
-            <td class="project-state">
-              <span class="badge badge-success">Sucesso</span>
-            </td>
-            <td class="project-actions text-right">
-              <a class="btn btn-primary btn-sm" href="#">
-                <i class="fas fa-folder">
-                </i>
-                Arquivos
-              </a>
-              <a class="btn btn-secondary btn-sm" href="#">
-                <i class="fas fa-sign-in-alt">
-                </i>
-                Acessar
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              #
-            </td>
-            <td>
-              <a>
-                Aula 3
-              </a>
-              <br/>
-              <small>
-                Criado em 01.01.2019
-              </small>
-            </td>
-            <td>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <img alt="Avatar" class="table-avatar" src="<?= asset("/dist/img/avatar3.png"); ?>">
-                </li>
-              </ul>
-            </td>
-            <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-volumenow="77" aria-volumemin="0" aria-volumemax="100" style="width: 77%">
-                </div>
-              </div>
-              <small>
-                77% Completo
-              </small>
-            </td>
-            <td class="project-state">
-              <span class="badge badge-success">Sucesso</span>
-            </td>
-            <td class="project-actions text-right">
-              <a class="btn btn-primary btn-sm" href="#">
-                <i class="fas fa-folder">
-                </i>
-                Arquivos
-              </a>
-              <a class="btn btn-secondary btn-sm" href="#">
-                <i class="fas fa-sign-in-alt">
-                </i>
-                Acessar
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              #
-            </td>
-            <td>
-              <a>
-                Aula 4
-              </a>
-              <br/>
-              <small>
-                Criado em 01.01.2019
-              </small>
-            </td>
-            <td>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <img alt="Avatar" class="table-avatar" src="<?= asset("/dist/img/avatar04.png"); ?>">
-                </li>
-              </ul>
-            </td>
-            <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-volumenow="77" aria-volumemin="0" aria-volumemax="100" style="width: 77%">
-                </div>
-              </div>
-              <small>
-                77% Completo
-              </small>
-            </td>
-            <td class="project-state">
-              <span class="badge badge-success">Sucesso</span>
-            </td>
-            <td class="project-actions text-right">
-              <a class="btn btn-primary btn-sm" href="#">
-                <i class="fas fa-folder">
-                </i>
-                Arquivos
-              </a>
-              <a class="btn btn-secondary btn-sm" href="#">
-                <i class="fas fa-sign-in-alt">
-                </i>
-                Acessar
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              #
-            </td>
-            <td>
-              <a>
-                Aula 5
-              </a>
-              <br/>
-              <small>
-                Criado em 01.01.2019
-              </small>
-            </td>
-            <td>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <img alt="Avatar" class="table-avatar" src="<?= asset("/dist/img/avatar3.png"); ?>">
-                </li>
-                <li class="list-inline-item">
-                  <img alt="Avatar" class="table-avatar" src="<?= asset("/dist/img/avatar5.png"); ?>">
-                </li>
-              </ul>
-            </td>
-            <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-volumenow="77" aria-volumemin="0" aria-volumemax="100" style="width: 77%">
-                </div>
-              </div>
-              <small>
-                77% Completo
-              </small>
-            </td>
-            <td class="project-state">
-              <span class="badge badge-success">Sucesso</span>
-            </td>
-            <td class="project-actions text-right">
-              <a class="btn btn-primary btn-sm" href="#">
-                <i class="fas fa-folder">
-                </i>
-                Arquivos
-              </a>
-              <a class="btn btn-secondary btn-sm" href="#">
-                <i class="fas fa-sign-in-alt">
-                </i>
-                Acessar
-              </a>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- /.card-body -->
     </div>
-    <!-- /.card -->
-
-  </section>
-  <!-- /.content -->
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-8 order-2 order-md-1">
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <div class="info-box bg-light">
+                            <div class="info-box-content">
+                                <span class="info-box-text text-center text-muted">Alunos inscritos</span>
+                                <span class="info-box-number text-center text-muted mb-0">46</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-3">
+                        <div class="info-box bg-light">
+                            <div class="info-box-content">
+                                <span class="info-box-text text-center text-muted">Total de aulas</span>
+                                <span class="info-box-number text-center text-muted mb-0">23</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-5">
+                        <div class="info-box bg-light">
+                            <div class="info-box-content">
+                                <span class="info-box-text text-center text-muted">Tempo médio para conclusão</span>
+                                <span class="info-box-number text-center text-muted mb-0">68 horas <span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                    <h4> Módulos </h4>
+                        <div class="post">
+                            <div class="user-block">
+                                <img class="img-circle img-bordered-sm" src="<?= asset("/dist/img/user1-128x128.png"); ?>" alt="user image">
+                                <span class="username">
+                                    <a href="#">Professor Jonathan Jr.</a>
+                                </span>
+                                <span class="description">Publicado - 7:45 PM hoje</span>
+                            </div>
+                            <!-- /.user-block -->
+                            <p>
+                              Lorem ipsum represents a long-held tradition for designers,
+                              typographers and the like. Some people hate it and argue for
+                              its demise, but others ignore.
+                            </p>
+                            <p>
+                              <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Arquivo demo 1 v2</a>
+                            </p>
+                        </div>
+                        <div class="post clearfix">
+                            <div class="user-block">
+                                <img class="img-circle img-bordered-sm" src="<?= asset("/dist/img/user7-128x128.png"); ?>" alt="User Image">
+                                <span class="username">
+                                    <a href="#">Sarah Ross</a>
+                                </span>
+                                <span class="description">Sent you a message - 3 days ago</span>
+                            </div>
+                            <!-- /.user-block -->
+                            <p>
+                            Lorem ipsum represents a long-held tradition for designers,
+                            typographers and the like. Some people hate it and argue for
+                            its demise, but others ignore.
+                            </p>
+                            <p>
+                                <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Demo File 2</a>
+                            </p>
+                        </div>
+                        <div class="post">
+                            <div class="user-block">
+                                <img class="img-circle img-bordered-sm" src="<?= asset("/dist/img/user5-128x128.png"); ?>" alt="user image">
+                                <span class="username">
+                                    <a href="#">Jonathan Burke Jr.</a>
+                                </span>
+                                <span class="description">Shared publicly - 5 days ago</span>
+                            </div>
+                        <!-- /.user-block -->
+                        <p>
+                          Lorem ipsum represents a long-held tradition for designers,
+                          typographers and the like. Some people hate it and argue for
+                          its demise, but others ignore.
+                        </p>
+                        <p>
+                          <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Demo File 1 v1</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 order-1 order-md-2">
+            <h3 class="text-primary"><i class="fas fa-paint-brush"></i> Administração</h3>
+            <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.</p>
+            <br>
+            <div class="text-muted">
+                <p class="text-sm">Fornecido pela
+                    <b class="d-block">INVAR</b>
+                </p>
+                <p class="text-sm">Professor
+                    <b class="d-block">Módulo 1</b>
+                </p>
+            </div>
+            <h5 class="mt-5 text-muted">Arquivos do Curso</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="btn-link text-secondary"><i class="far fa-fw fa-file-word"></i> Functional-requirements.docx</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="btn-link text-secondary"><i class="far fa-fw fa-file-pdf"></i> UAT.pdf</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="btn-link text-secondary"><i class="far fa-fw fa-envelope"></i> Email-from-flatbal.mln</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="btn-link text-secondary"><i class="far fa-fw fa-image "></i> Logo.png</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="btn-link text-secondary"><i class="far fa-fw fa-file-word"></i> Contract-10_12_2014.docx</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /.card-body -->
+</div>
+<!-- /.card -->
+</section>
+<!-- /.content -->
 </div>
 <!-- /.content-wrapper -->

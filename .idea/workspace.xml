@@ -22,18 +22,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Criação dos diferentes paineis de controle">
-      <change afterPath="$PROJECT_DIR$/source/Models/Company.php" afterDir="false" />
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Desenvolvimento cadastro das paginas e alterações nos visuais gerais da aplicação">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Controllers/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/App.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Controllers/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Models/SchoolRoom.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/SchoolRoom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Minify.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Minify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/css/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/assets/css/form.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/assets/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/emails/recover.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/emails/recover.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/dashboard_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_student.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/dashboard_student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/error.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/error.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/theme/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +106,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demhab" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -194,7 +200,18 @@
       <workItem from="1610366587863" duration="13837000" />
       <workItem from="1610456932850" duration="2532000" />
       <workItem from="1610478421821" duration="896000" />
-      <workItem from="1610546579824" duration="4116000" />
+      <workItem from="1610546579824" duration="8476000" />
+      <workItem from="1610628079332" duration="6128000" />
+      <workItem from="1610649871471" duration="618000" />
+      <workItem from="1610717005456" duration="3146000" />
+      <workItem from="1610804773180" duration="26000" />
+      <workItem from="1611082943526" duration="599000" />
+      <workItem from="1611144660329" duration="5265000" />
+      <workItem from="1611230245962" duration="8825000" />
+      <workItem from="1611285881255" duration="7495000" />
+      <workItem from="1611328815779" duration="2783000" />
+      <workItem from="1611604012365" duration="1695000" />
+      <workItem from="1611663903641" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -259,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609773621334</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Desenvolvimento cadastro das paginas e alterações nos visuais gerais da aplicação">
+      <created>1610562258875</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610562258875</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +319,8 @@
     <MESSAGE value="Alinhamento PSR1" />
     <MESSAGE value="Execução do composer e do autoload" />
     <MESSAGE value="Criação dos diferentes paineis de controle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação dos diferentes paineis de controle" />
+    <MESSAGE value="Desenvolvimento cadastro das paginas e alterações nos visuais gerais da aplicação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Desenvolvimento cadastro das paginas e alterações nos visuais gerais da aplicação" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

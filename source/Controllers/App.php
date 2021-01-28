@@ -44,7 +44,7 @@ class App extends Controller
             routeImage("Conta de {$this->user->first_name}")
         )->render();
 
-        echo  $this->view->render("theme/app/dashboard_admin", [
+        echo  $this->view->render("theme/app/dashboard_student", [
             "head" => $head,
             "user" => $this->user
         ]);

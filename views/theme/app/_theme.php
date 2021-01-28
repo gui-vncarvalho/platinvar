@@ -184,7 +184,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="nav-link">
                                     <i class="fas fa-boxes nav-icon"></i>
                                     <p>Materiais</p>
                                 </a>
@@ -200,8 +200,8 @@
                             </p>
                         </a>
                         <ul class="nav nav-treeview" style="display: none;">
-                            <li class="nav-item">
-                                <a href="<?= $router->route("app.calendar"); ?>" class="nav-link">
+                            <li class="nav-item ">
+                                <a href="<?= $router->route("app.calendar"); ?>" class="nav-link disabled">
                                     <i class="far fa-calendar-alt nav-icon"></i>
                                     <p>Calendário</p>
                                 </a>

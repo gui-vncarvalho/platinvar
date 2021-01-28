@@ -36,11 +36,11 @@
 
                 <h3 class="profile-username text-center"><?= $user->first_name; ?> <?= $user->last_name; ?></h3>
 
-                <p class="text-muted text-center">Programador PHP</p>
+                <p class="text-muted text-center">Programador FullStack</p>
 
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
-                    <b>Curso</b> <a class="float-right">Técnica de Vendas</a>
+                    <b>Curso</b> <a class="float-right">Administração</a>
                   </li>
                   <li class="list-group-item">
                     <b>Turma</b> <a class="float-right">3:00 PM</a>
@@ -49,8 +49,6 @@
                     <b>Empresa</b> <a class="float-right">Invar</a>
                   </li>
                 </ul>
-
-                <a href="#" class="btn btn-primary btn-block"><b>Siga</b></a>
               </div>
               <!-- /.card-body -->
             </div>
@@ -66,7 +64,7 @@
                 <strong><i class="fas fa-book mr-1"></i> Educação </strong>
 
                 <p class="text-muted">
-                  Técnico em Informática para Internet
+                  Técnico
                 </p>
 
                 <hr>
