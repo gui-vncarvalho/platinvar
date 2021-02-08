@@ -24,23 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Desenvolvimento cadastro das paginas e alterações nos visuais gerais da aplicação">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Controllers/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/App.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Controllers/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Minify.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Minify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/assets/css/button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/assets/css/form.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/assets/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/assets/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/_theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/_theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_student.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/dashboard_student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/error.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/error.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/dashboard_teacher.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +91,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demhab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adminlte/AdminLTE-3.0.5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -212,6 +197,12 @@
       <workItem from="1611328815779" duration="2783000" />
       <workItem from="1611604012365" duration="1695000" />
       <workItem from="1611663903641" duration="12000" />
+      <workItem from="1612180542353" duration="4765000" />
+      <workItem from="1612266044561" duration="2719000" />
+      <workItem from="1612358658804" duration="5966000" />
+      <workItem from="1612442188480" duration="6395000" />
+      <workItem from="1612526512032" duration="3757000" />
+      <workItem from="1612787296314" duration="4276000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>

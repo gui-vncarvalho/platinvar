@@ -77,6 +77,7 @@ class Auth extends Controller
         $user->email = $data["email"];
         $user->passwd = $data["passwd"];
 
+
         /** SOCIAL VALIDATE */
         $this->socialValidate($user);
 
