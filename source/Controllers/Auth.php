@@ -7,6 +7,7 @@ use League\OAuth2\Client\Provider\Facebook;
 use League\OAuth2\Client\Provider\FacebookUser;
 use League\OAuth2\Client\Provider\Google;
 use League\OAuth2\Client\Provider\GoogleUser;
+use Source\Models\Lesson;
 use Source\Models\User;
 use Source\Support\Email;
 
@@ -201,6 +202,42 @@ class Auth extends Controller
             "url" => $this->router->route("web.login")
         ]);
         return;
+    }
+
+    /**
+     * @param $data
+     */
+    public function lesson($data): void
+    {
+        $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
+        if(in_array("", $data)) {
+            echo $this->ajaxResponse("message", [
+                "type" => "error",
+                "message" => "Preencha todos os campos para cadastrar"
+            ]);
+            return;
+        }
+
+        $lesson = new Lesson();
+        $lesson->lesson_name = $data["lesson_name"];
+        $lesson->module = $data["module"];
+        $lesson->teacher = $data["first_name"];
+        $lesson->course = $data["curso"];
+        $lesson->embed = $data["embed"];
+        $lesson->drive = $data["drive"];
+
+        if (!$lesson->save()) {
+            echo $this->ajaxResponse("message", [
+                "type" => "error",
+                "message" => $lesson->fail()->getMessage()
+            ]);
+            return;
+        }
+
+        /** Auth */
+        echo $this->ajaxResponse("redirect", [
+        "url" => $this->router->route("app.teacher")
+        ]);
     }
 
     /**

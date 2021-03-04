@@ -1,4 +1,4 @@
-<?php $v->layout("theme/app/_theme"); ?>
+<?php $v->layout("theme/teacher/tea_theme"); ?>
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">

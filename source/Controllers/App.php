@@ -89,16 +89,34 @@ class App extends Controller
     /**
      *
      */
-    public function class(): void
+    public function classStd(): void
     {
       $head = $this->seo->optimize(
         "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
         site("desc"),
-        $this->router->route("app.class"),
+        $this->router->route("app.classstd"),
         routeImage("Conta de {$this->user->first_name}")
       )->render();
 
-      echo  $this->view->render("theme/app/class", [
+      echo  $this->view->render("theme/student/class_std", [
+        "head" => $head,
+        "user" => $this->user
+      ]);
+    }
+
+    /**
+     *
+     */
+    public function classTea(): void
+    {
+      $head = $this->seo->optimize(
+        "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
+        site("desc"),
+        $this->router->route("app.classtea"),
+        routeImage("Conta de {$this->user->first_name}")
+      )->render();
+
+      echo  $this->view->render("theme/teacher/class_tea", [
         "head" => $head,
         "user" => $this->user
       ]);

@@ -23,18 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Dashboard Teacher">
-      <change afterPath="$PROJECT_DIR$/views/theme/student/std_theme.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/theme/teacher/tea_theme.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Controllers/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/App.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Controllers/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/admin/adm_theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/admin/dashboard_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_student.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/student/dashboard_student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/dashboard_teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Lesson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/admin/dashboard_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/admin/dashboard_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/student/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/student/calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/student/class_std.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/student/class_std.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/teacher/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/teacher/class_tea.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/class_tea.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/teacher/dashboard_teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/dashboard_teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/teacher/tea_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/tea_theme.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +115,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\new_platinvar\views\theme\teacher" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\student" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\theme\admin" />
       <recent name="C:\xampp\htdocs" />
     </key>
@@ -222,7 +223,7 @@
       <workItem from="1613999187436" duration="887000" />
       <workItem from="1614004103447" duration="1172000" />
       <workItem from="1614349282729" duration="6938000" />
-      <workItem from="1614861252521" duration="2647000" />
+      <workItem from="1614861252521" duration="7030000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>

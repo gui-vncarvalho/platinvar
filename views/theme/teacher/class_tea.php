@@ -1,4 +1,4 @@
-<?php $v->layout("theme/app/_theme"); ?>
+<?php $v->layout("theme/teacher/tea_theme"); ?>
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -41,11 +41,11 @@
                         <div class="info-box bg-light">
                             <div class="info-box-content">
                                 <span class="info-box-text text-center text-muted">Alunos inscritos</span>
-                                <span class="info-box-number text-center text-muted mb-0">46</span>
+                                <!--<span class="info-box-number text-center text-muted mb-0"><?= $course->n_students ?></span>-->
                             </div>
                         </div>
                     </div>
-                    <div class="col-10 col-sm-3">
+                    <!--<div class="col-10 col-sm-3">
                         <div class="info-box bg-light">
                             <div class="info-box-content">
                                 <span class="info-box-text text-center text-muted">Total de aulas</span>
@@ -60,104 +60,77 @@
                                 <span class="info-box-number text-center text-muted mb-0">68 horas <span>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="row">
                     <div class="col-12">
                     <h4> Módulos </h4>
                         <div class="post">
                             <div class="user-block">
-                                <img class="img-circle img-bordered-sm" src="<?= asset("/dist/img/user1-128x128.png"); ?>" alt="user image">
                                 <span class="username">
-                                    <a href="#">Professor Jonathan Jr.</a>
+                                    <a href="#"><?= $user->first_name ?></a>
                                 </span>
-                                <span class="description">Publicado - 7:45 PM hoje</span>
+                                <span class="description">Publicado</span>
                             </div>
                             <!-- /.user-block -->
+                            <p></p>
                             <p>
-                              Lorem ipsum represents a long-held tradition for designers,
-                              typographers and the like. Some people hate it and argue for
-                              its demise, but others ignore.
-                            </p>
-                            <p>
-                              <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Arquivo demo 1 v2</a>
+                              <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Material - Módulo 1/Aula 1</a>
                             </p>
                         </div>
                         <div class="post clearfix">
                             <div class="user-block">
-                                <img class="img-circle img-bordered-sm" src="<?= asset("/dist/img/user7-128x128.png"); ?>" alt="User Image">
                                 <span class="username">
-                                    <a href="#">Sarah Ross</a>
+                                    <a href="#"><?= $user->first_name ?></a>
                                 </span>
-                                <span class="description">Sent you a message - 3 days ago</span>
+                                <span class="description">Publicado</span>
                             </div>
                             <!-- /.user-block -->
+                            <p></p>
                             <p>
-                            Lorem ipsum represents a long-held tradition for designers,
-                            typographers and the like. Some people hate it and argue for
-                            its demise, but others ignore.
-                            </p>
-                            <p>
-                                <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Demo File 2</a>
+                                <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Material - Módulo 1/Aula 2</a>
                             </p>
                         </div>
                         <div class="post">
                             <div class="user-block">
-                                <img class="img-circle img-bordered-sm" src="<?= asset("/dist/img/user5-128x128.png"); ?>" alt="user image">
                                 <span class="username">
-                                    <a href="#">Jonathan Burke Jr.</a>
+                                    <a href="#"><?= $user->first_name ?></a>
                                 </span>
-                                <span class="description">Shared publicly - 5 days ago</span>
+                                <span class="description">Publicado</span>
                             </div>
                         <!-- /.user-block -->
+                        <p></p>
                         <p>
-                          Lorem ipsum represents a long-held tradition for designers,
-                          typographers and the like. Some people hate it and argue for
-                          its demise, but others ignore.
-                        </p>
-                        <p>
-                          <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Demo File 1 v1</a>
+                          <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Material - Módulo 1/Aula 3</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-12 col-md-12 col-lg-4 order-1 order-md-2">
-            <h3 class="text-primary"><i class="fas fa-paint-brush"></i> Administração</h3>
-            <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.</p>
+            <h3 class="text-primary"><i class="fas fa-graduation-cap"></i> Administração</h3>
+            <p class="text-muted"></p>
             <br>
             <div class="text-muted">
-                <p class="text-sm">Fornecido pela
-                    <b class="d-block">INVAR</b>
+                <p class="text-sm">Fornecido pelo(a)
+                    <b class="d-block">Instituto de Educação e Tecnologia Vale do Ribeira - INVAR</b>
                 </p>
                 <p class="text-sm">Professor
-                    <b class="d-block">Módulo 1</b>
+                    <b class="d-block"><?= $user->first_name ?></b>
                 </p>
             </div>
             <h5 class="mt-5 text-muted">Arquivos do Curso</h5>
             <ul class="list-unstyled">
-                <li>
+                <!-- <li>
                     <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="btn-link text-secondary"><i class="far fa-fw fa-file-word"></i> Functional-requirements.docx</a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="btn-link text-secondary"><i class="far fa-fw fa-file-pdf"></i> UAT.pdf</a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="btn-link text-secondary"><i class="far fa-fw fa-envelope"></i> Email-from-flatbal.mln</a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="btn-link text-secondary"><i class="far fa-fw fa-image "></i> Logo.png</a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="btn-link text-secondary"><i class="far fa-fw fa-file-word"></i> Contract-10_12_2014.docx</a>
-                </li>
+                </li> -->
+
             </ul>
         </div>
     </div>
-</div>
-<!-- /.card-body -->
-</div>
-<!-- /.card -->
+    <!-- /.card-body -->
+    </div>
+    </div>
 </section>
 <!-- /.content -->
 </div>

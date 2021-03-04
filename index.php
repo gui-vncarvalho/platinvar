@@ -41,7 +41,8 @@ $router->group("/me");
 $router->get("/estudante","App:student","app.student");
 $router->get("/professor","App:teacher","app.teacher");
 $router->get("/administrador","App:admin","app.admin");
-$router->get("/aulas","App:class","app.class");
+$router->get("/curso","App:classstd","app.classstd");
+$router->get("/aulas","App:classtea","app.classtea");
 /*$router->get("/calendario","App:calendar","app.calendar");*/
 $router->get("/perfil","App:profile","app.profile");
 $router->get("/sair","App:logoff","app.logoff");

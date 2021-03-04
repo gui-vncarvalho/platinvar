@@ -85,7 +85,7 @@
   </div>
   <!-- right column -->
   <div class="col-md-6">
-      <!-- form student -->
+      <!-- form teacher -->
       <div class="card card-warning">
           <div class="card-header">
               <h3 class="card-title"> Cadastro de Professor </h3>
