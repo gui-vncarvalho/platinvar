@@ -125,10 +125,69 @@ class Auth extends Controller
             return;
         }
 
-        /** Auth */
-          echo $this->ajaxResponse("redirect", [
-            "url" => $this->router->route("app.admin")
-        ]);
+        unset($_SESSION["user"]);
+        flash("success","Cadastro efetuado com sucesso!");
+        $this->router->redirect("web.login");
+    }
+
+    /**
+     * @param $data
+     */
+    public function registerTea($data): void
+    {
+        $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
+        if(in_array("", $data)) {
+            echo $this->ajaxResponse("message", [
+                "type" => "error",
+                "message" => "Preencha todos os campos para cadastrar-se"
+            ]);
+            return;
+        }
+
+        $user = new User();
+        $user->first_name = $data["first_name"];
+        $user->last_name = $data["last_name"];
+        $user->email = $data["email"];
+        $user->passwd = $data["passwd"];
+        $user->course = $data["course"];
+
+        switch ($user->course) {
+            case 1:
+                $user->course = "Auxiliar Administrativo";
+                break;
+            case 2:
+                $user->course = "Auxiliar em Departamento Pessoal";
+                break;
+            case 3:
+                $user->course = "Auxiliar em Logística";
+                break;
+            case 4:
+                $user->course = "Marketing de Varejo";
+                break;
+            case 5:
+                $user->course = "Técnicas de Vendas";
+                break;
+            case 6:
+                $user->course = "Desenvolvimento de Websites";
+                break;
+        }
+
+        $user->extra = $data["extra"];
+
+        /** SOCIAL VALIDATE
+        $this->socialValidate($user);*/
+
+        if (!$user->save()) {
+            echo $this->ajaxResponse("message", [
+                "type" => "error",
+                "message" => $user->fail()->getMessage()
+            ]);
+            return;
+        }
+
+        unset($_SESSION["user"]);
+        flash("success","Cadastro efetuado com sucesso!");
+        $this->router->redirect("web.login");
     }
 
     /**

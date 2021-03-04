@@ -26,7 +26,7 @@
 <!-- Default box -->
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">Curso: Administração - Módulo 1</h3>
+        <h3 class="card-title"><?= $user->course ?></h3>
 
         <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -35,6 +35,7 @@
                 <i class="fas fa-times"></i></button>
         </div>
     </div>
+    <!--
     <div class="card-body p-0">
         <table class="table table-striped projects">
             <thead>
@@ -123,11 +124,11 @@
                             <button type="button" class="btn btn-primary" data-dismiss="modal">Voltar</button>
                         </div>
                     </div>
-                    <!-- /.modal-content -->
+                    <!-- /.modal-content
                 </div>
-                <!-- /.modal-dialog -->
+                <!-- /.modal-dialog
             </div>
-            <!-- /.modal -->
+            <!-- /.modal
 
             <tr>
                 <td>
@@ -194,16 +195,16 @@
                             <button type="button" class="btn btn-primary" data-dismiss="modal">Voltar</button>
                         </div>
                     </div>
-                    <!-- /.modal-content -->
+                    <!-- /.modal-content
                 </div>
-                <!-- /.modal-dialog -->
+                <!-- /.modal-dialog
             </div>
-            <!-- /.modal -->
+            <!-- /.modal
 
             </tbody>
         </table>
     </div>
-    <!-- /.card-body -->
+    <!-- /.card-body
 </div>
 <!-- /.card -->
 

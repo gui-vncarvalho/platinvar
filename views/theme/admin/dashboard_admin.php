@@ -39,9 +39,12 @@
               </div>
               <div class="card-body">
                   <div class="form-group">
-                      <label for="extra"> Tipo de Usuário </label>
-                      <input value="1" type="text" class="form-control" name="extra"
-                             id="extra" placeholder="Tipo de Usuário">
+                      <div class="form-group">
+                          <label for="extra"> Tipo de Usuário </code></label>
+                          <select class="custom-select form-control-border" name="extra" id="extra">
+                              <option value="1"> Aluno </option>
+                          </select>
+                      </div>
                   </div>
                   <div class="form-group">
                       <label for="first_name">Primeiro Nome</label>
@@ -72,8 +75,8 @@
                   <div class="form-group">
                       <label for="company">Vinculo | <code> atenção máxima </code></label>
                       <select class="custom-select form-control-border" name="company" id="company">
-                          <option value=""> Value 1 </option>
-                          <option value=""> Value 2 </option>
+                          <option value=" "> Selecione </option>
+                          <option value="INVAR"> INVAR </option>
                           <option value="DEMHAB"> DEMHAB </option>
                       </select>
                   </div>
@@ -81,6 +84,8 @@
                       <label for="local">Local | <code> unidade/condomínio </code></label>
                       <select class="custom-select form-control-border" name="local" id="local">
                           <option value=" "> Selecione </option>
+                          <option value="São Paulo"> São Paulo </option>
+                          <option value="Peruíbe"> Peruíbe </option>
                           <option value="Marista"> Marista </option>
                           <option value="Bomfim"> Bomfim </option>
                       </select>
@@ -97,8 +102,9 @@
               </div>
           </form>
       </div>
-      <!-- /.card -->
+      <!-- /.card student -->
   </div>
+
   <!-- right column -->
   <div class="col-md-6">
       <!-- form teacher -->
@@ -108,15 +114,18 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form action="<?= $router->route("auth.register"); ?>" method="post" autocomplete="off">
+          <form action="<?= $router->route("auth.registertea"); ?>" method="post" autocomplete="off">
               <div class="login_form_callback">
                   <?= flash(); ?>
               </div>
               <div class="card-body">
                   <div class="form-group">
-                      <label for="extra"> Tipo de Usuário </label>
-                      <input value="2" type="text" disabled class="form-control" name="extra"
-                             id="extra" placeholder="Tipo de Usuário">
+                      <div class="form-group">
+                          <label for="extra"> Tipo de Usuário </code></label>
+                          <select class="custom-select form-control-border" name="extra" id="extra">
+                              <option value="2"> Professor </option>
+                          </select>
+                      </div>
                   </div>
                   <div class="form-group">
                       <label for="first_name">Primeiro Nome</label>
@@ -129,6 +138,17 @@
                              id="last_name" placeholder="Sobrenome do Professor">
                   </div>
                   <div class="form-group">
+                      <label for="course">Curso Lecionado | <code> selecione </code></label>
+                      <select class="custom-select form-control-border" name="course" id="course">
+                          <option value="1"> Auxiliar Administrativo </option>
+                          <option value="2"> Auxiliar em Departamento Pessoal </option>
+                          <option value="3"> Auxiliar em Logística </option>
+                          <option value="4"> Marketing de Varejo </option>
+                          <option value="5"> Técnicas de Vendas </option>
+                          <option value="6"> Desenvolvimento de Websites </option>
+                      </select>
+                  </div>
+                  <div class="form-group">
                       <label for="email">E-mail</label>
                       <input value="" type="email" class="form-control" name="email"
                              id="email" placeholder="E-mail para acessar">
@@ -139,7 +159,7 @@
                              id="passwd" placeholder="Senha para acessar">
                   </div>
               </div>
-              <!-- /.card-body -->
+              <!-- /.card-body teacher -->
               <div class="card-footer">
                   <button type="submit" class="btn btn-success">Cadastrar</button>
               </div>
