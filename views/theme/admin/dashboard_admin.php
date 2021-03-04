@@ -1,4 +1,4 @@
-<?php $v->layout("theme/app/_theme"); ?>
+<?php $v->layout("theme/admin/adm_theme"); ?>
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -7,12 +7,12 @@
     <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Página Inicial</h1>
+            <h1 class="m-0 text-dark">Formulários</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Geral</a></li>
-              <li class="breadcrumb-item active">Visão Geral</li>
+              <li class="breadcrumb-item active">Formulários de Cadastro</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->

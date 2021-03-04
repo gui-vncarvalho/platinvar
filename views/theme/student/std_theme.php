@@ -156,7 +156,8 @@
             <!-- Sidebar user panel (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
-                    <img src="<?= $user->photo; ?>" class="img-circle elevation-2" alt="<?= $user->first_name; ?>">
+                    <!-- <img src="<?= $user->photo; ?>" class="img-circle elevation-2" alt="<?= $user->first_name; ?>"> -->
+                    <img src="<?= asset("/images/favicon.png"); ?>" class="img-circle elevation-2" alt="<?= $user->first_name; ?>">
                 </div>
                 <div class="info">
                     <a href="<?= $router->route("app.profile"); ?>" class="d-block"><?= $user->first_name; ?> <?= $user->last_name; ?></a>
@@ -203,7 +204,10 @@
                             <li class="nav-item ">
                                 <a href="<?= $router->route("app.calendar"); ?>" class="nav-link disabled">
                                     <i class="far fa-calendar-alt nav-icon"></i>
-                                    <p>Calendário</p>
+                                    <p>
+                                        Calendário
+                                        <span class="right badge badge-danger"> Em breve </span>
+                                    </p>
                                 </a>
                             </li>
                             <li class="nav-item">

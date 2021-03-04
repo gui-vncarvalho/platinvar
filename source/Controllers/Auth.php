@@ -7,7 +7,7 @@ use League\OAuth2\Client\Provider\Facebook;
 use League\OAuth2\Client\Provider\FacebookUser;
 use League\OAuth2\Client\Provider\Google;
 use League\OAuth2\Client\Provider\GoogleUser;
-use Source\Models\Student;
+use Source\Models\User;
 use Source\Support\Email;
 
 /**
@@ -41,7 +41,7 @@ class Auth extends Controller
             return;
         }
 
-        $user = (new Student())->find("id = :i", "i={$ra}")->fetch();
+        $user = (new User())->find("id = :i", "i={$ra}")->fetch();
         if(!$user || !password_verify($passwd, $user->passwd)) {
             echo $this->ajaxResponse("message", [
                 "type" => "error",
@@ -50,11 +50,21 @@ class Auth extends Controller
             return;
         }
 
-        /** SOCIAL VALIDATE */
-        $this->socialValidate($user);
+        /** SOCIAL VALIDATE
+        $this->socialValidate($user);*/
 
         $_SESSION["user"] = $user->id;
-        echo $this->ajaxResponse("redirect",["url" => $this->router->route("app.home")]);
+
+        if ( $user->extra == 1 ) {
+            echo $this->ajaxResponse("redirect",["url" => $this->router->route("app.student")]);
+        }
+        if ( $user->extra == 2 ) {
+            echo $this->ajaxResponse("redirect",["url" => $this->router->route("app.teacher")]);
+        }
+        if ( $user->extra == 3 ) {
+            echo $this->ajaxResponse("redirect",["url" => $this->router->route("app.admin")]);
+        }
+
     }
 
     /**
@@ -71,14 +81,15 @@ class Auth extends Controller
             return;
         }
 
-        $user = new Student();
+        $user = new User();
         $user->first_name = $data["first_name"];
         $user->last_name = $data["last_name"];
         $user->email = $data["email"];
         $user->passwd = $data["passwd"];
+        $user->extra = $data["extra"];
 
 
-        /** SOCIAL VALIDATE */
+        /** SOCIAL VALIDATE
         $this->socialValidate($user);
 
         if (!$user->save()) {
@@ -87,11 +98,12 @@ class Auth extends Controller
                 "message" => $user->fail()->getMessage()
             ]);
             return;
-        }
+        }*/
 
-        echo $this->ajaxResponse("redirect", [
-            "url" => $this->router->route("app.home")
-        ]);
+        /** Auth
+          echo $this->ajaxResponse("redirect", [
+            "url" => $this->router->route("app.student")
+        ]);*/
     }
 
     /**
@@ -108,7 +120,7 @@ class Auth extends Controller
             return;
         }
 
-        $user = (new Student())->find("email = :e", "e={$email}")->fetch();
+        $user = (new User())->find("email = :e", "e={$email}")->fetch();
         if(!$user) {
             echo $this->ajaxResponse("message", [
                 "type" => "error",
@@ -147,7 +159,7 @@ class Auth extends Controller
      */
     public function reset($data): void
     {
-        if(empty($_SESSION["forget"]) || !$user = (new Student())->findById($_SESSION["forget"])) {
+        if(empty($_SESSION["forget"]) || !$user = (new User())->findById($_SESSION["forget"])) {
             flash("error", "Não foi possível recuperar, tente novamente");
             echo $this->ajaxResponse("redirect", [
                 "url" => $this->router->route("web.forget")
@@ -193,7 +205,7 @@ class Auth extends Controller
 
     /**
      *
-     */
+
     public function facebook(): void
     {
         $facebook = new Facebook(FACEBOOK_LOGIN);
@@ -221,10 +233,10 @@ class Auth extends Controller
             }
         }
 
-        /** @var $facebook_user FacebookUser */
+        /** @var $facebook_user FacebookUser
         $facebook_user = unserialize($_SESSION["facebook_auth"]);
         var_dump($_SESSION["facebook_auth"]);
-        $user_by_id = (new Student())->find("facebook_id = :id", "id={$facebook_user->getId()}")->fetch();
+        $user_by_id = (new User())->find("facebook_id = :id", "id={$facebook_user->getId()}")->fetch();
 
         //LOGIN BY ID
         if ($user_by_id) {
@@ -235,7 +247,7 @@ class Auth extends Controller
         }
 
         //LOGIN BY EMAIL
-        $user_by_email = (new Student())->find("email = :e","e={$facebook_user->getEmail()}")->fetch();
+        $user_by_email = (new User())->find("email = :e","e={$facebook_user->getEmail()}")->fetch();
         if ($user_by_email) {
             flash("info", "Olá {$facebook_user->getFirstName()}, faça login para conectar seu Facebook");
             $this->router->redirect("web.login");
@@ -250,7 +262,7 @@ class Auth extends Controller
 
     /**
      *
-     */
+
     public function google(): void
     {
         $google = new Google(GOOGLE_LOGIN);
@@ -278,9 +290,9 @@ class Auth extends Controller
             }
         }
 
-        /** @var $google_user GoogleUser */
+        /** @var $google_user GoogleUser
         $google_user = unserialize($_SESSION["google_auth"]);
-        $user_by_id = (new Student())->find("google_id = :id", "id={$google_user->getId()}")->fetch();
+        $user_by_id = (new User())->find("google_id = :id", "id={$google_user->getId()}")->fetch();
 
         //LOGIN BY ID
         if ($user_by_id) {
@@ -291,7 +303,7 @@ class Auth extends Controller
         }
 
         //LOGIN BY EMAIL
-        $user_by_email = (new Student())->find("email = :e","e={$google_user->getEmail()}")->fetch();
+        $user_by_email = (new User())->find("email = :e","e={$google_user->getEmail()}")->fetch();
         if ($user_by_email) {
             flash("info", "Olá {$google_user->getFirstName()}, faça login para conectar seu Google");
             $this->router->redirect("web.login");
@@ -306,14 +318,14 @@ class Auth extends Controller
 
     /**
      * @param User $user
-     */
-    public function socialValidate(Student $user): void
+
+    public function socialValidate(User $user): void
     {
         /**
          * FACEBOOK
-         */
+
         if(!empty($_SESSION["facebook_auth"])) {
-            /** @var $facebook_user FacebookUser */
+            /** @var $facebook_user FacebookUser
             $facebook_user = unserialize($_SESSION["facebook_auth"]);
 
             $user->facebook_id = $facebook_user->getId();
@@ -325,9 +337,9 @@ class Auth extends Controller
 
         /**
          * GOOGLE
-         */
+
         if(!empty($_SESSION["google_auth"])) {
-            /** @var $google_user GoogleUser */
+            /** @var $google_user GoogleUser
             $google_user = unserialize($_SESSION["google_auth"]);
 
             $user->google_id = $google_user->getId();
@@ -336,7 +348,7 @@ class Auth extends Controller
 
             unset($_SESSION["google_auth"]);
         }
-    }
+    }*/
 }
 
 

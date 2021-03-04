@@ -38,7 +38,9 @@ $router->get("/google", "Auth:google", "auth.google");
  * APP
  */
 $router->group("/me");
-$router->get("/","App:home","app.home");
+$router->get("/estudante","App:student","app.student");
+$router->get("/professor","App:teacher","app.teacher");
+$router->get("/administrador","App:admin","app.admin");
 $router->get("/aulas","App:class","app.class");
 /*$router->get("/calendario","App:calendar","app.calendar");*/
 $router->get("/perfil","App:profile","app.profile");

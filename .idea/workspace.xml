@@ -22,10 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Desenvolvimento cadastro das paginas e alterações nos visuais gerais da aplicação">
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Dashboard Teacher">
+      <change afterPath="$PROJECT_DIR$/views/theme/student/std_theme.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/theme/teacher/tea_theme.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Controllers/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/App.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/app/dashboard_teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Controllers/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/admin/adm_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/admin/dashboard_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_student.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/student/dashboard_student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/dashboard_teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/dashboard_teacher.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +100,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adminlte/AdminLTE-3.0.5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/theme/teacher" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -105,14 +114,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\teacher" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\admin" />
       <recent name="C:\xampp\htdocs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\student" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\admin" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\teacher" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\assets" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\theme\app" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\assets\images" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\assets\js" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\assets\css" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -202,7 +213,16 @@
       <workItem from="1612358658804" duration="5966000" />
       <workItem from="1612442188480" duration="6395000" />
       <workItem from="1612526512032" duration="3757000" />
-      <workItem from="1612787296314" duration="4276000" />
+      <workItem from="1612787296314" duration="8689000" />
+      <workItem from="1612873320057" duration="1930000" />
+      <workItem from="1612957286798" duration="3574000" />
+      <workItem from="1613045203436" duration="3610000" />
+      <workItem from="1613134088192" duration="3577000" />
+      <workItem from="1613158889746" duration="511000" />
+      <workItem from="1613999187436" duration="887000" />
+      <workItem from="1614004103447" duration="1172000" />
+      <workItem from="1614349282729" duration="6938000" />
+      <workItem from="1614861252521" duration="2647000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -274,19 +294,26 @@
       <option name="project" value="LOCAL" />
       <updated>1610562258875</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Dashboard Teacher">
+      <created>1612804690739</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612804690739</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
+    <option name="COLUMN_ID_ORDER">
       <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
       </list>
     </option>
   </component>
@@ -311,7 +338,8 @@
     <MESSAGE value="Execução do composer e do autoload" />
     <MESSAGE value="Criação dos diferentes paineis de controle" />
     <MESSAGE value="Desenvolvimento cadastro das paginas e alterações nos visuais gerais da aplicação" />
-    <option name="LAST_COMMIT_MESSAGE" value="Desenvolvimento cadastro das paginas e alterações nos visuais gerais da aplicação" />
+    <MESSAGE value="Dashboard Teacher" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dashboard Teacher" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

@@ -2,7 +2,7 @@
 
 namespace Source\Controllers;
 
-use Source\Models\Student;
+use Source\Models\User;
 
 /**
  * Class App
@@ -24,7 +24,7 @@ class App extends Controller
     {
         parent::__construct($router);
 
-        if(empty($_SESSION["user"]) || !$this->user = (new Student())->findById($_SESSION["user"])) {
+        if(empty($_SESSION["user"]) || !$this->user = (new User())->findById($_SESSION["user"])) {
             unset($_SESSION["user"]);
 
             flash("error", "Acesso negado. Favor logue-se");
@@ -35,16 +35,52 @@ class App extends Controller
     /**
      *
      */
-    public function home(): void
+    public function student(): void
     {
         $head = $this->seo->optimize(
             "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
             site("desc"),
-            $this->router->route("app.home"),
+            $this->router->route("app.student"),
             routeImage("Conta de {$this->user->first_name}")
         )->render();
 
-        echo  $this->view->render("theme/app/dashboard_student", [
+        echo  $this->view->render("theme/student/dashboard_student", [
+            "head" => $head,
+            "user" => $this->user
+        ]);
+    }
+
+    /**
+     *
+     */
+    public function teacher(): void
+    {
+        $head = $this->seo->optimize(
+            "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
+            site("desc"),
+            $this->router->route("app.teacher"),
+            routeImage("Conta de {$this->user->first_name}")
+        )->render();
+
+        echo  $this->view->render("theme/teacher/dashboard_teacher", [
+            "head" => $head,
+            "user" => $this->user
+        ]);
+    }
+
+    /**
+     *
+     */
+    public function admin(): void
+    {
+        $head = $this->seo->optimize(
+            "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
+            site("desc"),
+            $this->router->route("app.admin"),
+            routeImage("Conta de {$this->user->first_name}")
+        )->render();
+
+        echo  $this->view->render("theme/admin/dashboard_admin", [
             "head" => $head,
             "user" => $this->user
         ]);

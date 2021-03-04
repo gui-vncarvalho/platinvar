@@ -2,7 +2,7 @@
 
 namespace Source\Controllers;
 
-use Source\Models\Student;
+use Source\Models\User;
 
 /**
  * Class Web
@@ -19,7 +19,8 @@ class Web extends Controller
         parent::__construct($router);
 
         if (!empty($_SESSION["user"])) {
-            $this->router->redirect("app.home");
+            unset($_SESSION["user"]);
+            $this->router->redirect("web.login");
         }
     }
 
@@ -109,7 +110,7 @@ class Web extends Controller
             $this->router->redirect("web.forget");
         }
 
-        $user = (new Student())->find("email = :e AND forget = :f", "e={$email}&f={$forget}")->fetch();
+        $user = (new User())->find("email = :e AND forget = :f", "e={$email}&f={$forget}")->fetch();
         if (!$user) {
             flash("error", $errForget);
             $this->router->redirect("web.forget");
