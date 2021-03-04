@@ -34,18 +34,17 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="row">
             <div class="col-12 col-md-12 col-lg-8 order-2 order-md-1">
                 <div class="row">
                     <div class="col-12 col-sm-4">
                         <div class="info-box bg-light">
                             <div class="info-box-content">
                                 <span class="info-box-text text-center text-muted">Alunos inscritos</span>
-                                <span class="info-box-number text-center text-muted mb-0">46</span>
+                                <!--<span class="info-box-number text-center text-muted mb-0"><?= $course->n_students ?></span>-->
                             </div>
                         </div>
                     </div>
-                    <div class="col-10 col-sm-3">
+                    <!--<div class="col-10 col-sm-3">
                         <div class="info-box bg-light">
                             <div class="info-box-content">
                                 <span class="info-box-text text-center text-muted">Total de aulas</span>
@@ -60,70 +59,55 @@
                                 <span class="info-box-number text-center text-muted mb-0">68 horas <span>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="row">
                     <div class="col-12">
-                    <h4> Módulos </h4>
+                        <h4> Módulos </h4>
                         <div class="post">
                             <div class="user-block">
-                                <img class="img-circle img-bordered-sm" src="<?= asset("/dist/img/user1-128x128.png"); ?>" alt="user image">
                                 <span class="username">
-                                    <a href="#">Professor Jonathan Jr.</a>
+                                    <a href="#"><?= $user->first_name ?></a>
                                 </span>
-                                <span class="description">Publicado - 7:45 PM hoje</span>
+                                <span class="description">Publicado</span>
                             </div>
                             <!-- /.user-block -->
+                            <p></p>
                             <p>
-                              Lorem ipsum represents a long-held tradition for designers,
-                              typographers and the like. Some people hate it and argue for
-                              its demise, but others ignore.
-                            </p>
-                            <p>
-                              <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Arquivo demo 1 v2</a>
+                                <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Material - Módulo 1/Aula 1</a>
                             </p>
                         </div>
                         <div class="post clearfix">
                             <div class="user-block">
-                                <img class="img-circle img-bordered-sm" src="<?= asset("/dist/img/user7-128x128.png"); ?>" alt="User Image">
                                 <span class="username">
-                                    <a href="#">Sarah Ross</a>
+                                    <a href="#"><?= $user->first_name ?></a>
                                 </span>
-                                <span class="description">Sent you a message - 3 days ago</span>
+                                <span class="description">Publicado</span>
                             </div>
                             <!-- /.user-block -->
+                            <p></p>
                             <p>
-                            Lorem ipsum represents a long-held tradition for designers,
-                            typographers and the like. Some people hate it and argue for
-                            its demise, but others ignore.
-                            </p>
-                            <p>
-                                <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Demo File 2</a>
+                                <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Material - Módulo 1/Aula 2</a>
                             </p>
                         </div>
                         <div class="post">
                             <div class="user-block">
-                                <img class="img-circle img-bordered-sm" src="<?= asset("/dist/img/user5-128x128.png"); ?>" alt="user image">
                                 <span class="username">
-                                    <a href="#">Jonathan Burke Jr.</a>
+                                    <a href="#"><?= $user->first_name ?></a>
                                 </span>
-                                <span class="description">Shared publicly - 5 days ago</span>
+                                <span class="description">Publicado</span>
                             </div>
-                        <!-- /.user-block -->
-                        <p>
-                          Lorem ipsum represents a long-held tradition for designers,
-                          typographers and the like. Some people hate it and argue for
-                          its demise, but others ignore.
-                        </p>
-                        <p>
-                          <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Demo File 1 v1</a>
-                        </p>
+                            <!-- /.user-block -->
+                            <p></p>
+                            <p>
+                                <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Material - Módulo 1/Aula 3</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         <div class="col-12 col-md-12 col-lg-4 order-1 order-md-2">
-            <h3 class="text-primary"><i class="fas fa-paint-brush"></i> Administração</h3>
+            <h3 class="text-primary"><i class="fas fa-paint-brush"></i><?= $user->course ?></h3>
             <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.</p>
             <br>
             <div class="text-muted">

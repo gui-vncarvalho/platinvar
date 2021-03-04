@@ -108,7 +108,7 @@
             </div>
         </div>
         <div class="col-12 col-md-12 col-lg-4 order-1 order-md-2">
-            <h3 class="text-primary"><i class="fas fa-graduation-cap"></i> Administração</h3>
+            <h3 class="text-primary"><i class="fas fa-graduation-cap"></i><?= $user->course ?></h3>
             <p class="text-muted"></p>
             <br>
             <div class="text-muted">
