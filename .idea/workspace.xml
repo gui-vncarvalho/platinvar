@@ -22,19 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Dashboard Teacher">
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Atualizações nas 3 páginas gerais + cadastro via pagina do professor">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Controllers/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/App.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Models/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Lesson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/admin/adm_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/admin/adm_theme.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/theme/admin/dashboard_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/admin/dashboard_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/student/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/student/calendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/student/class_std.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/student/class_std.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/teacher/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/calendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/teacher/class_tea.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/class_tea.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/teacher/dashboard_teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/dashboard_teacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/teacher/tea_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/tea_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/forget.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/forget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/reset.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/reset.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +218,7 @@
       <workItem from="1613999187436" duration="887000" />
       <workItem from="1614004103447" duration="1172000" />
       <workItem from="1614349282729" duration="6938000" />
-      <workItem from="1614861252521" duration="7030000" />
+      <workItem from="1614861252521" duration="13005000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -302,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612804690739</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Atualizações nas 3 páginas gerais + cadastro via pagina do professor">
+      <created>1614868572073</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614868572073</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +342,8 @@
     <MESSAGE value="Criação dos diferentes paineis de controle" />
     <MESSAGE value="Desenvolvimento cadastro das paginas e alterações nos visuais gerais da aplicação" />
     <MESSAGE value="Dashboard Teacher" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dashboard Teacher" />
+    <MESSAGE value="Atualizações nas 3 páginas gerais + cadastro via pagina do professor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizações nas 3 páginas gerais + cadastro via pagina do professor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

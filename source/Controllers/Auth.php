@@ -87,11 +87,35 @@ class Auth extends Controller
         $user->last_name = $data["last_name"];
         $user->email = $data["email"];
         $user->passwd = $data["passwd"];
+        $user->course = $data["course"];
+
+        switch ($user->course) {
+            case 1:
+                $user->course = "Auxiliar Administrativo";
+                break;
+            case 2:
+                $user->course = "Auxiliar em Departamento Pessoal";
+                break;
+            case 3:
+                $user->course = "Auxiliar em Logística";
+                break;
+            case 4:
+                $user->course = "Marketing de Varejo";
+                break;
+            case 5:
+                $user->course = "Técnicas de Vendas";
+                break;
+            case 6:
+                $user->course = "Desenvolvimento de Websites";
+                break;
+        }
+
+        $user->company = $data["company"];
+        $user->local = $data["local"];
         $user->extra = $data["extra"];
 
-
         /** SOCIAL VALIDATE
-        $this->socialValidate($user);
+        $this->socialValidate($user);*/
 
         if (!$user->save()) {
             echo $this->ajaxResponse("message", [
@@ -99,12 +123,12 @@ class Auth extends Controller
                 "message" => $user->fail()->getMessage()
             ]);
             return;
-        }*/
+        }
 
-        /** Auth
+        /** Auth */
           echo $this->ajaxResponse("redirect", [
-            "url" => $this->router->route("app.student")
-        ]);*/
+            "url" => $this->router->route("app.admin")
+        ]);
     }
 
     /**

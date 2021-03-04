@@ -85,7 +85,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing" class="nav-link">
+                                <a href="https://drive.google.com/drive/folders/0B9lMZ0ZNhFPhfmlQYmdpQXJVeW9CSXo2NjAxeklXVGpjSzFuOThiWVJvTnA1b3hZZ1FieGs?usp=sharing" class="nav-link">
                                     <i class="fas fa-boxes nav-icon"></i>
                                     <p>Materiais</p>
                                 </a>
@@ -100,7 +100,7 @@
                             <p class="text"> Sair </p>
                         </a>
                     </li><li class="nav-item">
-                        <a href="#help" class="nav-link">
+                        <a href="#" class="nav-link">
                             <i class="nav-icon far fa-question-circle text-info"></i>
                             <p class="text"> Ajuda </p>
                         </a>

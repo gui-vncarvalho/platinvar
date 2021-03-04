@@ -39,6 +39,11 @@
               </div>
               <div class="card-body">
                   <div class="form-group">
+                      <label for="extra"> Tipo de Usuário </label>
+                      <input value="1" type="text" class="form-control" name="extra"
+                             id="extra" placeholder="Tipo de Usuário">
+                  </div>
+                  <div class="form-group">
                       <label for="first_name">Primeiro Nome</label>
                       <input value="" type="text" class="form-control" name="first_name"
                              id="first_name" placeholder="Nome do Aluno">
@@ -52,6 +57,17 @@
                       <label for="email">E-mail</label>
                       <input value="" type="email" class="form-control" name="email"
                              id="email" placeholder="E-mail para acessar">
+                  </div>
+                  <div class="form-group">
+                      <label for="course">Curso | <code> selecione </code></label>
+                      <select class="custom-select form-control-border" name="course" id="course">
+                          <option value="1"> Auxiliar Administrativo </option>
+                          <option value="2"> Auxiliar em Departamento Pessoal </option>
+                          <option value="3"> Auxiliar em Logística </option>
+                          <option value="4"> Marketing de Varejo </option>
+                          <option value="5"> Técnicas de Vendas </option>
+                          <option value="6"> Desenvolvimento de Websites </option>
+                      </select>
                   </div>
                   <div class="form-group">
                       <label for="company">Vinculo | <code> atenção máxima </code></label>
@@ -77,7 +93,7 @@
               </div>
               <!-- /.card-body -->
               <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Criar</button>
+                  <button type="submit" class="btn btn-primary">Cadastrar</button>
               </div>
           </form>
       </div>
@@ -86,7 +102,7 @@
   <!-- right column -->
   <div class="col-md-6">
       <!-- form teacher -->
-      <div class="card card-warning">
+      <div class="card card-success">
           <div class="card-header">
               <h3 class="card-title"> Cadastro de Professor </h3>
           </div>
@@ -97,6 +113,11 @@
                   <?= flash(); ?>
               </div>
               <div class="card-body">
+                  <div class="form-group">
+                      <label for="extra"> Tipo de Usuário </label>
+                      <input value="2" type="text" disabled class="form-control" name="extra"
+                             id="extra" placeholder="Tipo de Usuário">
+                  </div>
                   <div class="form-group">
                       <label for="first_name">Primeiro Nome</label>
                       <input value="" type="text" class="form-control" name="first_name"
@@ -120,7 +141,7 @@
               </div>
               <!-- /.card-body -->
               <div class="card-footer">
-                  <button type="submit" class="btn btn-warning">Criar</button>
+                  <button type="submit" class="btn btn-success">Cadastrar</button>
               </div>
           </form>
       </div>
