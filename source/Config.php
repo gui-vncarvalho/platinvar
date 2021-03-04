@@ -4,11 +4,11 @@
  * SITE CONFIG
  */
 define("SITE", [
-   "name" => "Plataforma Ead Invar",
+   "name" => "Plataforma EaD Invar",
    "desc" => "Ensino a Distância do Instituto de Educação e Tecnologia Vale do Ribeira",
-   "domain" => "localplatinvar.com",
+   "domain" => "https://sysday.invar.org.br",
    "locale" => "pt_BR",
-    "root" => "https://localhost/new_platinvar"
+    "root" => "https://sysday.invar.org.br"
 ]);
 
 /**
@@ -23,11 +23,11 @@ if($_SERVER["SERVER_NAME"] == "localhost") {
  */
 define("DATA_LAYER_CONFIG", [
     "driver" => "mysql",
-    "host" => "localhost",
+    "host" => "mysql.invar.org.br",
     "port" => "3306",
-    "dbname" => "platinvar",
-    "username" => "root",
-    "passwd" => "",
+    "dbname" => "invar02",
+    "username" => "invar02",
+    "passwd" => "fl250808",
     "options" => [
         PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
