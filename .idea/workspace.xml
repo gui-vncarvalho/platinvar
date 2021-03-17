@@ -22,9 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Sistema EaD Invar atualizado">
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Config web">
+      <change afterPath="$PROJECT_DIR$/views/emails/welcome.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +214,9 @@
       <workItem from="1614004103447" duration="1172000" />
       <workItem from="1614349282729" duration="6938000" />
       <workItem from="1614861252521" duration="17816000" />
-      <workItem from="1614883665040" duration="1127000" />
+      <workItem from="1614883665040" duration="1149000" />
+      <workItem from="1615815989086" duration="3001000" />
+      <workItem from="1615897484308" duration="4128000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -321,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614883399217</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Config web">
+      <created>1614884805837</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614884805837</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +371,8 @@
     <MESSAGE value="Atualizações nas 3 páginas gerais + cadastro via pagina do professor" />
     <MESSAGE value="Sistema de Login e Cadastro estáveis e funcionando" />
     <MESSAGE value="Sistema EaD Invar atualizado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sistema EaD Invar atualizado" />
+    <MESSAGE value="Config web" />
+    <option name="LAST_COMMIT_MESSAGE" value="Config web" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
