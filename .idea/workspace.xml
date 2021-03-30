@@ -22,9 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Config web">
-      <change afterPath="$PROJECT_DIR$/views/emails/welcome.php" afterDir="false" />
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Email de boas vindas">
+      <change afterPath="$PROJECT_DIR$/source/Models/Classroom.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/SchoolRoom.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/teacher/class_tea.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/class_tea.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/teacher/dashboard_teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/dashboard_teacher.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +95,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/theme/teacher" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -217,6 +222,13 @@
       <workItem from="1614883665040" duration="1149000" />
       <workItem from="1615815989086" duration="3001000" />
       <workItem from="1615897484308" duration="4128000" />
+      <workItem from="1615985783303" duration="1986000" />
+      <workItem from="1615991358068" duration="786000" />
+      <workItem from="1616420106974" duration="599000" />
+      <workItem from="1616506724452" duration="13000" />
+      <workItem from="1616508694079" duration="5812000" />
+      <workItem from="1617026027400" duration="2056000" />
+      <workItem from="1617120319378" duration="660000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -330,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614884805837</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Email de boas vindas">
+      <created>1615985855440</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1615985855440</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +391,8 @@
     <MESSAGE value="Sistema de Login e Cadastro estáveis e funcionando" />
     <MESSAGE value="Sistema EaD Invar atualizado" />
     <MESSAGE value="Config web" />
-    <option name="LAST_COMMIT_MESSAGE" value="Config web" />
+    <MESSAGE value="Email de boas vindas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Email de boas vindas" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

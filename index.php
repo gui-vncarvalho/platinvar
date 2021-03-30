@@ -27,6 +27,9 @@ $router->post("/register","Auth:register","auth.register");
 $router->post("/registertea","Auth:registertea","auth.registertea");
 $router->post("/forget","Auth:forget","auth.forget");
 $router->post("/reset","Auth:reset","auth.reset");
+$router->post("/classroom","Auth:classroom","auth.classroom");
+$router->post("/lesson","Auth:lesson","auth.lesson");
+/*$router->post("/event","Auth:event","auth.event");*/
 
 /*
  * AUTH SOCIAL

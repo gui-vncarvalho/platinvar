@@ -41,6 +41,7 @@
                         <div class="info-box bg-light">
                             <div class="info-box-content">
                                 <span class="info-box-text text-center text-muted">Alunos inscritos</span>
+                                <span class="info-box-number text-center text-muted mb-0">0</span>
                                 <!--<span class="info-box-number text-center text-muted mb-0"><?= $course->n_students ?></span>-->
                             </div>
                         </div>
@@ -68,40 +69,14 @@
                         <div class="post">
                             <div class="user-block">
                                 <span class="username">
-                                    <a href="#"><?= $user->first_name ?></a>
+
                                 </span>
-                                <span class="description">Publicado</span>
-                            </div>
-                            <!-- /.user-block -->
-                            <p></p>
-                            <p>
-                              <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Material - Módulo 1/Aula 1</a>
-                            </p>
-                        </div>
-                        <div class="post clearfix">
-                            <div class="user-block">
-                                <span class="username">
-                                    <a href="#"><?= $user->first_name ?></a>
-                                </span>
-                                <span class="description">Publicado</span>
-                            </div>
-                            <!-- /.user-block -->
-                            <p></p>
-                            <p>
-                                <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Material - Módulo 1/Aula 2</a>
-                            </p>
-                        </div>
-                        <div class="post">
-                            <div class="user-block">
-                                <span class="username">
-                                    <a href="#"><?= $user->first_name ?></a>
-                                </span>
-                                <span class="description">Publicado</span>
+                                <span class="description"></span>
                             </div>
                         <!-- /.user-block -->
                         <p></p>
                         <p>
-                          <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Material - Módulo 1/Aula 3</a>
+                          <!--<a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Material - Módulo 1</a>-->
                         </p>
                     </div>
                 </div>
