@@ -166,6 +166,49 @@
           </form>
       </div>
   </div>
+
+      <div class="card">
+          <div class="card-header">
+              <h3 class="card-title">Cadastrar Nova Turma</h3>
+              <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                      <i class="fas fa-minus"></i></button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                      <i class="fas fa-times"></i></button>
+              </div>
+          </div>
+          <div class="card-body">
+              <!-- form start -->
+              <form action="<?= $router->route("auth.classroom"); ?>" method="post" autocomplete="off">
+                  <div class="card-body">
+                      <div class="form-group">
+                          <label for="classroom_name">Nome para a turma</label>
+                          <input value="" type="text" class="form-control" name="classroom_name"
+                                 id="classroom_name" placeholder="Nome da Turma">
+                      </div>
+                      <div class="form-group">
+                          <label for="first_name">Professor da turma</label>
+                          <input value="<?= $user->first_name ?>" type="text" disabled class="form-control" name="first_name"
+                                 id="first_name">
+                      </div>
+                      <div class="form-group">
+                          <label for="course">Curso lecionado</label>
+                          <input value="Administração" type="text" disabled class="form-control" name="course"
+                                 id="course">
+                      </div>
+                      <div class="form-group">
+                          <label for="passwd">Sua senha | <code> para confirmação </code></label>
+                          <input type="password" class="form-control" name="passwd"
+                                 id="passwd" placeholder="Senha de acesso">
+                      </div>
+                  </div>
+                  <!-- /.card-body -->
+                  <div class="card-footer">
+                      <button type="submit" class="btn btn-secondary">Cadastrar</button>
+                  </div>
+              </form>
+          </div>
+      </div>
   </div>
   </div>
 </section>
