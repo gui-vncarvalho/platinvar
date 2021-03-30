@@ -9,6 +9,7 @@
     <?= $head; ?>
 
     <!-- CORE STYLES -->
+    <link rel="stylesheet" href="<?= asset("/css/message.css"); ?>"/>
     <link rel="stylesheet" href="<?= asset("/dist/css/adminlte.min.css"); ?>"/>
     <link rel="stylesheet" href="<?= asset("/plugins/fontawesome-free/css/all.min.css"); ?>"/>
 
@@ -193,7 +194,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item has-treeview">
+                    <li class="nav-item has-treeview menu-open">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-address-card"></i>
                             <p>
@@ -265,9 +266,11 @@
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
+<script src="<?= asset("/js/form-app.js"); ?>"></script>
 
 <!-- jQuery -->
 <script src="<?= asset("/plugins/jquery/jquery.min.js"); ?>"></script>
+<script src="<?= asset("/js/jquery-app.js"); ?>"></script>
 <!-- Bootstrap 4 -->
 <script src="<?= asset("/plugins/bootstrap/js/bootstrap.bundle.min.js"); ?>"></script>
 <!-- AdminLTE App -->

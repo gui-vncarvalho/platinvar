@@ -331,10 +331,8 @@ class Auth extends Controller
     {
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
-            echo $this->ajaxResponse("message", [
-                "type" => "error",
-                "message" => "Preencha todos os campos para cadastrar"
-            ]);
+            flash("error", "Preencha todos os campos para cadastrar");
+            $this->router->redirect("app.teacher");
             return;
         }
 

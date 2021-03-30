@@ -42,6 +42,9 @@
 
                 <!-- fix for small devices only -->
                 <div class="clearfix hidden-md-up"></div>
+                <div class="form_callback">
+                    <?= flash(); ?>
+                </div>
             </div>
             <!-- /.row -->
             <!-- Default box -->
@@ -58,9 +61,6 @@
                 <div class="card-body">
                     <!-- form start -->
                     <form action="<?= $router->route("auth.lesson"); ?>" method="post" autocomplete="off">
-                        <div class="login_form_callback">
-                            <?= flash(); ?>
-                        </div>
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="lesson_name">Nome da Aula</label>
@@ -122,9 +122,6 @@
                 <div class="card-body">
                     <!-- form start -->
                     <form action="<?= $router->route("auth.classroom"); ?>" method="post" autocomplete="off">
-                        <div class="login_form_callback">
-                          <?= flash(); ?>
-                        </div>
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="classroom_name">Nome para a turma</label>
