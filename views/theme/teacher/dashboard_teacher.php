@@ -48,7 +48,7 @@
             </div>
             <!-- /.row -->
             <!-- Default box -->
-            <div class="card">
+            <div class="card card-lightblue">
                 <div class="card-header">
                     <h3 class="card-title">Cadastrar Nova Aula</h3>
                     <div class="card-tools">

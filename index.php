@@ -14,7 +14,7 @@ $router->namespace("Source\Controllers");
  */
 $router->group(null);
 $router->get("/","Web:login","web.login");
-/*$router->get("/cadastrar","Web:register","web.register");*/
+$router->get("/cadastrar","Web:register","web.register");
 $router->get("/recuperar","Web:forget","web.forget");
 $router->get("/senha/{email}/{forget}","Web:reset","web.reset");
 
@@ -48,7 +48,8 @@ $router->get("/administrador","App:admin","app.admin");
 $router->get("/curso","App:classstd","app.classstd");
 $router->get("/aulas","App:classtea","app.classtea");
 /*$router->get("/calendario","App:calendar","app.calendar");*/
-$router->get("/perfil","App:profile","app.profile");
+$router->get("/perfil","App:profilestd","app.profilestd");
+$router->get("/perfil","App:profiletea","app.profiletea");
 $router->get("/sair","App:logoff","app.logoff");
 
 /*

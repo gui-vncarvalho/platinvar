@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="<?= asset("/plugins/fullcalendar-timegrid/main.min.css"); ?>">
     <link rel="stylesheet" href="<?= asset("/plugins/fullcalendar-bootstrap/main.min.css"); ?>">
 
-    <link rel="icon" type="image/png" href="<?= asset("/images/favicon_on.png"); ?>"/>
+    <link rel="icon" type="image/png" href="<?= asset("/images/invar-iden.png"); ?>"/>
 </head>
 <body>
 
@@ -40,116 +40,15 @@
                 <a href="<?= $router->route("app.contato"); ?>" class="nav-link">Contato</a>
             </li>
         </ul>
-
-        <!-- SEARCH FORM -->
-        <form class="form-inline ml-3">
-            <div class="input-group input-group-sm">
-                <input class="form-control form-control-navbar" type="search" placeholder="Pesquisar" aria-label="Search">
-                <div class="input-group-append">
-                    <button class="btn btn-navbar" type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
-
-        <!-- Right navbar links -->
-        <ul class="navbar-nav ml-auto">
-            <!-- Messages Dropdown Menu -->
-            <li class="nav-item dropdown">
-                <a class="nav-link disabled" data-toggle="dropdown" href="#">
-                    <i class="far fa-comments"></i>
-                    <span class="badge badge-danger navbar-badge"> </span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                    <a href="#" class="dropdown-item">
-                        <!-- Message Start -->
-                        <div class="media">
-                            <img src="<?= asset("/dist/img/user1-128x128.jpg"); ?>" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                            <div class="media-body">
-                                <h3 class="dropdown-item-title">
-                                    Brad Diesel
-                                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                                </h3>
-                                <p class="text-sm"> Cara, me liga quando tu puder ai</p>
-                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 horas atrás</p>
-                            </div>
-                        </div>
-                        <!-- Message End -->
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
-                        <!-- Message Start -->
-                        <div class="media">
-                            <img src="<?= asset("/dist/img/user8-128x128.jpg"); ?>" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                            <div class="media-body">
-                                <h3 class="dropdown-item-title">
-                                    John Pierce
-                                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                                </h3>
-                                <p class="text-sm">Preciso falar contigo</p>
-                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 horas atrás</p>
-                            </div>
-                        </div>
-                        <!-- Message End -->
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
-                        <!-- Message Start -->
-                        <div class="media">
-                            <img src="<?= asset("/dist/img/user7-128x128.jpg"); ?>" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                            <div class="media-body">
-                                <h3 class="dropdown-item-title">
-                                    Nora Silvester
-                                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                                </h3>
-                                <p class="text-sm">Vamos fazer o trabalho, quinta?</p>
-                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 horas atrás</p>
-                            </div>
-                        </div>
-                        <!-- Message End -->
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item dropdown-footer">Ver todas as mensagens</a>
-                </div>
-            </li>
-            <!-- Notifications Dropdown Menu -->
-            <li class="nav-item dropdown">
-                <a class="nav-link disabled" data-toggle="dropdown" href="#">
-                    <i class="far fa-bell"></i>
-                    <span class="badge badge-warning navbar-badge"> </span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                    <span class="dropdown-header">14 Notificações</span>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
-                        <i class="fas fa-envelope mr-2"></i> 3 novas mensagens
-                        <span class="float-right text-muted text-sm">4 horas</span>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
-                        <i class="fas fa-users mr-2"></i> 8 pedidos de amizade
-                        <span class="float-right text-muted text-sm">12 horas</span>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
-                        <i class="fas fa-file mr-2"></i> 3 novas atividades
-                        <span class="float-right text-muted text-sm">2 dias</span>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item dropdown-footer">Ver todas as notificações</a>
-                </div>
-            </li>
-        </ul>
     </nav>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="<?= $router->route("app.teacher"); ?>" class="brand-link">
-            <img rel="icon" alt="<?= site("name"); ?>" type="image/png" src="<?= asset("images/logo_invar.png"); ?>" class="brand-image elevation-3"/>
-            <span class="brand-text font-weight-light"> Plataforma </span>
+        <a href="<?= $router->route("app.home"); ?>" class="brand-link">
+            <img rel="icon" alt="<?= site("name"); ?>" type="image/png" src="<?= asset("images/invar-iden.png"); ?>" class="brand-image"/>
+            <span class="brand-text font-weight-light"> INVAR </span>
         </a>
 
         <!-- Sidebar -->
@@ -161,7 +60,7 @@
                     <img src="<?= asset("/images/favicon.png"); ?>" class="img-circle elevation-2" alt="<?= $user->first_name; ?>">
                 </div>
                 <div class="info">
-                    <a href="<?= $router->route("app.profile"); ?>" class="d-block"><?= $user->first_name; ?> <?= $user->last_name; ?></a>
+                    <a href="<?= $router->route("app.profiletea"); ?>" class="d-block"><?= $user->first_name; ?> <?= $user->last_name; ?></a>
                 </div>
             </div>
 
@@ -212,7 +111,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?= $router->route("app.profile"); ?>" class="nav-link">
+                                <a href="<?= $router->route("app.profiletea"); ?>" class="nav-link">
                                     <i class="far fa-address-book nav-icon"></i>
                                     <p>Perfil</p>
                                 </a>

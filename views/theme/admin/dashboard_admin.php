@@ -167,9 +167,55 @@
       </div>
   </div>
 
-      <div class="card">
+  <!-- left column -->
+  <div class="col-md-6">
+      <!-- form course -->
+      <div class="card card-info">
           <div class="card-header">
-              <h3 class="card-title">Cadastrar Nova Turma</h3>
+              <h3 class="card-title"> Cadastro de Curso </h3>
+          </div>
+          <!-- /.card-header -->
+          <!-- form start -->
+          <form action="<?= $router->route("auth.register"); ?>" method="post" autocomplete="off">
+              <div class="login_form_callback">
+                  <?= flash(); ?>
+              </div>
+              <div class="card-body">
+                  <div class="form-group">
+                      <label for="course_name">Nome do Curso</label>
+                      <input value="" type="text" class="form-control" name="course_name"
+                             id="course_name" placeholder="Nome do Curso">
+                  </div>
+                  <div class="form-group">
+                      <label for="drive">Link do Google Drive</label>
+                      <input value="" type="text" class="form-control" name="drive"
+                             id="drive" placeholder="Link do Google Drive">
+                  </div>
+                  <div class="form-group">
+                      <label for="teacher"> Professor do Curso </label>
+                      <input value="" type="email" class="form-control" name="teacher"
+                             id="teacher" placeholder="Professor do Curso">
+                  </div>
+                  <div class="form-group">
+                      <label for="description">Descrição | <code> informações sobre o curso </code></label>
+                      <textarea class="form-control" id="description" rows="4"></textarea>
+                  </div>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+              </div>
+          </form>
+      </div>
+      <!-- /.card course -->
+  </div>
+
+  <!-- right column -->
+  <div class="col-md-6">
+      <!-- form classroom -->
+      <div class="card card-warning">
+          <div class="card-header">
+              <h3 class="card-title">Cadastro de Turma</h3>
               <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
                       <i class="fas fa-minus"></i></button>
@@ -209,6 +255,7 @@
               </form>
           </div>
       </div>
+  </div>
   </div>
   </div>
 </section>

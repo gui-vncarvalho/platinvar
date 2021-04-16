@@ -143,20 +143,38 @@ class App extends Controller
     /**
      *
      */
-    public function profile(): void
+    public function profileStd(): void
   {
     $head = $this->seo->optimize(
       "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
       site("desc"),
-      $this->router->route("app.profile"),
+      $this->router->route("app.profilestd"),
       routeImage("Conta de {$this->user->first_name}")
     )->render();
 
-    echo  $this->view->render("theme/app/profile", [
+    echo  $this->view->render("theme/student/profile_std", [
       "head" => $head,
       "user" => $this->user
     ]);
   }
+
+    /**
+     *
+     */
+    public function profileTea(): void
+    {
+        $head = $this->seo->optimize(
+            "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
+            site("desc"),
+            $this->router->route("app.profiletea"),
+            routeImage("Conta de {$this->user->first_name}")
+        )->render();
+
+        echo  $this->view->render("theme/teacher/profile_tea", [
+            "head" => $head,
+            "user" => $this->user
+        ]);
+    }
 
     /**
      *

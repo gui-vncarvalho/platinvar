@@ -83,6 +83,8 @@ class Auth extends Controller
             return;
         }
 
+        $passwd = $data["passwd"];
+
         $user = new User();
         $user->first_name = $data["first_name"];
         $user->last_name = $data["last_name"];
@@ -115,6 +117,19 @@ class Auth extends Controller
         $user->local = $data["local"];
         $user->extra = $data["extra"];
 
+        if (empty($user->company))
+        {
+            $user->company = null;
+        }
+        if (empty($user->local))
+        {
+            $user->local = null;
+        }
+        if (empty($user->extra))
+        {
+            $user->extra = 1;
+        }
+
         /** SOCIAL VALIDATE
         $this->socialValidate($user);*/
 
@@ -126,7 +141,18 @@ class Auth extends Controller
             return;
         }
 
-        unset($_SESSION["user"]);
+        $email = new Email();
+        $email->add(
+            "Registro de usuário | " . site("name"),
+            $this->view->render("emails/welcome", [
+                "user" => $user,
+                "passwd" => $passwd,
+                "link" => $this->router->route("web.login")
+            ]),
+            "{$user->first_name} {$user->last_name}",
+            $user->email
+        )->send();
+
         flash("success","Cadastro efetuado com sucesso!");
         $this->router->redirect("web.login");
     }

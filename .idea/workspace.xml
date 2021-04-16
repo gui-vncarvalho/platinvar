@@ -22,11 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Formulários pagina do professor - funcionais">
+    <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Atualização do sistema de login de usuário e atualização visual das páginas para implementação do novo logo e lapidação do visual.">
+      <change afterPath="$PROJECT_DIR$/views/theme/teacher/profile_tea.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/admin/dashboard_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/admin/dashboard_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/teacher/dashboard_teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/dashboard_teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Controllers/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/student/profile_std.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/student/std_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/student/std_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/teacher/tea_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/tea_theme.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +102,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/theme" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -111,18 +115,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\teacher" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\student" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\admin" />
-      <recent name="C:\xampp\htdocs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\student" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\teacher" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\app" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\app" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\teacher" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\theme\student" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\theme\admin" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\teacher" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\assets" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\app" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -231,7 +236,11 @@
       <workItem from="1616506724452" duration="13000" />
       <workItem from="1616508694079" duration="5812000" />
       <workItem from="1617026027400" duration="2056000" />
-      <workItem from="1617120319378" duration="7047000" />
+      <workItem from="1617120319378" duration="9509000" />
+      <workItem from="1617721735065" duration="3059000" />
+      <workItem from="1618510465416" duration="627000" />
+      <workItem from="1618580971549" duration="8916000" />
+      <workItem from="1618591888442" duration="249000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -366,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617125325561</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Troca de acesso aos formularios de cadastro de turmas">
+      <created>1617127432443</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1617127432443</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +427,16 @@
     <MESSAGE value="Email de boas vindas" />
     <MESSAGE value="Alteração no sistema de registro de sala de aula/turma e registro de aulas" />
     <MESSAGE value="Formulários pagina do professor - funcionais" />
-    <option name="LAST_COMMIT_MESSAGE" value="Formulários pagina do professor - funcionais" />
+    <MESSAGE value="Troca de acesso aos formularios de cadastro de turmas" />
+    <MESSAGE value="Atualização do sistema de login de usuário e atualização visual das páginas para implementação do novo logo e lapidação do visual." />
+    <MESSAGE value="Alteração visual e implementação da nova identidade visual da Invar, assim como a lapidação do visual para a mudança" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alteração visual e implementação da nova identidade visual da Invar, assim como a lapidação do visual para a mudança" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#Deployment" timestamp="1618581696609">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Deployment/0.0.1366.728@0.0.1366.728" timestamp="1618581696609" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

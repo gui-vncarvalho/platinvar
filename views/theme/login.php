@@ -4,7 +4,7 @@
     <div class="login">
         <div class="login-logo">
             <a href="https://www.invar.org.br/">
-                <img class="mb-3" src="<?= asset("/images/logo_invar.png"); ?>" alt="" width="100" height="150">
+                <img class="mb-3" src="<?= asset("/images/logo_invar.png"); ?>" alt="" width="70%" height="70%">
             </a>
         </div>
         <!-- /.login-logo -->
@@ -40,10 +40,16 @@
                        href="<?= $router->route("web.forget"); ?>" title="Recuperar Senha">Esqueceu sua senha?</a>
                 </div>
                 <!-- /.col -->
-                <div class="col-4">
+                <div class="col-4 mb-2">
                     <button class="btn btn-primary btn-block">Logar-se</button>
                 </div>
                 <!-- /.col -->
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <a class="btn btn-outline-info btn-block"
+                            href="<?= $router->route("web.register"); ?>"> Cadastrar-se </a>
+                </div>
             </div>
         </form>
     </div>

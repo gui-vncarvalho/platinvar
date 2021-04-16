@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?= asset("/dist/css/adminlte.min.css"); ?>"/>
     <link rel="stylesheet" href="<?= asset("/plugins/fontawesome-free/css/all.min.css"); ?>"/>
     <link rel="stylesheet" href="<?= asset("/style.min.css"); ?>"/>
-    <link rel="icon" type="image/png" href="<?= asset("/images/logo_invar.png"); ?>"/>
+    <link rel="icon" type="image/png" href="<?= asset("/images/invar-iden.png"); ?>"/>
 </head>
 <body>
 

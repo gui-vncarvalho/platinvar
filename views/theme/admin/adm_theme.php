@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="<?= asset("/plugins/fullcalendar-timegrid/main.min.css"); ?>">
     <link rel="stylesheet" href="<?= asset("/plugins/fullcalendar-bootstrap/main.min.css"); ?>">
 
-    <link rel="icon" type="image/png" href="<?= asset("/images/favicon_on.png"); ?>"/>
+    <link rel="icon" type="image/png" href="<?= asset("/images/invar-iden.png"); ?>"/>
 </head>
 <body>
 
@@ -47,8 +47,8 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="<?= $router->route("app.home"); ?>" class="brand-link">
-            <img rel="icon" alt="<?= site("name"); ?>" type="image/png" src="<?= asset("images/logo_invar.png"); ?>" class="brand-image elevation-3"/>
-            <span class="brand-text font-weight-light"> Plataforma </span>
+            <img rel="icon" alt="<?= site("name"); ?>" type="image/png" src="<?= asset("images/invar-iden.png"); ?>" class="brand-image"/>
+            <span class="brand-text font-weight-light"> INVAR </span>
         </a>
 
         <!-- Sidebar -->
