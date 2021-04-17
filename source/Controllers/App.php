@@ -89,6 +89,24 @@ class App extends Controller
     /**
      *
      */
+    public function office(): void
+    {
+        $head = $this->seo->optimize(
+            "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
+            site("desc"),
+            $this->router->route("app.office"),
+            routeImage("Conta de {$this->user->first_name}")
+        )->render();
+
+        echo  $this->view->render("theme/office/dashboard_office", [
+            "head" => $head,
+            "user" => $this->user
+        ]);
+    }
+
+    /**
+     *
+     */
     public function classStd(): void
     {
       $head = $this->seo->optimize(

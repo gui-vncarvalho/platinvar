@@ -9,6 +9,7 @@ use League\OAuth2\Client\Provider\Google;
 use League\OAuth2\Client\Provider\GoogleUser;
 use Source\Models\Lesson;
 use Source\Models\Classroom;
+use Source\Models\Course;
 use Source\Models\User;
 use Source\Support\Email;
 
@@ -65,6 +66,9 @@ class Auth extends Controller
         }
         if ( $user->extra == 3 ) {
             echo $this->ajaxResponse("redirect",["url" => $this->router->route("app.admin")]);
+        }
+        if ( $user->extra == 4 ) {
+            echo $this->ajaxResponse("redirect",["url" => $this->router->route("app.office")]);
         }
 
     }
@@ -154,7 +158,9 @@ class Auth extends Controller
         )->send();
 
         flash("success","Cadastro efetuado com sucesso!");
-        $this->router->redirect("web.login");
+        echo $this->ajaxResponse("redirect",[
+            "url" => $this->router->route("web.login")
+        ]);
     }
 
     /**
@@ -322,7 +328,7 @@ class Auth extends Controller
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
             flash("error", "Preencha todos os campos para cadastrar");
-            $this->router->redirect("app.teacher");
+            $this->router->redirect("app.admin");
             return;
         }
 
@@ -344,7 +350,61 @@ class Auth extends Controller
 
         /** Auth */
         echo $this->ajaxResponse("redirect", [
-        "url" => $this->router->route("app.teacher")
+        "url" => $this->router->route("app.admin")
+        ]);
+    }
+
+    /**
+     * @param $data
+     */
+    public function course($data): void
+    {
+        $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
+        if(in_array("", $data)) {
+            flash("error", "Preencha todos os campos para cadastrar");
+            $this->router->redirect("app.admin");
+            return;
+        }
+
+        $course = new Course();
+        $course->course = $data["course_name"];
+
+        switch ($course->course) {
+            case 1:
+                $course->course = "Auxiliar Administrativo";
+                break;
+            case 2:
+                $course->course = "Auxiliar em Departamento Pessoal";
+                break;
+            case 3:
+                $course->course = "Auxiliar em Logística";
+                break;
+            case 4:
+                $course->course = "Marketing de Varejo";
+                break;
+            case 5:
+                $course->course = "Técnicas de Vendas";
+                break;
+            case 6:
+                $course->course = "Desenvolvimento de Websites";
+                break;
+        }
+
+        $course->drive = $data["drive"];
+        $course->teacher = $data["first_name"];
+        $course->description = $data["description"];
+
+        if (!$course->save()) {
+            echo $this->ajaxResponse("message", [
+                "type" => "error",
+                "message" => $course->fail()->getMessage()
+            ]);
+            return;
+        }
+
+        /** Auth */
+        echo $this->ajaxResponse("redirect", [
+            "url" => $this->router->route("app.admin")
         ]);
     }
 
@@ -356,7 +416,7 @@ class Auth extends Controller
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
             flash("error", "Preencha todos os campos para cadastrar");
-            $this->router->redirect("app.teacher");
+            $this->router->redirect("app.admin");
             return;
         }
 
@@ -375,7 +435,7 @@ class Auth extends Controller
 
         /** Auth */
         echo $this->ajaxResponse("redirect", [
-            "url" => $this->router->route("app.teacher")
+            "url" => $this->router->route("app.admin")
         ]);
     }
     

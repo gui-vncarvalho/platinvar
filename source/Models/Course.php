@@ -15,8 +15,7 @@ class Course extends DataLayer
     public function save(): bool
     {
         if (
-            !$this->validateTeacher()
-            || !parent::save()
+            !parent::save()
         ) {
             return false;
         }
@@ -24,8 +23,5 @@ class Course extends DataLayer
         return true;
     }
 
-    protected function validateTeacher(): bool
-    {
-        
-    }
+
 }

@@ -23,14 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89b9e136-f5dd-4d3f-bd14-ae77e6b9756f" name="Default Changelist" comment="Atualização do sistema de login de usuário e atualização visual das páginas para implementação do novo logo e lapidação do visual.">
-      <change afterPath="$PROJECT_DIR$/views/theme/teacher/profile_tea.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/theme/office/dashboard_office.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/theme/office/office_theme.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Controllers/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Controllers/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Course.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/admin/adm_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/admin/adm_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/admin/dashboard_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/admin/dashboard_admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/theme/app/class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/app/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/student/profile_std.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/student/std_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/student/std_theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/theme/teacher/tea_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/theme/teacher/tea_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/theme/app/profile.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +105,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/theme" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../xampp/htdocs/adminlte/AdminLTE-3.0.5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -115,18 +118,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Guilherme\Documents\GitHub\platinvar\views\theme\office" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\app" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\teacher" />
+      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\student" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\new_platinvar\views\theme" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\theme\student" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\theme\teacher" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\theme\app" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\admin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\new_platinvar\views\theme" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\app" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\teacher" />
-      <recent name="C:\xampp\htdocs\new_platinvar\views\theme\student" />
       <recent name="C:\xampp\htdocs\new_platinvar\views\theme\admin" />
     </key>
   </component>
@@ -241,6 +244,8 @@
       <workItem from="1618510465416" duration="627000" />
       <workItem from="1618580971549" duration="8916000" />
       <workItem from="1618591888442" duration="249000" />
+      <workItem from="1618592791783" duration="842000" />
+      <workItem from="1618660422248" duration="3385000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace.xml">
       <created>1605011494904</created>
@@ -437,6 +442,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Deployment/0.0.1366.728@0.0.1366.728" timestamp="1618581696609" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1618661120229">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1618661120229" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

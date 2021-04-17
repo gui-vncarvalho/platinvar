@@ -176,7 +176,7 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form action="<?= $router->route("auth.course"); ?>" method="post" autocomplete="off">
+          <form action="<?= $router->route("auth.register"); ?>" method="post" autocomplete="off">
               <div class="login_form_callback">
                   <?= flash(); ?>
               </div>
@@ -193,7 +193,7 @@
                   </div>
                   <div class="form-group">
                       <label for="teacher"> Professor do Curso </label>
-                      <input value="<?= $user->first_name ?>" type="text" class="form-control" name="teacher"
+                      <input value="" type="email" class="form-control" name="teacher"
                              id="teacher" placeholder="Professor do Curso">
                   </div>
                   <div class="form-group">
@@ -234,20 +234,13 @@
                       </div>
                       <div class="form-group">
                           <label for="first_name">Professor da turma</label>
-                          <input value="<?= $user->first_name ?>" type="text" class="form-control" name="first_name"
+                          <input value="<?= $user->first_name ?>" type="text" disabled class="form-control" name="first_name"
                                  id="first_name">
                       </div>
                       <div class="form-group">
                           <label for="course">Curso lecionado</label>
-                          <select class="custom-select form-control-border" name="course" id="course">
-                              <option value="" disabled selected> Selecione o curso </option>
-                              <option value="1"> Auxiliar Administrativo </option>
-                              <option value="2"> Auxiliar em Departamento Pessoal </option>
-                              <option value="3"> Auxiliar em Logística </option>
-                              <option value="4"> Marketing de Varejo </option>
-                              <option value="5"> Técnicas de Vendas </option>
-                              <option value="6"> Desenvolvimento de Websites </option>
-                          </select>
+                          <input value="Administração" type="text" disabled class="form-control" name="course"
+                                 id="course">
                       </div>
                       <div class="form-group">
                           <label for="passwd">Sua senha | <code> para confirmação </code></label>
@@ -261,27 +254,6 @@
                   </div>
               </form>
           </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="col-md-6">
-          <!-- PIE CHART -->
-          <div class="card card-danger">
-              <div class="card-header">
-                  <h3 class="card-title">Gráfico de Usuários</h3>
-
-                  <div class="card-tools">
-                      <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                      </button>
-                      <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
-                  </div>
-              </div>
-              <div class="card-body">
-                  <canvas id="pieChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-              </div>
-              <!-- /.card-body -->
-          </div>
-      <!-- /.card -->
       </div>
   </div>
   </div>

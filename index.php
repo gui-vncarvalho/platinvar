@@ -29,6 +29,7 @@ $router->post("/forget","Auth:forget","auth.forget");
 $router->post("/reset","Auth:reset","auth.reset");
 $router->post("/classroom","Auth:classroom","auth.classroom");
 $router->post("/lesson","Auth:lesson","auth.lesson");
+$router->post("/course","Auth:course","auth.course");
 /*$router->post("/event","Auth:event","auth.event");*/
 
 /*
@@ -45,6 +46,7 @@ $router->group("/me");
 $router->get("/estudante","App:student","app.student");
 $router->get("/professor","App:teacher","app.teacher");
 $router->get("/administrador","App:admin","app.admin");
+$router->get("/secretaria","App:office","app.office");
 $router->get("/curso","App:classstd","app.classstd");
 $router->get("/aulas","App:classtea","app.classtea");
 /*$router->get("/calendario","App:calendar","app.calendar");*/
