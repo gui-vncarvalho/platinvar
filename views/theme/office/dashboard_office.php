@@ -110,6 +110,7 @@
       <!-- form teacher -->
       <div class="card card-success">
           <div class="card-header">
+
               <h3 class="card-title"> Cadastro de Professor </h3>
           </div>
           <!-- /.card-header -->
@@ -176,7 +177,7 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form action="<?= $router->route("auth.register"); ?>" method="post" autocomplete="off">
+          <form action="<?= $router->route("auth.course"); ?>" method="post" autocomplete="off">
               <div class="login_form_callback">
                   <?= flash(); ?>
               </div>
@@ -187,13 +188,13 @@
                              id="course_name" placeholder="Nome do Curso">
                   </div>
                   <div class="form-group">
-                      <label for="drive">Link do Google Drive</label>
+                      <label for="drive">Link do Armazenamento | <code> compartilhe o link onde os arquivos do curso serão colocados </code></label>
                       <input value="" type="text" class="form-control" name="drive"
                              id="drive" placeholder="Link do Google Drive">
                   </div>
                   <div class="form-group">
                       <label for="teacher"> Professor do Curso </label>
-                      <input value="" type="email" class="form-control" name="teacher"
+                      <input value="" type="text" class="form-control" name="teacher"
                              id="teacher" placeholder="Professor do Curso">
                   </div>
                   <div class="form-group">
@@ -238,9 +239,15 @@
                                  id="first_name">
                       </div>
                       <div class="form-group">
-                          <label for="course">Curso lecionado</label>
-                          <input value="Administração" type="text" disabled class="form-control" name="course"
-                                 id="course">
+                          <label for="course">Curso Lecionado | <code> selecione </code></label>
+                          <select class="custom-select form-control-border" name="course" id="course">
+                              <option value="1"> Auxiliar Administrativo </option>
+                              <option value="2"> Auxiliar em Departamento Pessoal </option>
+                              <option value="3"> Auxiliar em Logística </option>
+                              <option value="4"> Marketing de Varejo </option>
+                              <option value="5"> Técnicas de Vendas </option>
+                              <option value="6"> Desenvolvimento de Websites </option>
+                          </select>
                       </div>
                       <div class="form-group">
                           <label for="passwd">Sua senha | <code> para confirmação </code></label>

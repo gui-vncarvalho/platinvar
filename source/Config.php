@@ -59,7 +59,7 @@ define("MAIL", [
     "from_email" => "suporte@mtic.com.br"
 ]);
 
-/*
+/*q
  * SOCIAL LOGIN: FACEBOOK
  */
 define("FACEBOOK_LOGIN", [

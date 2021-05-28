@@ -37,6 +37,7 @@ class App extends Controller
      */
     public function student(): void
     {
+
         $head = $this->seo->optimize(
             "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
             site("desc"),
