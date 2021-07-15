@@ -6,9 +6,9 @@
 define("SITE", [
    "name" => "Sysday",
    "desc" => "Ensino a Distância do Instituto de Educação e Tecnologia Vale do Ribeira",
-   "domain" => "https://sysday.invar.org.br",
+   "domain" => "https://www.sysday.invar.org.br",
    "locale" => "pt_BR",
-    "root" => "https://sysday.invar.org.br"
+    "root" => "https://www.sysday.invar.org.br"
 ]);
 
 /**

@@ -24,7 +24,9 @@ $router->get("/senha/{email}/{forget}","Web:reset","web.reset");
 $router->group(null);
 $router->post("/login","Auth:login","auth.login");
 $router->post("/register","Auth:register","auth.register");
-$router->post("/registertea","Auth:registertea","auth.registertea");
+$router->post("/appRegisterTeacher","Auth:appregisterteacher","auth.appregisterteacher");
+$router->post("/appRegisterStudent","Auth:appregisterstudent","auth.appregisterstudent");
+
 $router->post("/forget","Auth:forget","auth.forget");
 $router->post("/reset","Auth:reset","auth.reset");
 $router->post("/classroom","Auth:classroom","auth.classroom");
@@ -54,8 +56,9 @@ $router->get("/aulas","App:classtea","app.classtea");
 /*
  * APP ADMIN
  */
-$router->get("/administrador","App:admin","app.admin");
-$router->get("/usuarios","App:users","app.users");
+$router->group("/admin");
+$router->get("/","App:admin","app.admin");
+$router->get("/tabelas","App:tables","app.tables");
 
 /*
  * APP OFFICE

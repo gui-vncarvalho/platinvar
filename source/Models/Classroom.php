@@ -6,7 +6,7 @@ use CoffeeCode\DataLayer\DataLayer;
 use Exception;
 
 /**
- * Class Lesson
+ * Class Classroom
  * @package Source\Models
  */
 class Classroom extends DataLayer

@@ -33,7 +33,7 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form action="<?= $router->route("auth.register"); ?>" method="post" autocomplete="off">
+          <form action="<?= $router->route("auth.appregisterstudent"); ?>" method="post" autocomplete="off">
               <div class="login_form_callback">
                   <?= flash(); ?>
               </div>
@@ -92,7 +92,7 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form action="<?= $router->route("auth.registertea"); ?>" method="post" autocomplete="off">
+          <form action="<?= $router->route("auth.appregisterteacher"); ?>" method="post" autocomplete="off">
               <div class="login_form_callback">
                   <?= flash(); ?>
               </div>
@@ -209,8 +209,8 @@
                                  id="classroom_name" placeholder="Nome da Turma">
                       </div>
                       <div class="form-group">
-                          <label for="first_name">Professor da turma</label>
-                          <select class="custom-select form-control-border" name="course" id="first_name">
+                          <label for="teacher">Professor da turma</label>
+                          <select class="custom-select form-control-border" name="teacher" id="teacher">
                               <option value="" disabled selected> Selecione o professor </option>
                               <? foreach ($users as $user) {echo "<option value='".$user->first_name." ".$user->last_name."'>".$user->first_name." ".$user->last_name."</option>"; } ?>
                           </select>

@@ -3,10 +3,6 @@
 namespace Source\Controllers;
 
 use Exception;
-use League\OAuth2\Client\Provider\Facebook;
-use League\OAuth2\Client\Provider\FacebookUser;
-use League\OAuth2\Client\Provider\Google;
-use League\OAuth2\Client\Provider\GoogleUser;
 use Source\Models\Lesson;
 use Source\Models\Classroom;
 use Source\Models\Course;
@@ -53,9 +49,6 @@ class Auth extends Controller
             return;
         }
 
-        /** SOCIAL VALIDATE
-        $this->socialValidate($user);*/
-
         $_SESSION["user"] = $user->id;
 
         if ( $user->extra == 1 ) {
@@ -88,7 +81,6 @@ class Auth extends Controller
         }
 
         $passwd = $data["passwd"];
-
         $user = new User();
         $user->first_name = $data["first_name"];
         $user->last_name = $data["last_name"];
@@ -135,9 +127,6 @@ class Auth extends Controller
             $user->extra = 1;
         }
 
-        /** SOCIAL VALIDATE
-        $this->socialValidate($user);*/
-
         if (!$user->save()) {
             echo $this->ajaxResponse("message", [
                 "type" => "error",
@@ -157,79 +146,6 @@ class Auth extends Controller
             "{$user->first_name} {$user->last_name}",
             $user->email
         )->send();
-
-        flash("success","Cadastro efetuado com sucesso!");
-        echo $this->ajaxResponse("redirect",[
-            "url" => $this->router->route("web.login")
-        ]);
-    }
-
-    /**
-     * @param $data
-     */
-    public function registerTea($data): void
-    {
-        $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
-        if(in_array("", $data)) {
-            echo $this->ajaxResponse("message", [
-                "type" => "error",
-                "message" => "Preencha todos os campos para cadastrar-se"
-            ]);
-            return;
-        }
-
-        $passwd = $data["passwd"];
-
-        $user = new User();
-        $user->first_name = $data["first_name"];
-        $user->last_name = $data["last_name"];
-        $user->email = $data["email"];
-        $user->passwd = $data["passwd"];
-        $user->course = $data["course"];
-
-        switch ($user->course) {
-            case 1:
-                $user->course = "Auxiliar Administrativo";
-                break;
-            case 2:
-                $user->course = "Auxiliar em Departamento Pessoal";
-                break;
-            case 3:
-                $user->course = "Auxiliar em Logística";
-                break;
-            case 4:
-                $user->course = "Marketing de Varejo";
-                break;
-            case 5:
-                $user->course = "Técnicas de Vendas";
-                break;
-            case 6:
-                $user->course = "Desenvolvimento de Websites";
-                break;
-        }
-
-        $user->extra = $data["extra"];
-        $user->class = NULL;
-
-        $email = new Email();
-        $email->add(
-            "Registro de usuário | " . site("name"),
-            $this->view->render("emails/welcome", [
-                "user" => $user,
-                "passwd" => $passwd,
-                "link" => $this->router->route("web.login")
-            ]),
-            "{$user->first_name} {$user->last_name}",
-            $user->email
-        )->send();
-
-        if (!$user->save()) {
-            echo $this->ajaxResponse("message", [
-                "type" => "error",
-                "message" => $user->fail()->getMessage()
-            ]);
-            return;
-        }
 
         flash("success","Cadastro efetuado com sucesso!");
         echo $this->ajaxResponse("redirect",[
@@ -331,7 +247,6 @@ class Auth extends Controller
         echo $this->ajaxResponse("redirect", [
             "url" => $this->router->route("web.login")
         ]);
-        return;
     }
 
     /**
@@ -362,9 +277,9 @@ class Auth extends Controller
             return;
         }
 
-        /** Auth */
-        echo $this->ajaxResponse("redirect", [
-        "url" => $this->router->route("app.admin")
+        flash("success","Cadastro efetuado com sucesso!");
+        echo $this->ajaxResponse("redirect",[
+            "url" => $this->router->route("web.login")
         ]);
     }
 
@@ -394,9 +309,9 @@ class Auth extends Controller
             return;
         }
 
-        /** Auth */
-        echo $this->ajaxResponse("redirect", [
-            "url" => $this->router->route("app.admin")
+        flash("success","Cadastro efetuado com sucesso!");
+        echo $this->ajaxResponse("redirect",[
+            "url" => $this->router->route("web.login")
         ]);
     }
 
@@ -414,7 +329,7 @@ class Auth extends Controller
 
         $classroom = new Classroom();
         $classroom->classroom_name = $data["classroom_name"];
-        $classroom->teacher = $data["first_name"];
+        $classroom->teacher = $data["teacher"];
         $classroom->course = $data["course"];
 
         if (!$classroom->save()) {
@@ -430,153 +345,121 @@ class Auth extends Controller
             "url" => $this->router->route("app.admin")
         ]);
     }
-    
+
     /**
-     *
-
-    public function facebook(): void
+     * @param $data
+     */
+    public function appRegisterStudent($data): void
     {
-        $facebook = new Facebook(FACEBOOK_LOGIN);
-        $error = filter_input(INPUT_GET, "error", FILTER_SANITIZE_STRIPPED);
-        $code = filter_input(INPUT_GET, "code", FILTER_SANITIZE_STRIPPED);
-
-        if (!$error && !$code) {
-            $auth_url = $facebook->getAuthorizationUrl(["scope" => "email"]);
-            header("Location: {$auth_url}");
+        $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
+        if(in_array("", $data)) {
+            echo $this->ajaxResponse("message", [
+                "type" => "error",
+                "message" => "Preencha todos os campos para cadastrar-se"
+            ]);
             return;
         }
 
-        if ($error) {
-            flash("error", "Não foi possível logar com o Facebook");
-            $this->router->redirect("web.login");
+        $passwd = $data["passwd"];
+
+        $user = new User();
+        $user->first_name = $data["first_name"];
+        $user->last_name = $data["last_name"];
+        $user->email = $data["email"];
+        $user->passwd = $data["passwd"];
+        $user->course = $data["course"];
+        $user->extra = $data["extra"];
+        $user->class = NULL;
+
+        if (empty($user->company))
+        {
+            $user->company = null;
+        }
+        if (empty($user->local))
+        {
+            $user->local = null;
+        }
+        if (empty($user->extra))
+        {
+            $user->extra = 1;
         }
 
-        if ($code && empty($_SESSION["facebook_auth"])) {
-            try {
-                $token = $facebook->getAccessToken("authorization_code", ["code" => $code]);
-                $_SESSION["facebook_auth"] = serialize($facebook->getResourceOwner($token));
-            } catch (Exception $exception) {
-                flash("error", "Não foi possível logar com o Facebook");
-                $this->router->redirect("web.login");
-            }
-        }
-
-        /** @var $facebook_user FacebookUser
-        $facebook_user = unserialize($_SESSION["facebook_auth"]);
-        var_dump($_SESSION["facebook_auth"]);
-        $user_by_id = (new User())->find("facebook_id = :id", "id={$facebook_user->getId()}")->fetch();
-
-        //LOGIN BY ID
-        if ($user_by_id) {
-            unset($_SESSION["facebook_auth"]);
-
-            $_SESSION["user"] = $user_by_id->id;
-            $this->router->redirect("app.home");
-        }
-
-        //LOGIN BY EMAIL
-        $user_by_email = (new User())->find("email = :e","e={$facebook_user->getEmail()}")->fetch();
-        if ($user_by_email) {
-            flash("info", "Olá {$facebook_user->getFirstName()}, faça login para conectar seu Facebook");
-            $this->router->redirect("web.login");
-        }
-
-        //REGISTER IF NOT
-        $link = $this->router->route("web.login");
-        flash("info",
-            "Olá {$facebook_user->getFirstName()}, <b>se já tem uma conta clique em <a title='Fazer login' href='{$link}'>FAZER LOGIN</a></b>, ou complete seu cadastro");
-        $this->router->redirect("web.register");
-    }
-
-    /**
-     *
-
-    public function google(): void
-    {
-        $google = new Google(GOOGLE_LOGIN);
-        $error = filter_input(INPUT_GET, "error", FILTER_SANITIZE_STRIPPED);
-        $code = filter_input(INPUT_GET, "code", FILTER_SANITIZE_STRIPPED);
-
-        if (!$error && !$code) {
-            $auth_url = $google->getAuthorizationUrl();
-            header("Location: {$auth_url}");
+        if (!$user->save()) {
+            echo $this->ajaxResponse("message", [
+                "type" => "error",
+                "message" => $user->fail()->getMessage()
+            ]);
             return;
         }
 
-        if ($error) {
-            flash("error", "Não foi possível logar com o Google");
-            $this->router->redirect("web.login");
-        }
+        $email = new Email();
+        $email->add(
+            "Registro de usuário | " . site("name"),
+            $this->view->render("emails/welcome", [
+                "user" => $user,
+                "passwd" => $passwd,
+                "link" => $this->router->route("web.login")
+            ]),
+            "{$user->first_name} {$user->last_name}",
+            $user->email
+        )->send();
 
-        if ($code && empty($_SESSION["google_auth"])) {
-            try {
-                $token = $google->getAccessToken("authorization_code", ["code" => $code]);
-                $_SESSION["google_auth"] = serialize($google->getResourceOwner($token));
-            } catch (Exception $exception) {
-                flash("error", "Não foi possível logar com o Google");
-                $this->router->redirect("web.login");
-            }
-        }
-
-        /** @var $google_user GoogleUser
-        $google_user = unserialize($_SESSION["google_auth"]);
-        $user_by_id = (new User())->find("google_id = :id", "id={$google_user->getId()}")->fetch();
-
-        //LOGIN BY ID
-        if ($user_by_id) {
-            unset($_SESSION["google_auth"]);
-
-            $_SESSION["user"] = $user_by_id->id;
-            $this->router->redirect("app.home");
-        }
-
-        //LOGIN BY EMAIL
-        $user_by_email = (new User())->find("email = :e","e={$google_user->getEmail()}")->fetch();
-        if ($user_by_email) {
-            flash("info", "Olá {$google_user->getFirstName()}, faça login para conectar seu Google");
-            $this->router->redirect("web.login");
-        }
-
-        //REGISTER IF NOT
-        $link = $this->router->route("web.login");
-        flash("info",
-            "Olá {$google_user->getFirstName()}, <b>se já tem uma conta clique em <a title='Fazer login' href='{$link}'>FAZER LOGIN</a></b>, ou complete seu cadastro");
-        $this->router->redirect("web.register");
+        flash("success","Cadastro efetuado com sucesso!");
+        echo $this->ajaxResponse("redirect",[
+            "url" => $this->router->route("web.login")
+        ]);
     }
 
     /**
-     * @param User $user
-
-    public function socialValidate(User $user): void
+     * @param $data
+     */
+    public function appRegisterTeacher($data): void
     {
-        /**
-         * FACEBOOK
-
-        if(!empty($_SESSION["facebook_auth"])) {
-            /** @var $facebook_user FacebookUser
-            $facebook_user = unserialize($_SESSION["facebook_auth"]);
-
-            $user->facebook_id = $facebook_user->getId();
-            $user->photo = $facebook_user->getPictureUrl();
-            $user->save();
-
-            unset($_SESSION["facebook_auth"]);
+        $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
+        if(in_array("", $data)) {
+            echo $this->ajaxResponse("message", [
+                "type" => "error",
+                "message" => "Preencha todos os campos para cadastrar-se"
+            ]);
+            return;
         }
 
-        /**
-         * GOOGLE
+        $passwd = $data["passwd"];
 
-        if(!empty($_SESSION["google_auth"])) {
-            /** @var $google_user GoogleUser
-            $google_user = unserialize($_SESSION["google_auth"]);
+        $user = new User();
+        $user->first_name = $data["first_name"];
+        $user->last_name = $data["last_name"];
+        $user->email = $data["email"];
+        $user->passwd = $data["passwd"];
+        $user->course = $data["course"];
+        $user->extra = $data["extra"];
+        $user->class = NULL;
 
-            $user->google_id = $google_user->getId();
-            $user->photo = $google_user->getAvatar();
-            $user->save();
+        $email = new Email();
+        $email->add(
+            "Registro de usuário | " . site("name"),
+            $this->view->render("emails/welcome", [
+                "user" => $user,
+                "passwd" => $passwd,
+                "link" => $this->router->route("web.login")
+            ]),
+            "{$user->first_name} {$user->last_name}",
+            $user->email
+        )->send();
 
-            unset($_SESSION["google_auth"]);
+        if (!$user->save()) {
+            echo $this->ajaxResponse("message", [
+                "type" => "error",
+                "message" => $user->fail()->getMessage()
+            ]);
+            return;
         }
-    }*/
+
+        flash("success","Cadastro efetuado com sucesso!");
+        echo $this->ajaxResponse("redirect",[
+            "url" => $this->router->route("web.login")
+        ]);
+    }
 }
 
 
