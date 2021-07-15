@@ -57,6 +57,7 @@ if ($error) {
                                 <th> Nome </th>
                                 <th> Sobrenome </th>
                                 <th> Curso </th>
+                                <th> X </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -67,8 +68,7 @@ if ($error) {
                                 echo "<td>".$user->email."</td>";
                                 echo "<td>".$user->first_name."</td>";
                                 echo "<td>".$user->last_name."</td>";
-                                echo "<td>".$user->course."</td><tr>";
-                                echo "<td> <a class='btn btn-app'><i fas fa-user-slash>::before</i> Apagar </a> </td><tr>";
+                                echo "<td>".$user->course."</td></tr>";
                             } ?>
 
                             </tbody>
