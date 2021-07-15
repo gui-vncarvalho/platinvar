@@ -57,7 +57,6 @@ if ($error) {
                                 <th> Nome </th>
                                 <th> Sobrenome </th>
                                 <th> Curso </th>
-                                <th> X </th>
                             </tr>
                             </thead>
                             <tbody>
