@@ -64,8 +64,8 @@
                   <div class="form-group">
                       <label for="course">Curso | <code> selecione </code></label>
                       <select class="custom-select form-control-border" name="course" id="course">
-                          <? use Source\Models\Course; $model = new Course(); $courses = $model->find()->fetch(true); ?>
-                          <? foreach ($courses as $course) {echo "<option value='".$course->id."'>".$course->name."</option>"; } ?>
+                          <? use Source\Models\Course; $model_course = new Course(); $courses = $model_course->find()->fetch(true); ?>
+                          <? foreach ($courses as $course) {echo "<option value='".$course->name."'>".$course->name."</option>"; } ?>
                       </select>
                   </div>
                   <div class="form-group">
@@ -118,7 +118,7 @@
                   <div class="form-group">
                       <label for="course">Curso Lecionado | <code> selecione </code></label>
                       <select class="custom-select form-control-border" name="course" id="course">
-                          <? foreach ($courses as $course) {echo "<option value='".$course->id."'>".$course->name."</option>"; } ?>
+                          <? foreach ($courses as $course) {echo "<option value='".$course->name."'>".$course->name."</option>"; } ?>
                       </select>
                   </div>
                   <div class="form-group">
@@ -165,9 +165,12 @@
                              id="drive" placeholder="Link do Google Drive">
                   </div>
                   <div class="form-group">
-                      <label for="teacher"> Professor do Curso </label>
-                      <input value="<?= $user->first_name ?>" type="text" class="form-control" name="teacher"
-                             id="teacher" placeholder="Professor do Curso">
+                      <label for="teacher">Professor do curso</label>
+                      <select class="custom-select form-control-border" name="course" id="teacher">
+                          <option value="" disabled selected> Selecione o professor </option>
+                          <? use Source\Models\User; $model_teacher = new User(); $users = $model_teacher->find("extra= :id","id=2")->fetch(true);
+                          foreach ($users as $user) {echo "<option value='".$user->first_name." ".$user->last_name."'>".$user->first_name." ".$user->last_name."</option>"; } ?>
+                      </select>
                   </div>
                   <div class="form-group">
                       <label for="description">Descrição | <code> informações sobre o curso </code></label>
@@ -207,14 +210,16 @@
                       </div>
                       <div class="form-group">
                           <label for="first_name">Professor da turma</label>
-                          <input value="<?= $user->first_name ?>" type="text" class="form-control" name="first_name"
-                                 id="first_name">
+                          <select class="custom-select form-control-border" name="course" id="first_name">
+                              <option value="" disabled selected> Selecione o professor </option>
+                              <? foreach ($users as $user) {echo "<option value='".$user->first_name." ".$user->last_name."'>".$user->first_name." ".$user->last_name."</option>"; } ?>
+                          </select>
                       </div>
                       <div class="form-group">
                           <label for="course">Curso lecionado</label>
                           <select class="custom-select form-control-border" name="course" id="course">
                               <option value="" disabled selected> Selecione o curso </option>
-                              <? foreach ($courses as $course) {echo "<option value='".$course->id."'>".$course->name."</option>"; } ?>
+                              <? foreach ($courses as $course) {echo "<option value='".$course->name."'>".$course->name."</option>"; } ?>
                           </select>
                       </div>
                       <div class="form-group">
