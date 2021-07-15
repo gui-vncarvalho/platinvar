@@ -64,30 +64,8 @@
                   <div class="form-group">
                       <label for="course">Curso | <code> selecione </code></label>
                       <select class="custom-select form-control-border" name="course" id="course">
-                          <option value="1"> Auxiliar Administrativo </option>
-                          <option value="2"> Auxiliar em Departamento Pessoal </option>
-                          <option value="3"> Auxiliar em Logística </option>
-                          <option value="4"> Marketing de Varejo </option>
-                          <option value="5"> Técnicas de Vendas </option>
-                          <option value="6"> Desenvolvimento de Websites </option>
-                      </select>
-                  </div>
-                  <div class="form-group">
-                      <label for="company">Vinculo | <code> atenção máxima </code></label>
-                      <select class="custom-select form-control-border" name="company" id="company">
-                          <option value=" "> Selecione </option>
-                          <option value="INVAR"> INVAR </option>
-                          <option value="DEMHAB"> DEMHAB </option>
-                      </select>
-                  </div>
-                  <div class="form-group">
-                      <label for="local">Local | <code> unidade/condomínio </code></label>
-                      <select class="custom-select form-control-border" name="local" id="local">
-                          <option value=" "> Selecione </option>
-                          <option value="São Paulo"> São Paulo </option>
-                          <option value="Peruíbe"> Peruíbe </option>
-                          <option value="Marista"> Marista </option>
-                          <option value="Bomfim"> Bomfim </option>
+                          <? use Source\Models\Course; $model = new Course(); $courses = $model->find()->fetch(true); ?>
+                          <? foreach ($courses as $course) {echo "<option value='".$course->id."'>".$course->name."</option>"; } ?>
                       </select>
                   </div>
                   <div class="form-group">
@@ -140,12 +118,7 @@
                   <div class="form-group">
                       <label for="course">Curso Lecionado | <code> selecione </code></label>
                       <select class="custom-select form-control-border" name="course" id="course">
-                          <option value="1"> Auxiliar Administrativo </option>
-                          <option value="2"> Auxiliar em Departamento Pessoal </option>
-                          <option value="3"> Auxiliar em Logística </option>
-                          <option value="4"> Marketing de Varejo </option>
-                          <option value="5"> Técnicas de Vendas </option>
-                          <option value="6"> Desenvolvimento de Websites </option>
+                          <? foreach ($courses as $course) {echo "<option value='".$course->id."'>".$course->name."</option>"; } ?>
                       </select>
                   </div>
                   <div class="form-group">
@@ -241,12 +214,7 @@
                           <label for="course">Curso lecionado</label>
                           <select class="custom-select form-control-border" name="course" id="course">
                               <option value="" disabled selected> Selecione o curso </option>
-                              <option value="1"> Auxiliar Administrativo </option>
-                              <option value="2"> Auxiliar em Departamento Pessoal </option>
-                              <option value="3"> Auxiliar em Logística </option>
-                              <option value="4"> Marketing de Varejo </option>
-                              <option value="5"> Técnicas de Vendas </option>
-                              <option value="6"> Desenvolvimento de Websites </option>
+                              <? foreach ($courses as $course) {echo "<option value='".$course->id."'>".$course->name."</option>"; } ?>
                           </select>
                       </div>
                       <div class="form-group">
@@ -261,27 +229,6 @@
                   </div>
               </form>
           </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="col-md-6">
-          <!-- PIE CHART -->
-          <div class="card card-danger">
-              <div class="card-header">
-                  <h3 class="card-title">Gráfico de Usuários</h3>
-
-                  <div class="card-tools">
-                      <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                      </button>
-                      <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
-                  </div>
-              </div>
-              <div class="card-body">
-                  <canvas id="pieChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-              </div>
-              <!-- /.card-body -->
-          </div>
-      <!-- /.card -->
       </div>
   </div>
   </div>

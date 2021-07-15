@@ -12,13 +12,6 @@ if ($error) {
 
 ?>
 
-<!-- DataTables -->
-<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="<?= asset("/plugins/moment/moment.min.js"); ?>"></script>
-
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -49,7 +42,7 @@ if ($error) {
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <table id="example1" class="table table-bordered table-striped">
+                        <table id="usuarios" class="table table-bordered table-striped">
                             <thead>
                             <tr>
                                 <th> Tipo de Usuário </th>
@@ -85,13 +78,34 @@ if ($error) {
                     <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
-                </div>
-                <!-- /.col -->
-                </div>
-                <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
-                </section>
-                <!-- /.content -->
-                </div>
-                <!-- /.content-wrapper -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<!-- DataTables -->
+<script src="<?= asset("/plugins/datatables/jquery.dataTables.min.js"); ?>"></script>
+<script src="<?= asset("/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"); ?>"></script>
+<script src="<?= asset("/plugins/datatables-responsive/js/dataTables.responsive.min.js"); ?>"></script>
+<script src="<?= asset("/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"); ?>"></script>
+<script>
+    $(function () {
+        $("#users").DataTable({
+            "responsive": true,
+            "autoWidth": false,
+        });
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+        });
+    });
+</script>
