@@ -33,7 +33,7 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="<?= $router->route("app.home"); ?>" class="nav-link">Home</a>
+                <a href="<?= $router->route("app.administrador"); ?>" class="nav-link">Home</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="<?= $router->route("app.contato"); ?>" class="nav-link">Contato</a>
@@ -46,7 +46,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="<?= $router->route("app.home"); ?>" class="brand-link">
+        <a href="<?= $router->route("app.administrador"); ?>" class="brand-link">
             <img rel="icon" alt="<?= site("name"); ?>" type="image/png" src="<?= asset("images/invar-iden.png"); ?>" class="brand-image"/>
             <span class="brand-text font-weight-light"> INVAR </span>
         </a>
@@ -60,7 +60,7 @@
                     <img src="<?= asset("/images/favicon.png"); ?>" class="img-circle elevation-2" alt="<?= $user->first_name; ?>">
                 </div>
                 <div class="info">
-                    <a href="<?= $router->route("app.profile"); ?>" class="d-block"><?= $user->first_name; ?> <?= $user->last_name; ?></a>
+                    <a href="<?= $router->route("app.administrador"); ?>" class="d-block"><?= $user->first_name; ?> <?= $user->last_name; ?></a>
                 </div>
             </div>
 
