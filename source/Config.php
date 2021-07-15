@@ -4,7 +4,7 @@
  * SITE CONFIG
  */
 define("SITE", [
-   "name" => "Plataforma EaD Invar",
+   "name" => "Sysday",
    "desc" => "Ensino a Distância do Instituto de Educação e Tecnologia Vale do Ribeira",
    "domain" => "https://sysday.invar.org.br",
    "locale" => "pt_BR",
