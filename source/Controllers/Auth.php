@@ -120,6 +120,7 @@ class Auth extends Controller
         $user->company = $data["company"];
         $user->local = $data["local"];
         $user->extra = $data["extra"];
+        $user->class = NULL;
 
         if (empty($user->company))
         {
@@ -208,9 +209,7 @@ class Auth extends Controller
         }
 
         $user->extra = $data["extra"];
-
-        /** SOCIAL VALIDATE
-        $this->socialValidate($user);*/
+        $user->class = NULL;
 
         $email = new Email();
         $email->add(
