@@ -1,6 +1,6 @@
 <?php $v->layout("theme/admin/adm_theme"); ?>
 <? use Source\Models\Course; $model_course = new Course(); $courses = $model_course->find()->fetch(true); ?>
-<? use Source\Models\User; $model_user = new User(); $users = $model_user->find()->fetch(true); ?>
+<? use Source\Models\User; $model_teacher = new User(); $users = $model_teacher->find("extra= :id","id=2")->fetch(true); ?>
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
