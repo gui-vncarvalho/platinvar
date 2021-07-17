@@ -298,7 +298,6 @@ class Auth extends Controller
         $course = new Course();
         $course->course = $data["course_name"];
         $course->drive = $data["drive"];
-        $course->teacher = $data["first_name"];
         $course->description = $data["description"];
 
         if (!$course->save()) {
@@ -331,6 +330,7 @@ class Auth extends Controller
         $classroom->classroom_name = $data["classroom_name"];
         $classroom->teacher = $data["teacher"];
         $classroom->course = $data["course"];
+        $classroom->drive = $data["drive"];
 
         if (!$classroom->save()) {
             echo $this->ajaxResponse("message", [

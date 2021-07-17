@@ -1,4 +1,6 @@
 <?php $v->layout("theme/admin/adm_theme"); ?>
+<? use Source\Models\Course; $model_course = new Course(); $courses = $model_course->find()->fetch(true); ?>
+<? use Source\Models\User; $model_user = new User(); $users = $model_user->find()->fetch(true); ?>
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -64,7 +66,6 @@
                   <div class="form-group">
                       <label for="course">Curso | <code> selecione </code></label>
                       <select class="custom-select form-control-border" name="course" id="course">
-                          <? use Source\Models\Course; $model_course = new Course(); $courses = $model_course->find()->fetch(true); ?>
                           <? foreach ($courses as $course) {echo "<option value='".$course->name."'>".$course->name."</option>"; } ?>
                       </select>
                   </div>
@@ -116,12 +117,6 @@
                              id="last_name" placeholder="Sobrenome do Professor">
                   </div>
                   <div class="form-group">
-                      <label for="course">Curso Lecionado | <code> selecione </code></label>
-                      <select class="custom-select form-control-border" name="course" id="course">
-                          <? foreach ($courses as $course) {echo "<option value='".$course->name."'>".$course->name."</option>"; } ?>
-                      </select>
-                  </div>
-                  <div class="form-group">
                       <label for="email">E-mail</label>
                       <input value="" type="email" class="form-control" name="email"
                              id="email" placeholder="E-mail para acessar">
@@ -163,14 +158,6 @@
                       <label for="drive">Link do Google Drive</label>
                       <input value="" type="text" class="form-control" name="drive"
                              id="drive" placeholder="Link do Google Drive">
-                  </div>
-                  <div class="form-group">
-                      <label for="teacher">Professor do curso</label>
-                      <select class="custom-select form-control-border" name="course" id="teacher">
-                          <option value="" disabled selected> Selecione o professor </option>
-                          <? use Source\Models\User; $model_teacher = new User(); $users = $model_teacher->find("extra= :id","id=2")->fetch(true);
-                          foreach ($users as $user) {echo "<option value='".$user->first_name." ".$user->last_name."'>".$user->first_name." ".$user->last_name."</option>"; } ?>
-                      </select>
                   </div>
                   <div class="form-group">
                       <label for="description">Descrição | <code> informações sobre o curso </code></label>
@@ -217,9 +204,9 @@
                           </select>
                       </div>
                       <div class="form-group">
-                          <label for="passwd">Sua senha | <code> para confirmação </code></label>
-                          <input type="password" class="form-control" name="passwd"
-                                 id="passwd" placeholder="Senha de acesso">
+                          <label for="drive">Link do Google Drive</label>
+                          <input value="" type="text" class="form-control" name="drive"
+                                 id="drive" placeholder="Link do Google Drive">
                       </div>
                   </div>
                   <!-- /.card-body -->

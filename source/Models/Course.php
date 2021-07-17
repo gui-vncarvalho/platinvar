@@ -16,7 +16,7 @@ class Course extends DataLayer
      */
     public function __construct()
     {
-        parent::__construct("courses", ["name","drive","teacher", "description"]);
+        parent::__construct("courses", ["name","drive","description"]);
     }
 
     /**
