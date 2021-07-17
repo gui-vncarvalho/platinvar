@@ -79,6 +79,12 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
+                                <a href="<?= $router->route("app.admin"); ?>" class="nav-link">
+                                    <i class="fab fa-wpforms nav-icon"></i>
+                                    <p>Formulários</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="<?= $router->route("app.tables"); ?>" class="nav-link">
                                     <i class="fas fa-chalkboard-teacher nav-icon"></i>
                                     <p>Registros</p>

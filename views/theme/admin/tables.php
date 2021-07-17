@@ -36,13 +36,20 @@ if ($error) {
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="card">
+                <div class="card card-primary">
+                    <!-- /.card-users -->
                     <div class="card-header">
                         <h3 class="card-title">Usuários Cadastrados</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                <i class="fas fa-minus"></i></button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                                <i class="fas fa-times"></i></button>
+                        </div>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <table id="usuarios" class="table table-bordered table-striped">
+                        <table id="users" class="table table-bordered table-striped">
                             <thead>
                             <tr>
                                 <th> Tipo de Usuário </th>
@@ -80,6 +87,107 @@ if ($error) {
                 <!-- /.card -->
             </div>
             <!-- /.row -->
+            <div class="row">
+                <!-- /.card-courses -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Cursos Cadastrados</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                <i class="fas fa-minus"></i></button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                                <i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="courses" class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th> Nome do Curso </th>
+                                <th> Drive </th>
+                                <th> Professor </th>
+                                <th> Descrição </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <? use Source\Models\Course; $model_course = new Course(); $courses = $model_course->find()->fetch(true); ?>
+
+                            <? foreach ($courses as $course) {
+                                echo "<tr><td>".$course->name."</td>";
+                                echo "<td>".$course->drive."</td>";
+                                echo "<td>".$course->teacher."</td>";
+                                echo "<td>".$course->description."</td></tr>";
+                            } ?>
+
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <th> Nome do Curso </th>
+                                <th> Drive </th>
+                                <th> Professor </th>
+                                <th> Descrição </th>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <!-- /.card-classrooms -->
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <h3 class="card-title">Turmas Cadastradas</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                <i class="fas fa-minus"></i></button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                                <i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="classrooms" class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th> Id da Turma </th>
+                                <th> Nome </th>
+                                <th> Professor </th>
+                                <th> Curso </th>
+                                <th> Nº de Estudantes </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <? use Source\Models\Classroom; $model_class = new Classroom(); $classrooms = $model_class->find()->fetch(true); ?>
+
+                            <? foreach ($classrooms as $classroom) {
+                                echo "<tr><td>".$classroom->id."</td>";
+                                echo "<td>".$classroom->classroom_name."</td>";
+                                echo "<td>".$classroom->teacher."</td>";
+                                echo "<td>".$classroom->course."</td>";
+                                echo "<td>".$classroom->students."</td></tr>";
+                            } ?>
+
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <th> Id da Turma </th>
+                                <th> Nome </th>
+                                <th> Professor </th>
+                                <th> Curso </th>
+                                <th> Nº de Estudantes </th>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.row -->
         </div>
         <!-- /.container-fluid -->
     </section>
@@ -95,6 +203,14 @@ if ($error) {
 <script>
     $(function () {
         $("#users").DataTable({
+            "responsive": true,
+            "autoWidth": false,
+        });
+        $("#courses").DataTable({
+            "responsive": true,
+            "autoWidth": false,
+        });
+        $("#classrooms").DataTable({
             "responsive": true,
             "autoWidth": false,
         });

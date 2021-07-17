@@ -26,7 +26,6 @@ $router->post("/login","Auth:login","auth.login");
 $router->post("/register","Auth:register","auth.register");
 $router->post("/appRegisterTeacher","Auth:appregisterteacher","auth.appregisterteacher");
 $router->post("/appRegisterStudent","Auth:appregisterstudent","auth.appregisterstudent");
-
 $router->post("/forget","Auth:forget","auth.forget");
 $router->post("/reset","Auth:reset","auth.reset");
 $router->post("/classroom","Auth:classroom","auth.classroom");

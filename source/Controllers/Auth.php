@@ -403,11 +403,6 @@ class Auth extends Controller
             "{$user->first_name} {$user->last_name}",
             $user->email
         )->send();
-
-        flash("success","Cadastro efetuado com sucesso!");
-        echo $this->ajaxResponse("redirect",[
-            "url" => $this->router->route("web.login")
-        ]);
     }
 
     /**
@@ -435,6 +430,14 @@ class Auth extends Controller
         $user->extra = $data["extra"];
         $user->class = NULL;
 
+        if (!$user->save()) {
+            echo $this->ajaxResponse("message", [
+                "type" => "error",
+                "message" => $user->fail()->getMessage()
+            ]);
+            return;
+        }
+
         $email = new Email();
         $email->add(
             "Registro de usuário | " . site("name"),
@@ -446,14 +449,6 @@ class Auth extends Controller
             "{$user->first_name} {$user->last_name}",
             $user->email
         )->send();
-
-        if (!$user->save()) {
-            echo $this->ajaxResponse("message", [
-                "type" => "error",
-                "message" => $user->fail()->getMessage()
-            ]);
-            return;
-        }
 
         flash("success","Cadastro efetuado com sucesso!");
         echo $this->ajaxResponse("redirect",[
