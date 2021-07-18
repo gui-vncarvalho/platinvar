@@ -227,7 +227,7 @@ class App extends Controller
 
         echo  $this->view->render("theme/teacher/room", [
             "head" => $head,
-            "user" => $this->user
+            "user" => $this->user,
         ]);
     }
 
