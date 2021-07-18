@@ -216,6 +216,24 @@ class App extends Controller
     /**
      *
      */
+    public function roomTea(): void
+    {
+        $head = $this->seo->optimize(
+            "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
+            site("desc"),
+            $this->router->route("app.roomtea"),
+            routeImage("Conta de {$this->user->first_name}")
+        )->render();
+
+        echo  $this->view->render("theme/teacher/room", [
+            "head" => $head,
+            "user" => $this->user
+        ]);
+    }
+
+    /**
+     *
+     */
     public function logoff(): void
     {
         unset($_SESSION["user"]);

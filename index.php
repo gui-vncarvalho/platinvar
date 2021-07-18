@@ -45,12 +45,15 @@ $router->get("/google", "Auth:google", "auth.google");
  */
 $router->group("/me");
 $router->get("/estudante","App:student","app.student");
-$router->get("/professor","App:teacher","app.teacher");
-/*$router->get("/calendario","App:calendar","app.calendar");*/
-$router->get("/perfil","App:profilestd","app.profilestd");
-$router->get("/perfil","App:profiletea","app.profiletea");
 $router->get("/curso","App:classstd","app.classstd");
+$router->get("/perfil","App:profilestd","app.profilestd");
+
+$router->get("/professor","App:teacher","app.teacher");
+$router->get("/perfil","App:profiletea","app.profiletea");
 $router->get("/aulas","App:classtea","app.classtea");
+$router->get("/turma","App:roomtea","app.roomtea");
+
+/*$router->get("/calendario","App:calendar","app.calendar");*/
 
 /*
  * APP ADMIN

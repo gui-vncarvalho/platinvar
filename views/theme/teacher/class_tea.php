@@ -49,13 +49,13 @@ use Source\Models\Classroom; $model_class = new Classroom(); $class = $model_cla
                     </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($class as $cls) {
-                            echo "<tr><td> ".var_dump($cls)." </td>";
-                            echo "<td>{$cls->id}</td>";
-                            echo "<td>{$cls->classroom_name}</td>";
-                            echo "<td>{$cls->course}</td>";
-                            echo "<td><a href='{$cls->drive}'><i class='fas fa-boxes nav-icon'></i></a></td></tr>";
-                    } ?>
+                    <?php foreach ($class as $cls) { ?>
+                        <tr><td> <a href="<?= $router->route("app.roomtea"); ?>"> Acessar </a> </td>
+                        <td> <?=$cls->id?> </td>
+                        <td> <?=$cls->classroom_name?></td>
+                        <td> <?=$cls->course?></td>
+                        <td><a href='<?=$cls->drive?>'><i class='fas fa-boxes nav-icon'></i></a></td></tr>
+                    <? } ?>
                     </tbody>
                     <tfoot>
                     <tr>
