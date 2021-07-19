@@ -36,9 +36,6 @@
           <!-- /.card-header -->
           <!-- form start -->
           <form action="<?= $router->route("auth.appregisterstudent"); ?>" method="post" autocomplete="off">
-              <div class="login_form_callback">
-                  <?= flash(); ?>
-              </div>
               <div class="card-body">
                   <div class="form-group">
                       <div class="form-group">
@@ -94,9 +91,6 @@
           <!-- /.card-header -->
           <!-- form start -->
           <form action="<?= $router->route("auth.appregisterteacher"); ?>" method="post" autocomplete="off">
-              <div class="login_form_callback">
-                  <?= flash(); ?>
-              </div>
               <div class="card-body">
                   <div class="form-group">
                       <div class="form-group">
@@ -145,9 +139,6 @@
           <!-- /.card-header -->
           <!-- form start -->
           <form action="<?= $router->route("auth.course"); ?>" method="post" autocomplete="off">
-              <div class="login_form_callback">
-                  <?= flash(); ?>
-              </div>
               <div class="card-body">
                   <div class="form-group">
                       <label for="course_name">Nome do Curso</label>
@@ -161,7 +152,7 @@
                   </div>
                   <div class="form-group">
                       <label for="description">Descrição | <code> informações sobre o curso </code></label>
-                      <textarea class="form-control" id="description" rows="4"></textarea>
+                      <textarea class="form-control" id="description" name="description" rows="4"></textarea>
                   </div>
               </div>
               <!-- /.card-body -->

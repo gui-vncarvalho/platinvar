@@ -262,17 +262,13 @@ class Auth extends Controller
 
         $lesson = new Lesson();
         $lesson->lesson_name = $data["lesson_name"];
-        $lesson->module = $data["module"];
-        $lesson->teacher = $data["first_name"];
-        $lesson->course = $data["curso"];
+        $lesson->teacher = $data["teacher"];
         $lesson->embed = $data["embed"];
         $lesson->drive = $data["drive"];
+        $lesson->course = $data["course"];
 
         if (!$lesson->save()) {
-            echo $this->ajaxResponse("message", [
-                "type" => "error",
-                "message" => $lesson->fail()->getMessage()
-            ]);
+            $this->router->redirect("app.teacher");
             return;
         }
 
@@ -286,27 +282,21 @@ class Auth extends Controller
     {
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
-
+            $this->router->redirect("app.admin");
             return;
         }
 
         $course = new Course();
-        $course->course = $data["course_name"];
+        $course->name = $data["course_name"];
         $course->drive = $data["drive"];
         $course->description = $data["description"];
 
         if (!$course->save()) {
-            echo $this->ajaxResponse("message", [
-                "type" => "error",
-                "message" => $course->fail()->getMessage()
-            ]);
+            $this->router->redirect("app.admin");
             return;
         }
 
-        flash("success","Cadastro efetuado com sucesso!");
-        echo $this->ajaxResponse("redirect",[
-            "url" => $this->router->route("web.login")
-        ]);
+        $this->router->redirect("app.admin");
     }
 
     /**
@@ -316,7 +306,7 @@ class Auth extends Controller
     {
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
-
+            $this->router->redirect("app.admin");
             return;
         }
 
@@ -327,17 +317,12 @@ class Auth extends Controller
         $classroom->drive = $data["drive"];
 
         if (!$classroom->save()) {
-            echo $this->ajaxResponse("message", [
-                "type" => "error",
-                "message" => $classroom->fail()->getMessage()
-            ]);
+            $this->router->redirect("app.admin");
             return;
         }
 
         /** Auth */
-        echo $this->ajaxResponse("redirect", [
-            "url" => $this->router->route("app.admin")
-        ]);
+        $this->router->redirect("app.admin");
     }
 
     /**
@@ -347,7 +332,7 @@ class Auth extends Controller
     {
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
-
+            $this->router->redirect("app.admin");
             return;
         }
 
@@ -372,7 +357,7 @@ class Auth extends Controller
         }
 
         if (!$user->save()) {
-
+            $this->router->redirect("app.admin");
             return;
         }
 
@@ -388,9 +373,7 @@ class Auth extends Controller
             $user->email
         )->send();
 
-        echo $this->ajaxResponse("redirect",[
-            "url" => $this->router->route("web.login")
-        ]);
+        $this->router->redirect("app.admin");
     }
 
     /**
@@ -400,7 +383,7 @@ class Auth extends Controller
     {
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
-
+            $this->router->redirect("app.admin");
             return;
         }
 
@@ -416,10 +399,7 @@ class Auth extends Controller
         $user->class = NULL;
 
         if (!$user->save()) {
-            echo $this->ajaxResponse("message", [
-                "type" => "error",
-                "message" => $user->fail()->getMessage()
-            ]);
+            $this->router->redirect("app.admin");
             return;
         }
 
@@ -435,8 +415,6 @@ class Auth extends Controller
             $user->email
         )->send();
 
-        echo $this->ajaxResponse("redirect",[
-            "url" => $this->router->route("web.login")
-        ]);
+        $this->router->redirect("app.admin");
     }
 }

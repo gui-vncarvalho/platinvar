@@ -42,17 +42,17 @@
                                            id="lesson_name" placeholder="Nome da Aula">
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Professor</label>
+                                    <label for="teacher">Professor</label>
                                     <input value="<?=$user->first_name?> <?=$user->last_name?>" type="text" class="form-control" name="teacher"
                                            id="teacher" placeholder="">
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Link do Youtube</label>
+                                    <label for="embed">Link do Youtube</label>
                                     <input value="" type="text" class="form-control" name="embed"
                                            id="embed" placeholder="youtube.com/">
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Google Drive</label>
+                                    <label for="drive">Google Drive</label>
                                     <input value="" type="text" class="form-control" name="drive"
                                            id="drive" placeholder="Link">
                                 </div>

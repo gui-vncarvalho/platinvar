@@ -143,7 +143,7 @@
                             <p class="text"> Sair </p>
                         </a>
                     </li><li class="nav-item">
-                        <a href="<?= $router->route("app.contacthelp"); ?>" class="nav-link">
+                        <a href="<?= $router->route("app.contacthelp"); ?>" class="nav-link disabled">
                             <i class="nav-icon far fa-question-circle text-info"></i>
                             <p class="text"> Ajuda </p>
                         </a>
