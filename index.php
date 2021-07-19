@@ -35,6 +35,9 @@ $router->post("/lesson","Auth:lesson","auth.lesson");
 $router->post("/course","Auth:course","auth.course");
 /*$router->post("/event","Auth:event","auth.event");*/
 
+$router->post("/addStudent", "Room:addstudent", "room.addstudent");
+$router->post("/remStudent", "Room:remstudent", "room.remstudent");
+
 /*
  * AUTH SOCIAL
 $router->group(null);
