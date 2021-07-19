@@ -126,12 +126,12 @@ class App extends Controller
     /**
      *
      */
-    public function classStd(): void
+    public function class(): void
     {
       $head = $this->seo->optimize(
         "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
         site("desc"),
-        $this->router->route("app.classstd"),
+        $this->router->route("app.class"),
         routeImage("Conta de {$this->user->first_name}")
       )->render();
 

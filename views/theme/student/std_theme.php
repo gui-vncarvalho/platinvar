@@ -59,7 +59,7 @@
                     <img src="<?= asset("/images/favicon.png"); ?>" class="img-circle elevation-2" alt="<?= $user->first_name; ?>">
                 </div>
                 <div class="info">
-                    <a href="<?= $router->route("app.profilestd"); ?>" class="d-block"><?= $user->first_name; ?> <?= $user->last_name; ?></a>
+                    <a href="<?= $router->route("app.profilestd"); ?>" class="d-block disabled"><?= $user->first_name; ?> <?= $user->last_name; ?></a>
                 </div>
             </div>
 
@@ -80,7 +80,7 @@
                             <li class="nav-item">
                                 <a href="<?= $router->route("app.class"); ?>" class="nav-link">
                                     <i class="fas fa-chalkboard-teacher nav-icon"></i>
-                                    <p>Aulas</p>
+                                    <p>Turma</p>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -110,9 +110,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?= $router->route("app.profilestd"); ?>" class="nav-link">
+                                <a href="<?= $router->route("app.profilestd"); ?>" class="nav-link disabled">
                                     <i class="far fa-address-book nav-icon"></i>
-                                    <p>Perfil</p>
+                                    <p>
+                                        Perfil
+                                        <span class="right badge badge-danger"> Em breve </span>
+                                    </p>
                                 </a>
                             </li>
                             <li class="nav-item">
