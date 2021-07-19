@@ -256,8 +256,7 @@ class Auth extends Controller
     {
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
-            flash("error", "Preencha todos os campos para cadastrar");
-            $this->router->redirect("app.admin");
+            $this->router->redirect("app.teacher");
             return;
         }
 
@@ -277,10 +276,7 @@ class Auth extends Controller
             return;
         }
 
-        flash("success","Cadastro efetuado com sucesso!");
-        echo $this->ajaxResponse("redirect",[
-            "url" => $this->router->route("web.login")
-        ]);
+        $this->router->redirect("app.teacher");
     }
 
     /**
@@ -290,8 +286,7 @@ class Auth extends Controller
     {
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
-            flash("error", "Preencha todos os campos para cadastrar");
-            $this->router->redirect("app.admin");
+
             return;
         }
 
@@ -321,8 +316,7 @@ class Auth extends Controller
     {
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
-            flash("error", "Preencha todos os campos para cadastrar");
-            $this->router->redirect("app.admin");
+
             return;
         }
 
@@ -353,10 +347,7 @@ class Auth extends Controller
     {
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
-            echo $this->ajaxResponse("message", [
-                "type" => "error",
-                "message" => "Preencha todos os campos para cadastrar-se"
-            ]);
+
             return;
         }
 
@@ -368,7 +359,7 @@ class Auth extends Controller
         $user->email = $data["email"];
         $user->passwd = $data["passwd"];
         $user->course = $data["course"];
-        $user->extra = $data["extra"];
+        $user->extra = 1;
         $user->class = NULL;
 
         if (empty($user->company))
@@ -379,16 +370,9 @@ class Auth extends Controller
         {
             $user->local = null;
         }
-        if (empty($user->extra))
-        {
-            $user->extra = 1;
-        }
 
         if (!$user->save()) {
-            echo $this->ajaxResponse("message", [
-                "type" => "error",
-                "message" => $user->fail()->getMessage()
-            ]);
+
             return;
         }
 
@@ -403,6 +387,10 @@ class Auth extends Controller
             "{$user->first_name} {$user->last_name}",
             $user->email
         )->send();
+
+        echo $this->ajaxResponse("redirect",[
+            "url" => $this->router->route("web.login")
+        ]);
     }
 
     /**
@@ -412,10 +400,7 @@ class Auth extends Controller
     {
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
         if(in_array("", $data)) {
-            echo $this->ajaxResponse("message", [
-                "type" => "error",
-                "message" => "Preencha todos os campos para cadastrar-se"
-            ]);
+
             return;
         }
 
@@ -427,7 +412,7 @@ class Auth extends Controller
         $user->email = $data["email"];
         $user->passwd = $data["passwd"];
         $user->course = $data["course"];
-        $user->extra = $data["extra"];
+        $user->extra = 2;
         $user->class = NULL;
 
         if (!$user->save()) {
@@ -450,7 +435,6 @@ class Auth extends Controller
             $user->email
         )->send();
 
-        flash("success","Cadastro efetuado com sucesso!");
         echo $this->ajaxResponse("redirect",[
             "url" => $this->router->route("web.login")
         ]);

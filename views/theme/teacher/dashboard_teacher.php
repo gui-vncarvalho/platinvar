@@ -1,4 +1,5 @@
 <?php $v->layout("theme/teacher/tea_theme"); ?>
+<? use Source\Models\Course; $model_course = new Course(); $courses = $model_course->find()->fetch(true); ?>
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -23,27 +24,57 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-            <!-- Info boxes -->
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="info-box">
-                        <span class="info-box-icon bg-info elevation-1"><i class="far fa-address-book"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Curso Lecionado</span>
-                            <span class="info-box-number">
-                                <?= $user->course ?>
-                            </span>
+                <!-- left column -->
+                <div class="col-md-6">
+                    <!-- form student -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title"> Cadastrar Nova Aula </h3>
                         </div>
-                        <!-- /.info-box-content -->
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form action="<?= $router->route("auth.lesson"); ?>" method="post" autocomplete="off">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="lesson_name">Nome da Aula</label>
+                                    <input value="" type="text" class="form-control" name="lesson_name"
+                                           id="lesson_name" placeholder="Nome da Aula">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Professor</label>
+                                    <input value="<?=$user->first_name?> <?=$user->last_name?>" type="text" class="form-control" name="teacher"
+                                           id="teacher" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Link do Youtube</label>
+                                    <input value="" type="text" class="form-control" name="embed"
+                                           id="embed" placeholder="youtube.com/">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Google Drive</label>
+                                    <input value="" type="text" class="form-control" name="drive"
+                                           id="drive" placeholder="Link">
+                                </div>
+                                <div class="form-group">
+                                    <label for="course">Curso | <code> selecione </code></label>
+                                    <select class="custom-select form-control-border" name="course" id="course">
+                                        <? foreach ($courses as $course) {echo "<option value='".$course->name."'>".$course->name."</option>"; } ?>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- /.card-body -->
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                            </div>
+                        </form>
                     </div>
-                    <!-- /.info-box -->
+                    <!-- /.card student -->
                 </div>
-                <!-- fix for small devices only -->
-                <div class="clearfix hidden-md-up"></div>
             </div>
-            <!-- /.row -->
-
-        </div><!--/. container-fluid -->
+            <!--/. row -->
+        </div>
+        <!--/. container-fluid -->
     </section>
     <!-- /.content -->
 </div>

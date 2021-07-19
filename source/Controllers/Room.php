@@ -4,7 +4,9 @@
 namespace Source\Controllers;
 
 
+use http\Message;
 use League\Plates\Engine;
+use Source\Models\User;
 
 class Room
 {
@@ -23,13 +25,37 @@ class Room
 
     public function addstudent(array $data): void
     {
-        $callback["data"] = $data;
+        $stdData = filter_var_array($data, FILTER_SANITIZE_STRING);
+
+        if (in_array("", $stdData)){
+            return;
+        }
+
+        $studentId = $data["id"];
+        $studentClass = $data["class"];
+        $modelStd = new User();
+        $students = $modelStd->findById($studentId)->fetch(true);
+        $students->class=$studentClass;
+        $students->save();
+
+
+        $callback["student"] = "student";
         echo json_encode($data);
     }
 
     public function remstudent(array $data): void
     {
-        $callback["data"] = $data;
-        echo json_encode($data);
+        if (empty($data["id"])) {
+            return;
+        }
+
+        $id = filter_var($data["id"], FILTER_VALIDATE_INT);
+        $user = (new User())->findById($id);
+        if($user){
+            $user->class = NULL;
+        }
+
+        $callback["remove"] = true;
+        echo json_encode($callback);
     }
 }

@@ -66,12 +66,14 @@ use Source\Models\Classroom; $model_class = new Classroom(); $class = $model_cla
                             <div class="col-12">
                                 <? if(!empty($students)): ?>
                                 <!-- form start -->
-                                <form action="<?= $router->route("room.addstudent"); ?>" method="post" autocomplete="off" enctype="multipart/form-data">
-
+                                <form id="form_students" action="<?= $router->route("room.addstudent"); ?>"
+                                      method="post" autocomplete="off" enctype="multipart/form-data"
+                                      data-id="<?= $student->id; ?>" data-class="<?= $cls->id ?>">
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="student">Estudantes inscritos no curso | <code> selecione </code></label>
                                             <select class="custom-select form-control-border" name="student" id="student">
+                                                <option value="" disabled selected> Selecione um Aluno para Adicionar </option>
                                                 <? foreach ($students as $student) {echo "<option value='".$student->id."'>".$student->first_name." ".$student->last_name."</option>"; } ?>
                                             </select>
                                         </div>
@@ -123,7 +125,7 @@ use Source\Models\Classroom; $model_class = new Classroom(); $class = $model_cla
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
-                                <table id="users" class="table table-bordered table-striped">
+                                <table id="students" class="table table-bordered table-striped">
                                     <thead>
                                     <tr>
                                         <th> Nome do Estudante </th>
@@ -172,3 +174,46 @@ use Source\Models\Classroom; $model_class = new Classroom(); $class = $model_cla
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
+<?php $v->start("scripts"); ?>
+<script>
+    $(function () {
+        $("form").submit(function (e) {
+            e.preventDefault();
+            var form = $(this);
+            var form_ajax = $(".form_students");
+            var student = $(".students");
+
+            $.ajax({
+                url: form.attr("action"),
+                data: form.serialize(),
+                type: "POST",
+                dataType: "json",
+                success: function (callback) {
+                    if(callback.message) {
+                        form_ajax.html(callback.message).fadeIn();
+                    } else {
+                        form_ajax.fadeOut(function (){
+                           $(this).html("");
+                        });
+                    }
+
+                    if(callback.student){
+                        student.prepend(callback.student);
+                    }
+                }
+            });
+        });
+
+        $("body").on("click", "[data-action]", function (e) {
+            e.preventDefault();
+            var data = $(this).data();
+            var div = $(this).parent();
+
+            $.post(data.action, data, , "json"). fail(function (){
+                alert("Erro ao incluir aluno");
+            });
+        });
+    });
+</script>
+<?php $v->end(); ?>

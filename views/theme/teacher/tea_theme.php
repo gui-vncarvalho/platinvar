@@ -116,9 +116,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?= $router->route("app.profiletea"); ?>" class="nav-link">
+                                <a href="<?= $router->route("app.profiletea"); ?>" class="nav-link disabled">
                                     <i class="far fa-address-book nav-icon"></i>
-                                    <p>Perfil</p>
+                                    <p>
+                                        Perfil
+                                        <span class="right badge badge-danger"> Em breve </span>
+                                    </p>
                                 </a>
                             </li>
                             <li class="nav-item">
