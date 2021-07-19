@@ -456,14 +456,3 @@ class Auth extends Controller
         ]);
     }
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -50,7 +50,7 @@ use Source\Models\Classroom; $model_class = new Classroom(); $class = $model_cla
                     </thead>
                     <tbody>
                     <?php foreach ($class as $cls) { ?>
-                        <tr><td> <a href="<?= $router->route("app.roomtea"); ?>"> Acessar </a> </td>
+                        <tr><td> <a href="<?= $router->route("app.roomtea",["id"=>$cls->id]); ?>"> Acessar </a> </td>
                         <td> <?=$cls->id?> </td>
                         <td> <?=$cls->classroom_name?></td>
                         <td> <?=$cls->course?></td>

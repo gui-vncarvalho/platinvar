@@ -1,5 +1,7 @@
 <?php $v->layout("theme/teacher/tea_theme"); ?>
 
+<?php $classId = filter_input(INPUT_GET, "id", FILTER_SANITIZE_STRIPPED); ?>
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -25,7 +27,7 @@
         <!-- Default box -->
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title"><?= $cls->id?></h3>
+                <h3 class="card-title"><?= $classId ?></h3>
 
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">

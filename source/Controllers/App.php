@@ -216,8 +216,10 @@ class App extends Controller
     /**
      *
      */
-    public function roomTea(): void
+    public function roomTea($data): void
     {
+        $classid = $data["id"];
+
         $head = $this->seo->optimize(
             "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
             site("desc"),

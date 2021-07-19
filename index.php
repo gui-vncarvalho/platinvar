@@ -25,7 +25,9 @@ $router->group(null);
 $router->post("/login","Auth:login","auth.login");
 $router->post("/register","Auth:register","auth.register");
 $router->post("/appRegisterTeacher","Auth:appregisterteacher","auth.appregisterteacher");
+$router->post("/roomtea","Auth:roomtea","auth.roomtea");
 $router->post("/appRegisterStudent","Auth:appregisterstudent","auth.appregisterstudent");
+$router->post("/contactHelp","Auth:contacthelp","auth.contacthelp");
 $router->post("/forget","Auth:forget","auth.forget");
 $router->post("/reset","Auth:reset","auth.reset");
 $router->post("/classroom","Auth:classroom","auth.classroom");
@@ -52,6 +54,7 @@ $router->get("/professor","App:teacher","app.teacher");
 $router->get("/perfil","App:profiletea","app.profiletea");
 $router->get("/aulas","App:classtea","app.classtea");
 $router->get("/turma","App:roomtea","app.roomtea");
+$router->post("/contato","App:contacthelp","app.contacthelp");
 
 /*$router->get("/calendario","App:calendar","app.calendar");*/
 
