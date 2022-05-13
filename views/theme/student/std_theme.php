@@ -105,7 +105,6 @@
                                     <i class="far fa-calendar-alt nav-icon"></i>
                                     <p>
                                         Calendário
-                                        <span class="right badge badge-danger"> Em breve </span>
                                     </p>
                                 </a>
                             </li>
@@ -113,15 +112,6 @@
                                 <a href="<?= $router->route("app.profilestd"); ?>" class="nav-link">
                                     <i class="far fa-address-book nav-icon"></i>
                                     <p>Perfil</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="<?= $router->route("app.chat"); ?>" class="nav-link disabled">
-                                    <i class="nav-icon fas fa-comments"></i>
-                                    <p>
-                                        Chat
-                                        <span class="right badge badge-danger"> Em breve </span>
-                                    </p>
                                 </a>
                             </li>
                         </ul>

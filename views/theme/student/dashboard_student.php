@@ -23,7 +23,7 @@
 <!-- Main content -->
 <section class="content">
 
-<!-- Default box -->
+<!-- Course Section -->
 <div class="card">
     <div class="card-header">
         <h3 class="card-title"><?= $user->course ?></h3>
@@ -35,7 +35,6 @@
                 <i class="fas fa-times"></i></button>
         </div>
     </div>
-    <!--
     <div class="card-body p-0">
         <table class="table table-striped projects">
             <thead>
@@ -124,87 +123,16 @@
                             <button type="button" class="btn btn-primary" data-dismiss="modal">Voltar</button>
                         </div>
                     </div>
-                    <!-- /.modal-content
+                    <!-- /.modal-content -->
                 </div>
-                <!-- /.modal-dialog
+                <!-- /.modal-dialog -->
             </div>
-            <!-- /.modal
-
-            <tr>
-                <td>
-                    2
-                </td>
-                <td>
-                    <a>
-                        Termos técnicos
-                    </a>
-                    <br/>
-                    <small>
-                        Criado em 22.01.2021
-                    </small>
-                </td>
-                <td>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <img alt="Avatar" class="table-avatar" src="<?= asset("/dist/img/avatar3.png"); ?>">
-                        </li>
-                        <li class="list-inline-item">
-                            <img alt="Avatar" class="table-avatar" src="<?= asset("/dist/img/avatar5.png"); ?>">
-                        </li>
-                    </ul>
-                </td>
-                <td class="project_progress">
-                    <div class="progress progress-sm">
-                        <div class="progress-bar bg-green" role="progressbar" aria-volumenow="77" aria-volumemin="0" aria-volumemax="100" style="width: 77%">
-                        </div>
-                    </div>
-                    <small>
-                        77% Completo
-                    </small>
-                </td>
-                <td class="project-state">
-                    <span class="badge badge-success">Sucesso</span>
-                </td>
-                <td class="project-actions text-right">
-                    <a class="btn btn-primary btn-sm" href="https://drive.google.com/drive/folders/1tf3nYBluyssmtjHK9wDj3W_iONlqMwKJ?usp=sharing">
-                        <i class="fas fa-folder"></i>
-                        Arquivos
-                    </a>
-                    <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-lg2">
-                        <i class="fas fa-sign-in-alt"></i>
-                        Acessar
-                    </a>
-                </td>
-            </tr>
-
-            <div class="modal fade" id="modal-lg2">
-                <div class="modal-dialog modal-lg2">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title">Termos técnicos</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gqf0MsUsWM8" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="modal-footer justify-content-between">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Voltar</button>
-                        </div>
-                    </div>
-                    <!-- /.modal-content
-                </div>
-                <!-- /.modal-dialog
-            </div>
-            <!-- /.modal
+            <!-- /.modal -->
 
             </tbody>
         </table>
     </div>
-    <!-- /.card-body
+    <!-- /.card-body -->
 </div>
 <!-- /.card -->
 
